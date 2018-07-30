@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>已预订信息</title>
+    <include file="public@head"/>
+    <style type="text/css">
+      .weui-cells{
+        margin-top: 0;
+      }
+      .save{
+        background: linear-gradient(to right, #D13BF5, #7D3FD6);
+      }
+      .booking-select .isused{
+        background-color: #D13BF5;
+      }
+      .Notable_type{
+        display: none;
+      }
+      .demos-header {
+        position: absolute;
+        top: 50%;
+        margin-top: -78px;
+        width: 100%;
+      }
+      .demos-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 400;
+        margin: 0 15%;
+        color: #666;
+      }
+      .weui-input{
+        text-align: right;
+      }
+      .header{
+        text-align: center;
+        background: #EBEDEE;
+        padding:25px 0;
+      }
+      .header p{
+        margin-top: 15px;
+      }
+      .weui-textarea{
+        padding-top: 5px;
+      }
+    </style>
+  </head>
+  <body class="grade-a">
+    <!-- 用餐时间 -->
+    <notempty name="$data">
+      <form >
+        <div class="header"> 
+          <h3>{:$data.seller_nickname}</h3>
+          <p>{:$data.menu_name}厅 - {:$data.table_name}</p>
+        </div>       
+        <div class="weui-cells weui-cells_form">
+          <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="" class="weui-label">状态</label></div>
+            <div class="weui-cell__bd">
+              <if condition="$data.seller_confirm eq 3" >
+                  <php> $stase_name = '商家拒绝'; </php>
+              <elseif condition="$data.seller_confirm eq 2" >
+                  <if condition="$data.complete eq 2" >
+                    <php> $stase_name = '已完成'; </php>
+                  <else />
+                    <php> $stase_name = '商家已确认'; </php>
+                  </if>
+              <else />
+                  <if condition="$data.complete eq 1" >
+                    <php> $stase_name = '等待商家确认'; </php>
+                  <elseif condition="$data.complete eq 3" >
+                    <php> $stase_name = '商家违约'; </php>
+                  <elseif condition="$data.complete eq 4" >
+                    <php> $stase_name = '已取消'; </php>
+                  </if>
+              </if>
+              <input class="weui-input" type="text"  disabled value="{:$stase_name}" style="color: #D842F7;">
+            </div>
+          </div>
+          <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="" class="weui-label">用餐时间</label></div>
+            <div class="weui-cell__bd">
+              <input class="weui-input" type="text"  disabled value="{:date('Y-m-d H:i',$data.reserve_time)}">
+            </div>
+          </div>
+          <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">用餐人数</label></div>
+            <div class="weui-cell__bd">
+              <input class="weui-input" type="text"  name="user_nub"  disabled value="{:$data.user_nub} 人"> 
+            </div>
+          </div>
+          <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">联系人</label></div>
+            <div class="weui-cell__bd">
+              <input class="weui-input" name="user_name" disabled type="text"  value="{:$data.user_name}">
+            </div>
+          </div>
+          <div class="weui-cell weui-cells__tel_sellerReserve">
+            <div class="weui-cell__hd">
+              <label class="weui-label">联系电话</label>
+            </div>
+            <div class="weui-cell__bd">
+              <input class="weui-input" type="tel" disabled name="tel" value="{:$data.tel}">
+            </div>
+          </div>
+          <div class="weui-cell weui-cells__title weui-cells__title_sellerReserve ">备注</div>
+          <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+              <div class="weui-cell__bd">
+                <textarea class="weui-textarea"  rows="3" name="remarks" disabled> {:$data.remarks}</textarea>
+                <!-- <div class="weui-textarea-counter"><span>最多</span>/200个字</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    <else />
+      <header class="demos-header">
+      <h1 class="demos-title">暂无预订信息</h1>
+    </header>
+    </notempty>
+
+<include file="public@nav"/>
+<include file="public@footer"/>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>我的预订</title>
+    <include file="public@head"/>
+    <style type="text/css">
+      .group {
+        padding: 10px;
+      }
+      text{
+        font-size: 14px;
+      }
+      .Top-position-all{
+        font-size: 14px;
+        color: #000;
+      }
+      .Top-position{
+        position: relative;
+        border-bottom: 0px;
+      }
+      .icon-paided{
+        font-size: 28px !important;
+        margin-top: 5px;
+        margin-bottom: 7px;
+      }
+      .Order-Status-Options .weui-tabbar__item{
+        font-size: 14px;
+      }
+      .weui-td .placeholder {
+        margin: 26px 0;
+      }
+      .weui-flex .name {
+        text-align: left;
+        margin-left: 10px;
+      }
+      .placeholder {
+        margin: 5px 0;
+        /*padding: 0 3px;*/
+        height: 2.3em;
+        line-height: 2.3em;
+        text-align: center;
+        font-size: 12px;
+      }
+      .weui-flex__item {
+           -webkit-box-flex: inherit; 
+           -webkit-flex: inherit; 
+           flex: inherit; 
+          width: 28.33333%;
+      }
+      .weui-flex__item_name{
+        width: 15%;
+      }
+      .weui-flex{
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+      .weui-td{
+        border-top: 0px;
+      }
+      .weui-flex-th .placeholder{
+        font-weight: 700;
+      }
+      .icon-yuding{
+        font-size: 28px !important;
+        margin-top: 6px;
+        margin-bottom: 6px;
+      }
+      .icon-yudingguanli{
+        font-size: 30px !important;
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="__TMPL__/public/assets/css/font-ico/font_wx/reserve/iconfont.css">
+  </head>
+  <body class="grade-a">
+    <!-- 顶部位置 -->
+    <view class="group Top-position">
+      <view>
+        <text class="Top-position-tiele fl">我的预订</text>
+        <a class="Top-position-all fr" href="{:cmf_url('user/index/reserve')}" hover-class="mine-navigator-hover" open-type="redirect">全部预订 ＞</a>
+        <view class="clear"></view>
+      </view>  
+    </view>
+
+    <!-- 预订状态选项 -->
+    <view class=" weui-tabbar Order-Status-Options">
+        <a href="{:cmf_url('user/index/sellerreserve')}" hover-class="mine-navigator-hover" class='weui-tabbar__item <if condition="$Request.param.order_pay eq 2 "> mine-navigator-hover </if>'>
+          <icon class="iconfont icon-yuding" type="" size=""> </icon> 
+          <!-- icon-paided -->
+          我要预订
+        </a>
+        <a href="{:cmf_url('user/index/reserve',['status'=>1])}" hover-class="mine-navigator-hover" class='weui-tabbar__item <if condition="$Request.param.status eq 1 "> mine-navigator-hover </if>'>
+          <icon class="iconfont icon-book" type="" size=""> </icon>
+          当前预订
+        </a>
+        <a href="{:cmf_url('user/index/reserve',['status'=>2])}" hover-class="mine-navigator-hover" class='weui-tabbar__item <if condition="$Request.param.status eq 2 "> mine-navigator-hover </if>'>
+          <icon class="iconfont icon-yudingguanli" type="" size=""> </icon>
+          预订历史
+        </a>
+      <view class="clear"></view>
+    </view>
+
+    <view class="group me-Dishes-tiele">
+      <text>最近预订</text>
+    </view>
+    <!-- 预订信息列表 -->
+    <notempty name="$data">
+      <div class="weui-flex weui-flex-th">
+        <div class="weui-flex__item weui-flex__item_name">
+          <div class="placeholder name">
+            联系人
+          </div>
+        </div>
+        <div class="weui-flex__item">
+          <div class="placeholder">
+            桌号
+          </div>
+        </div>
+        <div class="weui-flex__item">
+          <div class="placeholder">
+            预订时间
+          </div>
+        </div>
+        <div class="weui-flex__item">
+          <div class="placeholder">
+            操作
+          </div>
+        </div> 
+      </div>
+      <foreach name="$data" item="vo">
+        <div class="weui-flex weui-td">
+          <div class="weui-flex__item weui-flex__item_name">
+            <div class="placeholder name">
+              {:$vo.user_name}
+            </div>
+          </div>
+          <div class="weui-flex__item">
+            <div class="placeholder">
+              {:$vo.menu_name}厅-{:$vo.table_name}
+            </div>
+          </div>
+          <div class="weui-flex__item">
+            <div class="placeholder">
+              {:date('Y-m-d H:i',$vo.reserve_time)}
+            </div>
+          </div>
+          <div class="weui-flex__item">
+            <div class="placeholder">
+              <a href="{:cmf_url('user/index/reserve_detailed',['id'=>$vo.id])}">查看</a> 
+              <if condition="$Request.param.status eq 2 ">
+                <if condition="$vo.seller_confirm eq 3" >
+                  <php> $stase_name = '商家拒绝'; </php>
+                <elseif condition="$vo.seller_confirm eq 2" >
+                    <if condition="$vo.complete eq 2" >
+                      <php> $stase_name = '已完成'; </php>
+                    <else />
+                      <php> $stase_name = '商家已确认'; </php>
+                    </if>
+                <else />
+                    <if condition="$vo.complete eq 1" >
+                      <php> $stase_name = '等待商家确认'; </php>
+                    <elseif condition="$vo.complete eq 3" >
+                      <php> $stase_name = '商家违约'; </php>
+                    <elseif condition="$vo.complete eq 4" >
+                      <php> $stase_name = '已取消'; </php>
+                    </if>
+                </if>
+
+                |  <font color="#999"> {:$stase_name} </font>
+                
+              <else />
+                <if condition="($vo.seller_confirm eq 1) AND  ($vo.complete eq 1)" >
+                  |  <a href="{:cmf_url('user/index/reserve',['id'=>$vo.id,'complete'=>4])}" class="js-ajax-dialog-btn" data-msg="确定取消该预订？">取消</a> 
+                </if>
+              </if>   
+            </div>
+          </div> 
+        </div>
+      </foreach>
+    <else />
+      <view class="group" style='color: #999;'> 暂无预订信息</view>     
+    </notempty>
+   
+<include file="public@nav"/>
+<include file="public@footer"/>

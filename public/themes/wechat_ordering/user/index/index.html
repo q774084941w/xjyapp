@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>微信点餐-首页</title>
+    <include file="public@head"/>
+    <style type="text/css">
+      .swiper-container .swiper-slide img{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="grade-a">
+
+      <!-- 幻灯片 -->
+      <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1kQI3HpXXXXbSXFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt=""></div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- 菜单导航 -->
+      <div class="weui-grids index-nav-food">
+        <!-- 菜系项 -->
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-zhongcan" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            中餐
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-huoguo" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            火锅
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-chuanchuanwanzi" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            串串
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-chalou0101" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            茶水
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-haixian" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            海味
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-xiaochi" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            小吃
+          </p>
+        </a>
+
+        <!-- 功能项 -->
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-yuyue" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            预订餐桌
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-quhaopaidui" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            预约排号
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-saoma" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            扫码点餐
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-shouyin1" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            收银
+          </p>
+        </a>
+        <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-iconfontgengduo" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            更多
+          </p>
+        </a>
+      </div>
+      
+      <!-- 推荐菜品 -->
+      <div class="weui-panel weui-panel_access">
+        <div class="weui-panel__hd title-lists">
+          <div  class="fl title-hide">推荐菜品</div>
+          <div class="weui-panel__ft fr">
+            <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+              <div class="weui-cell__bd">查看更多</div>
+              <span class="weui-cell__ft"></span>
+            </a>    
+          </div>
+          <div class="clear"> </div>
+        </div>
+        <div class="weui-panel__bd conont-lists">
+          <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__hd">
+              <img class="weui-media-box__thumb" src="{:$default_thumb}">
+            </div>
+            <div class="weui-media-box__bd">
+              <h4 class="weui-media-box__title">一菜四肉行政套餐送饮料</h4>
+              <h5 class="weui-media-box__price">￥ 15.00</h5>
+              <p class="weui-media-box__desc">这是一道十分美味可口的中国菜式，深受消费者喜爱。</p>
+            </div>
+          </a>
+          <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__hd">
+              <img class="weui-media-box__thumb" src="{:$default_thumb}">
+            </div>
+            <div class="weui-media-box__bd">
+              <h4 class="weui-media-box__title">标题二</h4>
+              <h5 class="weui-media-box__price">￥ 15.00</h5>
+              <p class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <!-- 热销菜品 -->
+      <div class="weui-panel weui-panel_access">
+        <div class="weui-panel__hd title-lists">
+          <div  class="fl title-hide">热销菜品</div>
+          <div class="weui-panel__ft fr">
+            <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+              <div class="weui-cell__bd">查看更多</div>
+              <span class="weui-cell__ft"></span>
+            </a>    
+          </div>
+          <div class="clear"> </div>
+        </div>
+        <div class="weui-panel__bd conont-lists">
+          <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__hd">
+              <img class="weui-media-box__thumb" src="{:$default_thumb}">
+            </div>
+            <div class="weui-media-box__bd">
+              <h4 class="weui-media-box__title">一菜四肉行政套餐送饮料</h4>
+              <h5 class="weui-media-box__price">￥ 15.00</h5>
+              <p class="weui-media-box__desc">这是一道十分美味可口的中国菜式，深受消费者喜爱。</p>
+            </div>
+          </a>
+          <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__hd">
+              <img class="weui-media-box__thumb" src="{:$default_thumb}">
+            </div>
+            <div class="weui-media-box__bd">
+              <h4 class="weui-media-box__title">标题二</h4>
+              <h5 class="weui-media-box__price">￥ 15.00</h5>
+              <p class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+<include file="public@nav"/>
+<include file="public@footer"/>
+
+<script type="text/javascript">
+  $(".swiper-container").swiper();
+</script>

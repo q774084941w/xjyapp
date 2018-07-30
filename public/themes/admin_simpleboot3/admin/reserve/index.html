@@ -1,0 +1,82 @@
+<include file="public@header" />
+<head>
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">预约订单</a></li>
+			<!-- <li><a href="{:url('Seller/sellerAdd')}">{:lang('ADMIN_SELLER_SELLERADD')}</a></li> -->
+		</ul>
+		<php>
+			$order_complete = array('1'=>'未确认','2'=>'确认','3'=>'拒绝','4'=>'完成');
+		</php>
+		<form class="well form-inline margin-top-20" method="post" action="{:url('admin/reserve/index')}">
+            <select class="form-control" name="order_complete" id="more-template-select">
+        		<option value="">订单状态</option>
+	        	<foreach name="$order_complete" item="vo">
+					<option value="{:$key}" <if condition="input('request.order_complete') eq $key">selected</if>>{$vo}</option>
+	        	</foreach>               
+            </select>
+            <input class="form-control js-bootstrap-date" type="text" name="time" value="{:input('request.time')}" style="width: 7%" placeholder="订单日期">
+	        <input class="form-control" type="text" name="keyword" style="width: 200px;" value="{:input('request.keyword')}"
+	               placeholder="请输入订单ID/商家ID">
+	        <input type="submit" class="btn btn-success" value="搜索"/>
+	        <a class="btn btn-danger" href="{:url('admin/reserve/index')}">清空</a>
+	        <span style="float:right">
+	        	<a class="btn btn-info" href="{:url('admin/reserve/index',array('order_complete'=>'1'))}">最新预约</a>
+	        	<a class="btn btn-info" href="{:url('admin/reserve/index',array('order_complete'=>'2'))}">确认预约</a>
+	        </span>
+	    </form>
+		<form method="post" class="margin-top-20">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="10%">订单号</th>
+						<th width="10%">预定人</th>
+						<th width="10%">预留电话</th>
+						<th width="10%" align="left">下单时间</th>
+						<th width="10%" align="left">预定时间</th>
+						<th width="10%" align="left">商家ID</th>
+						<th width="5%">订单状态</th>
+						<th width="10%">操作</th>
+						<th width="15%">快速操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="order" item="vo">
+						<tr>
+							<td>{$vo.order_id}</td>
+							<td>{$vo.user_name}</td>
+							<td>{$vo.tel}</td>
+							<td>{:date('Y-m-d H:i:s',$vo['order_time'])}</td>
+							<td>{:date('Y-m-d H:i:s',$vo['reserve_time'])}</td>
+							<td>{$vo.seller_nickname}</td>							
+							<td>{$order_complete[$vo.order_complete]}</td>
+							<td>
+								<a type="button" class="btn btn-link" href="{:url('reserve/Detailed',array('order_id'=>$vo['order_id']))}">查看</a>
+								<a type="button" class="btn btn-link" href="{:url('reserve/Edit',array('order_id'=>$vo['order_id']))}">修改</a>
+								<if condition="cmf_get_current_admin_id() eq 1">
+								<a type="button"class="btn btn-link js-ajax-delete" href="{:url('Order/orderDel',array('order_id'=>$vo['order_id']))}">删除</a>
+								</if>	
+							</td>
+							<td>
+								<if condition="$vo['order_complete'] neq 3 and $vo['order_complete'] neq 4">
+									<a type="button" class="btn btn-link js-ajax-dialog-btn" data-msg="确定订单将标记为完成！" href="{:url('Order/reserve_quick',array('order_id'=>$vo['order_id'],'order_complete'=>4))}">完成订单</a>
+									<a type="button" class="btn btn-link js-ajax-dialog-btn" data-msg="确定拒绝该预约？" href="{:url('Order/reserve_quick',array('order_id'=>$vo['order_id'],'order_complete'=>3))}">拒绝预约</a>
+									<if condition="$vo['order_complete'] neq 2">
+										<a type="button" class="btn btn-link js-ajax-dialog-btn" data-msg="确定已经查看该预约？" href="{:url('Order/reserve_quick',array('order_id'=>$vo['order_id'],'order_complete'=>2))}">确认预约</a>
+									</if>
+								</if>							
+							</td>
+						</tr>
+					</foreach>
+				</tbody>
+			</table>
+		</form>
+		<div class="col-xs-12"  style="text-align:center">
+			<ul class="pagination">{$page}</ul>
+		</div>
+	</div>
+	<div><script src="__STATIC__/js/admin.js"></script></div>
+</body>
+</html>

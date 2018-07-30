@@ -1,0 +1,258 @@
+---------------------------------------------------------------
+[ 2018-05-29T11:47:26+08:00 ] 122.114.61.97 182.139.28.6 GET /api/index.php/wxapp/Public/login/?code=011VVwDG1W1K680kOADG1GMpDG1VVwDK&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fscan_order%2Fid%2F28
+[ info ] wx.ccapp.com.cn/api/index.php/wxapp/Public/login/?code=011VVwDG1W1K680kOADG1GMpDG1VVwDK&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fscan_order%2Fid%2F28 [运行时间：4.046875s][吞吐率：0.25req/s] [内存消耗：1,961.32kb] [文件加载：54]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.125000s ]
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wxapp',
+    1 => 'Public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E302 MicroMessenger/6.6.7 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=gh0b79atj26uchviskdqrh6qr0; yunsuo_leech_key=107; Hm_lvt_6cdf3f56c973e5883f94aca4192567f4=1527514924; Hm_lvt_f992f1ff6a03cc9681f84b59278ec71b=1527514924; yunsuo_session_verify=9afb9f630562f591819cf3f38afe4a5c',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'wx.ccapp.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'code' => '011VVwDG1W1K680kOADG1GMpDG1VVwDK',
+  'state' => 'http://wx.ccapp.com.cn/user/index/scan_order/id/28',
+)
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\public\api/../../simplewind/cmf/lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] api\wxapp\controller\PublicController->login[ D:\wwwroot\wx_cwyx\wwwroot\api\wxapp\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_third_party_user` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_third_party_user` WHERE  `openid` = 'oGxoe1VxD1CQbWK5UrSM0HHlUu4k'  AND `app_id` = 'wx4612824b7c9f43b5' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_token` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_token` WHERE  `user_id` = 20  AND `device_type` = 'wxapp' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] UPDATE `xjy_user_token`  SET `token`='3fc752793f1628d75df908d4f61260573fc752793f1628d75df908d4f6126057',`expire_time`=1543117645,`create_time`=1527565645  WHERE  `user_id` = 20  AND `device_type` = 'wxapp' [ RunTime:1.656250s ]
+[ sql ] [ SQL ] UPDATE `xjy_third_party_user`  SET `last_login_ip`='182.139.28.6',`last_login_time`=1527565645,`login_times`=login_times+1,`more`='{\"gender\":1,\"nickName\":\"\\u9ece\\u6d69\",\"avatarUrl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/Q0j4TwGTfTJVVBpDhvNsU3eJ8ynXzhlalc5icSYcJ3dsePDXb3MnvUIaAG8HyMXsyQYckThB9KqGibsvaFVmECaQ\\/132\",\"user_address\":\"\\u56db\\u5ddd\\u6210\\u90fd\",\"union_id\":\"\\u5fae\\u4fe1\\u5e73\\u53f0\"}'  WHERE  `openid` = 'oGxoe1VxD1CQbWK5UrSM0HHlUu4k'  AND `app_id` = 'wx4612824b7c9f43b5' [ RunTime:0.046875s ]
+---------------------------------------------------------------
+[ 2018-05-29T12:13:10+08:00 ] 122.114.61.97 182.140.177.167 GET /api/index.php/wxapp/Public/login/?code=081VVpII1YKTS70lMeFI1DDcII1VVpIQ&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fscan_order%2Fid%2F52
+[ info ] wx.ccapp.com.cn/api/index.php/wxapp/Public/login/?code=081VVpII1YKTS70lMeFI1DDcII1VVpIQ&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fscan_order%2Fid%2F52 [运行时间：2.312500s][吞吐率：0.43req/s] [内存消耗：1,962.42kb] [文件加载：54]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.062500s ]
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wxapp',
+    1 => 'Public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-for-pound' => '182.139.28.6',
+  'x-forwarded-for' => '182.139.28.6',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; ZTE BV0800 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044033 Mobile Safari/537.36 MicroMessenger/6.6.6.1300(0x26060637) NetType/WIFI Language/zh_CN',
+  'host' => 'wx.ccapp.com.cn',
+  'cookie' => 'PHPSESSID=ivq7lcpvpc0rmb98bq4d5dabq5; srcurl=687474703a2f2f77782e63636170702e636f6d2e636e2f757365722f696e6465782f7363616e5f6f726465722f69642f32; security_session_mid_verify=a39103635fbffd3939eedbca9bb465fd; yunsuo_session_verify=9afb9f630562f591819cf3f38afe4a5c; yunsuo_leech_key=61',
+  'connection' => 'close',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '081VVpII1YKTS70lMeFI1DDcII1VVpIQ',
+  'state' => 'http://wx.ccapp.com.cn/user/index/scan_order/id/52',
+)
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\public\api/../../simplewind/cmf/lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] api\wxapp\controller\PublicController->login[ D:\wwwroot\wx_cwyx\wwwroot\api\wxapp\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_third_party_user` [ RunTime:0.093750s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_third_party_user` WHERE  `openid` = 'oGxoe1VMYH4M3Np_ITy1kxRKGUEw'  AND `app_id` = 'wx4612824b7c9f43b5' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_token` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_token` WHERE  `user_id` = 21  AND `device_type` = 'wxapp' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] UPDATE `xjy_user_token`  SET `token`='9aa37e8394346f1f86b6acd1f3861d1b9aa37e8394346f1f86b6acd1f3861d1b',`expire_time`=1543119190,`create_time`=1527567190  WHERE  `user_id` = 21  AND `device_type` = 'wxapp' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_third_party_user`  SET `last_login_ip`='182.139.28.6',`last_login_time`=1527567190,`login_times`=login_times+1,`more`='{\"gender\":1,\"nickName\":\"\\u8c22\\u946b\\u78ca\",\"avatarUrl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/FnfnEco7BdgKxoHHcyvTCbeCDureVVREsoovd0TuNUmZ55iaVPgLUmB5Ha6WBxrryp2sPPpJLBV4VEm5PvnlJcw\\/132\",\"user_address\":\"\\u56db\\u5ddd\\u6210\\u90fd\",\"union_id\":\"\\u5fae\\u4fe1\\u5e73\\u53f0\"}'  WHERE  `openid` = 'oGxoe1VMYH4M3Np_ITy1kxRKGUEw'  AND `app_id` = 'wx4612824b7c9f43b5' [ RunTime:0.031250s ]
+---------------------------------------------------------------
+[ 2018-05-29T14:42:00+08:00 ] 122.114.61.97 182.140.177.167 GET /api/index.php/wxapp/Public/login/?code=061O3onU1R7MfW0HdSoU1EBonU1O3onH&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fwaiterloginview.html
+[ info ] wx.ccapp.com.cn/api/index.php/wxapp/Public/login/?code=061O3onU1R7MfW0HdSoU1EBonU1O3onH&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fwaiterloginview.html [运行时间：0.921875s][吞吐率：1.08req/s] [内存消耗：1,963.62kb] [文件加载：54]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.031250s ]
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wxapp',
+    1 => 'Public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-for-pound' => '182.139.28.6',
+  'x-forwarded-for' => '182.139.28.6',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; ZTE BV0800 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044033 Mobile Safari/537.36 MicroMessenger/6.6.6.1300(0x26060637) NetType/WIFI Language/zh_CN',
+  'host' => 'wx.ccapp.com.cn',
+  'cookie' => 'PHPSESSID=ivq7lcpvpc0rmb98bq4d5dabq5; srcurl=687474703a2f2f77782e63636170702e636f6d2e636e2f757365722f696e6465782f7363616e5f6f726465722f69642f32; security_session_mid_verify=a39103635fbffd3939eedbca9bb465fd; yunsuo_session_verify=9afb9f630562f591819cf3f38afe4a5c; yunsuo_leech_key=61',
+  'connection' => 'close',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '061O3onU1R7MfW0HdSoU1EBonU1O3onH',
+  'state' => 'http://wx.ccapp.com.cn/user/index/waiterloginview.html',
+)
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\public\api/../../simplewind/cmf/lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] api\wxapp\controller\PublicController->login[ D:\wwwroot\wx_cwyx\wwwroot\api\wxapp\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_third_party_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_third_party_user` WHERE  `openid` = 'oGxoe1VMYH4M3Np_ITy1kxRKGUEw'  AND `app_id` = 'wx4612824b7c9f43b5' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_token` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_token` WHERE  `user_id` = 21  AND `device_type` = 'wxapp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_user_token`  SET `token`='946eeb80144704df621c096f5b4bfc9b946eeb80144704df621c096f5b4bfc9b',`expire_time`=1543128120,`create_time`=1527576120  WHERE  `user_id` = 21  AND `device_type` = 'wxapp' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] UPDATE `xjy_third_party_user`  SET `last_login_ip`='182.139.28.6',`last_login_time`=1527576120,`login_times`=login_times+1,`more`='{\"gender\":1,\"nickName\":\"\\u8c22\\u946b\\u78ca\",\"avatarUrl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/FnfnEco7BdgKxoHHcyvTCbeCDureVVREsoovd0TuNUmZ55iaVPgLUmB5Ha6WBxrryp2sPPpJLBV4VEm5PvnlJcw\\/132\",\"user_address\":\"\\u56db\\u5ddd\\u6210\\u90fd\",\"union_id\":\"\\u5fae\\u4fe1\\u5e73\\u53f0\"}'  WHERE  `openid` = 'oGxoe1VMYH4M3Np_ITy1kxRKGUEw'  AND `app_id` = 'wx4612824b7c9f43b5' [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-29T14:42:07+08:00 ] 122.114.61.97 182.140.177.167 GET /api/index.php/wxapp/Public/login/?code=081DzcKA0a6F0g2gP2LA0b8nKA0DzcKI&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fwaiterloginview.html
+[ info ] wx.ccapp.com.cn/api/index.php/wxapp/Public/login/?code=081DzcKA0a6F0g2gP2LA0b8nKA0DzcKI&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fwaiterloginview.html [运行时间：0.734375s][吞吐率：1.36req/s] [内存消耗：1,963.62kb] [文件加载：54]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.046875s ]
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wxapp',
+    1 => 'Public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-for-pound' => '182.139.28.6',
+  'x-forwarded-for' => '182.139.28.6',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; ZTE BV0800 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044033 Mobile Safari/537.36 MicroMessenger/6.6.6.1300(0x26060637) NetType/WIFI Language/zh_CN',
+  'host' => 'wx.ccapp.com.cn',
+  'cookie' => 'PHPSESSID=ivq7lcpvpc0rmb98bq4d5dabq5; srcurl=687474703a2f2f77782e63636170702e636f6d2e636e2f757365722f696e6465782f7363616e5f6f726465722f69642f32; security_session_mid_verify=a39103635fbffd3939eedbca9bb465fd; yunsuo_session_verify=9afb9f630562f591819cf3f38afe4a5c; yunsuo_leech_key=61',
+  'connection' => 'close',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,*/*;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '081DzcKA0a6F0g2gP2LA0b8nKA0DzcKI',
+  'state' => 'http://wx.ccapp.com.cn/user/index/waiterloginview.html',
+)
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\public\api/../../simplewind/cmf/lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] api\wxapp\controller\PublicController->login[ D:\wwwroot\wx_cwyx\wwwroot\api\wxapp\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_third_party_user` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_third_party_user` WHERE  `openid` = 'oGxoe1VMYH4M3Np_ITy1kxRKGUEw'  AND `app_id` = 'wx4612824b7c9f43b5' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_token` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_token` WHERE  `user_id` = 21  AND `device_type` = 'wxapp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_user_token`  SET `token`='90395cb155224d25f35bf9363186cae490395cb155224d25f35bf9363186cae4',`expire_time`=1543128127,`create_time`=1527576127  WHERE  `user_id` = 21  AND `device_type` = 'wxapp' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_third_party_user`  SET `last_login_ip`='182.139.28.6',`last_login_time`=1527576127,`login_times`=login_times+1,`more`='{\"gender\":1,\"nickName\":\"\\u8c22\\u946b\\u78ca\",\"avatarUrl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/FnfnEco7BdgKxoHHcyvTCbeCDureVVREsoovd0TuNUmZ55iaVPgLUmB5Ha6WBxrryp2sPPpJLBV4VEm5PvnlJcw\\/132\",\"user_address\":\"\\u56db\\u5ddd\\u6210\\u90fd\",\"union_id\":\"\\u5fae\\u4fe1\\u5e73\\u53f0\"}'  WHERE  `openid` = 'oGxoe1VMYH4M3Np_ITy1kxRKGUEw'  AND `app_id` = 'wx4612824b7c9f43b5' [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-29T14:45:10+08:00 ] 122.114.61.97 182.139.28.6 GET /api/index.php/wxapp/Public/login/?code=001YRbUd1CbRkt0A7ZUd19P4Ud1YRbUs&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fscan_order%2Fid%2F52
+[ info ] wx.ccapp.com.cn/api/index.php/wxapp/Public/login/?code=001YRbUd1CbRkt0A7ZUd19P4Ud1YRbUs&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fscan_order%2Fid%2F52 [运行时间：0.687500s][吞吐率：1.45req/s] [内存消耗：1,961.32kb] [文件加载：54]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.031250s ]
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wxapp',
+    1 => 'Public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E302 MicroMessenger/6.6.7 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=6b4qo38v901ds1acbt3ltqgkt0; yunsuo_leech_key=61; Hm_lvt_6cdf3f56c973e5883f94aca4192567f4=1527514924; Hm_lvt_f992f1ff6a03cc9681f84b59278ec71b=1527514924; yunsuo_session_verify=9afb9f630562f591819cf3f38afe4a5c',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'wx.ccapp.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'code' => '001YRbUd1CbRkt0A7ZUd19P4Ud1YRbUs',
+  'state' => 'http://wx.ccapp.com.cn/user/index/scan_order/id/52',
+)
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\public\api/../../simplewind/cmf/lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] api\wxapp\controller\PublicController->login[ D:\wwwroot\wx_cwyx\wwwroot\api\wxapp\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_third_party_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_third_party_user` WHERE  `openid` = 'oGxoe1VxD1CQbWK5UrSM0HHlUu4k'  AND `app_id` = 'wx4612824b7c9f43b5' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_token` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_token` WHERE  `user_id` = 20  AND `device_type` = 'wxapp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_user_token`  SET `token`='95605b6f7df9a64a0218319df9c43c6195605b6f7df9a64a0218319df9c43c61',`expire_time`=1543128310,`create_time`=1527576310  WHERE  `user_id` = 20  AND `device_type` = 'wxapp' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_third_party_user`  SET `last_login_ip`='182.139.28.6',`last_login_time`=1527576310,`login_times`=login_times+1,`more`='{\"gender\":1,\"nickName\":\"\\u9ece\\u6d69\",\"avatarUrl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/Q0j4TwGTfTJVVBpDhvNsU3eJ8ynXzhlalc5icSYcJ3dsePDXb3MnvUIaAG8HyMXsyQYckThB9KqGibsvaFVmECaQ\\/132\",\"user_address\":\"\\u56db\\u5ddd\\u6210\\u90fd\",\"union_id\":\"\\u5fae\\u4fe1\\u5e73\\u53f0\"}'  WHERE  `openid` = 'oGxoe1VxD1CQbWK5UrSM0HHlUu4k'  AND `app_id` = 'wx4612824b7c9f43b5' [ RunTime:0.000000s ]

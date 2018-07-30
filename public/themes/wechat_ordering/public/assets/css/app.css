@@ -1,0 +1,876 @@
+
+/**app.wxss**/
+@import "./reset.css";
+@import "./font-ico/iconfont.wxss";
+@import "./font-ico/font_one/iconfont.wxss";
+@import "./font-ico/font_wx/iconfont.css";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+page{
+  font-size: 28rpx;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.clear{
+  clear: both;
+}
+
+.group{
+  padding: 10px 0;
+}
+.navigator-hover {
+    color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:#EA2553;
+}
+.mine-navigator-hover,
+.mine-navigator-hover .iconfont {
+    color:orange !important;
+}
+.mine-navigator-hover{
+  border-color:orange;
+}
+.index-navigator-hover .iconfont{
+  background:orange !important;
+}
+.index-navigator-hover .nav-tiele{
+  color:orange !important;
+}
+.mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.7;
+  background-color: black;
+  z-index: 99;
+}
+
+/******* 首页 **********/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+swiper{
+  height: 175px;
+}
+
+swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+
+.navico{
+  float: left;
+   /* width: 20%;*/
+  width: 25%; 
+  text-align: center;
+}
+
+.weui-grid__icon .iconfont{
+  font-size: 28px;
+  background-color: #923EDE;
+  color: #fff;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+}
+
+.navico .nav-tiele{
+  display:block;
+  padding-top: 18rpx;
+  text-align: center;
+}
+
+ .nav-outside{
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+} 
+
+/* Business-information */
+.Business-information{
+  background: #916a73;
+  color: #fff;
+}
+.Business-logo{
+  width: 42px;
+  height: 42px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 4px;
+}
+.logo-title{
+  padding-left: 8px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  width: 66%;
+}
+.Business-information .icon-dizhi{
+  color:#d16830;
+  font-size: 56rpx;
+  position: absolute;
+  top:-14px;
+  margin-right: 25px;
+}
+.Business-information .icon-dianhua{
+  font-size: 56rpx;
+  position: absolute;
+  top:-14px;
+  right: 0;
+}
+.Business-information .address-tel-text{
+  width:55%;
+  padding: 0;
+  position: relative;
+}
+.Business-information .address-tel-text .address {
+  font-size: 12px;
+  width:70%;
+  position: absolute;
+  top:10px;
+  left: 32px;
+}
+/* Dishes-menu */
+.Dishes-menu{
+  width: 22%;
+}
+.Dishes-menu scroll-view view{
+  line-height: 35px;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+  padding: 0 5px;
+  background: #B03CE9;
+  font-size: 14px;
+}
+.Dishes-menu scroll-view view a{
+  color: #fff;
+}
+.Dishes-menu scroll-view .filter_class{
+  background-color: #fff;
+}
+.Dishes-maxlist-right{
+  width: 74%;
+}
+.Dishes-maxlist-right .Dishes-price{
+/*  margin-top:10px;*/
+  background: linear-gradient(to right, #D13BF5, #7D3FD6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.Dishes-maxlist-right .Dishes-num{
+  padding-top:0px;
+}
+
+/* Dishes-list */
+.Dishes-list{
+  border-bottom: 1px solid #ececec;
+}
+.list-img{
+  width:40%;
+}
+.list-img image{
+  width:100%;
+  height: 120px; 
+}
+.list-pric-text{
+   width:53%;
+   display: block;
+/*   padding-left: 3%*/
+   padding-right: 5px;
+}
+.Dishes-Title{
+  display: block;
+/*  padding: 5px;
+  padding-top:10px;*/
+}
+.Dishes-price{
+  color: #ff0000;
+  display: block;
+/*  padding: 5px;*/
+/*  margin-top: 40px;*/
+}
+.Dishes-description{
+  font-size: 12px;
+  color: #888;
+}
+.plus-round{
+  border-radius: 100%;
+  border: 1px solid #B03CE9;
+  width: 15px;
+  height: 15px;
+  line-height: 13px;
+  color: #B03CE9;
+  text-align: center;
+/*  font-weight: 700;*/
+  display: inline-block;
+  margin-right: 5px;
+}
+.plus-round-Reduce,
+.Dishes-num-size{
+  display: none;
+}
+.plus-round-add{
+  background: #B03CE9;
+  color: #fff;
+}
+.Dishes-num-size{
+  color:#333;
+  margin-left: 0px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+.Dishes-num{
+  padding-top:75px;
+}
+
+/*weui-tabbar */
+ .weui-tabbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: fixed;
+    z-index: 500;
+    bottom: 0;
+    width: 100%;
+    /* height: 50px; */
+    padding: 5px 0;
+    background-color: #F7F7FA;
+    /* //d2d2d2 */
+    margin-top: 85px;
+    /* height: 50px; */
+}
+.weui-tabbar__item {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #777777;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.weui-tabbar__item icon{
+  display:block;
+  font-size: 30px;
+  padding: 0;
+}
+.weui-tabbar__item text{
+  display:block;
+}
+.nav-footer-claer{
+  height: 61px;
+}
+
+/* footer-shopping-cart */
+.footer-shopping-cart-fixed{
+  position: fixed;
+  bottom:53px;
+  width: 100%;
+  z-index: 9999;
+}
+.footer-shopping-cart{
+  background: #333;
+  color:#fff;
+  font-size: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+.footer-shopping-cart .Selected {
+  background: #B03CE9;
+  padding: 10px 20px;
+}
+.footer-shopping-cart .total {
+  padding: 10px 0;
+  margin-left: 100px;
+}
+.footer-shopping-cart .icon-finished-cart{
+  color: #D13BF5;
+  font-size: 30px;
+}
+.footer-shopping-cart .shopping-icon{
+  background: #fff;
+  border-radius: 100%;
+  /*padding: 7px;*/
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  top:2px;
+  left:25px;
+}
+.footer-shopping-cart .shopping-icon text{
+  position: absolute;
+  top:-10px;
+  right: -10px;
+  border-radius: 100%;
+  background: #D13BF5;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+}
+.footer-shopping-cart .shopping-icon-position{
+  position:relative;
+}
+.other-navigator-hover{
+  color: #ED5377;
+}
+
+/* footer-shopping-Selected-products */
+.footer-shopping-Selected-products{
+  position:fixed;
+  bottom:98px;
+  width:100%;
+  background: #fff;
+  z-index: 9999;
+}
+.footer-shopping-Selected-products .Selected-products-title{
+  background: #F7F7FA;
+  color: #999;
+  /*padding:0 10px;*/
+  position: fixed;
+  width: 100%;
+}
+.shop-chaked-list{
+  margin-top: 46px;
+}
+.footer-shopping-Selected-products .Selected-products-title .group{
+  padding:10px;
+}
+.footer-shopping-Selected-products .Selected-products-title-line{
+  color: #D13BF5;
+  padding-right: 5px;
+}
+.footer-shopping-Selected-products .price{
+  color: #D13BF5;
+  margin-right: 10px;
+}
+.footer-shopping-Selected-products .plus-round{
+  width:17px;
+  height:17px;
+  line-height:15px;
+}
+.footer-shopping-Selected-products .Service-fee-list{
+  padding: 10px;
+}
+
+/* .icon-waimaiindex:before { content: "\e608"; } */
+
+.title-lists .weui-cell{
+  padding: 0px;
+}
+.title-lists .weui-cell_link:first-child:before{
+  display: none;
+}
+.weui-media-box__price{
+  color: #D842F7;
+  font-size: 16px; 
+  padding-bottom: 5px;
+}
+.conont-lists .weui-media-box_appmsg .weui-media-box__hd{
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+}
+.title-hide{
+  color: #333;
+  font-size: 14px;
+}
+.index-nav-food .weui-grid{
+  width: 25%;
+}
+.index-nav-food .weui-grid__icon{
+  width: 45px;
+  height: 45px;
+}
+.index-nav-food .weui-grid{
+  padding: 8px;
+}
+.index-nav-food .weui-grid:after, .weui-grid:before{
+  display: none;
+}
+.weui-bar__item_on,
+.weui-bar__item_on .weui-tabbar__label,
+.weui-bar__item_on .weui-tabbar__icon{
+  color: #923EDE !important;
+}
+.clear-bothheight{
+  height: 56px;
+}
+.wx-food-foodnav .weui-tabbar__label{
+  padding-top: 4px;
+}
+.wx-food-foodnav .weui-tabbar__item icon{
+  font-size: 22px;
+}
+.wx-food-foodnav .weui-tabbar__item{
+  padding: 0;
+}
+.wx-food-foodnav{
+  padding: 2px 0;
+}
+.weui-grids:after, .weui-grids:before{
+  display: none;
+}
+.weui-search-bar__label{
+  top: 0;
+}
+
+.food_list_nav_slide .weui-bar__item--on{
+  /* 旧语法，带前缀并且已经废弃，以支持老版本的浏览器 */
+  background: -prefix-linear-gradient(left, #D13BF5, #7D3FD6); 
+
+  /* 新语法，不带前缀，以支持标准兼容的浏览器（Opera 12.1， IE 10， Firefox 16， Chrome 26， Safari 6.1） */
+  background: linear-gradient(to right, #D13BF5, #7D3FD6);
+  color: #fff; 
+  border-radius: 25px;
+}
+.food_list_nav_slide .weui-navbar__item:after{
+  display: none;
+}
+.food_list_nav_slide .weui-navbar__item{
+  padding: 0;
+  margin: 13px 0;
+}
+view {
+  display:block;
+}
+.food_list_nav_slide {
+  position: relative;
+}
+.Department-menu-dishes{
+  padding: 10px 0;
+}
+
+.Dishes-list .list-img img{
+  border-radius: 5px;
+  width: 100%;
+  max-height: 120px;
+}
+.scroll-view-item-activ{
+  background: #fff !important;
+  border-left: 3px solid #B03CE9;
+}
+.scroll-view-item-activ a{
+  color: #B03CE9 !important;
+}
+
+/*sellerReserve*/
+
+.booking-add-li{
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+.save{
+  background-color: #923EDE !important;
+}
+.Remarks{
+  border: 1px solid #ececec;
+  padding: 10px 15px;
+  width: 90%;
+  margin-top: 10px;
+  height: 60px;
+}
+.booking-select{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.booking-select .booking-numname{
+  padding: 10px 0;
+  background-color: #9B9C9C;
+  margin-right: 3.33%;
+  font-size: 14px;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+.booking-select .Scheduled{
+  background-color: #E64340;
+}
+.booking-select .isusing{
+  background-color: #46BF5F;
+}
+.booking-select .booking-numname:nth-child(3),
+.booking-select .booking-numname:nth-child(6),
+.booking-select .booking-numname:nth-child(9),
+.booking-select .booking-numname:nth-child(12),
+.booking-select .booking-numname:nth-child(16),
+.booking-select .booking-numname:nth-child(20){
+  /*margin-right: 0;*/
+}
+picker-view-column{
+  text-align:center;
+}
+button[loading][type="warn"] {
+  color: #fff;
+  background-color: #fff;
+}
+.group-content{
+  padding: 10px;
+}
+.weui-cells__title_sellerReserve:before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+  left: 15px;
+  z-index: 2;
+}
+.weui-cells__title_sellerReserve{
+  margin-top: 0;
+  font-size: 17px;
+  color: #000;
+}
+
+/*place_order*/
+.address-list .pay-receiving-address{
+  color:#EB2553;
+  font-size:20px;
+  padding-top:3px;
+}
+.pay-Business-information{
+  background: none;
+  color:#000;
+  border-bottom: 1px solid #ececec;
+}
+.pay-Business-information .logo-title {
+  padding-left: 5px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.pay-receiving-address-list{
+  border-bottom:5px solid #ececec;
+}
+.Dishes-maxlist-shoppingcart{
+  width: 100%;
+}
+.Dishes-maxlist-shoppingcart .list-img{
+  width: 80px;
+}
+.Dishes-maxlist-shoppingcart .list-img image{
+  height: 80px;
+}
+.Dishes-maxlist-shoppingcart .list-pric-text{
+  width: 68%;
+}
+.Dishes-maxlist-shoppingcart .Service-fee{
+  padding-bottom: 10px;
+}
+.Dishes-list-alone .Service-fee{
+  padding-bottom: 0px;
+}
+.Dishes-maxlist-shoppingcart .Remarks{
+  height: 60px;
+}
+.Dishes-maxlist-shoppingcart .Remarks-description{
+  background: #F7F7FA;
+  padding: 8px 10px;
+}
+.footer-shoppingpay-claer{
+  height: 50px;
+}
+.footer-shopping-totals-pay{
+  border-top:1px solid #ececec;
+}
+.footer-shopping-totals-pay .footer-shopping-cart{
+  background:#fff;
+  z-index: 999;
+}
+.footer-shopping-totals-pay .total{
+  color:#333;
+  margin-left: 10px;
+}
+.footer-shopping-totals-pay .totals-prc{
+  color: #D13BF5;
+  font-weight: 700;
+}
+.footer-shopping-totals-pay .Selected{
+  background-color: #923EDE;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+}
+.footer-shopping-totals-pay .Selected .save{
+  background-color: #923EDE;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 30px;
+}
+.Dishes-maxlist-shoppingcart .Dishes-list .Dishes-Title{
+  font-size: 14px;
+}
+.Dishes-maxlist-shoppingcart .Dishes-list .list-pric-text{
+  padding-left:10px;
+}
+.Dishes-maxlist-shoppingcart .Dishes-list .address-tel-text{
+  padding: 12px 0;
+}
+.Dishes-maxlist-shoppingcart .Dishes-list .Dishes-num{
+  padding: 25px 0;
+}
+
+/*order*/
+
+/* Top-position */
+.Top-position{
+  border-bottom: 1px solid #ececec;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+/* Order-Status-Options */
+.Order-Status-Options{
+  position:relative;
+  margin: 0 auto;
+  background: none;
+  padding-top:15px;
+  padding-bottom: 15px;
+
+}
+.Order-Status-Options .iconfont{
+  font-size: 35px;
+  color: #923EDE;
+}
+/* .Order-Status-Options .icon-icon{
+  font-size: 40px;
+} */
+.Order-Status-Options navigator {
+  color:#333;
+}
+
+/* me-Dishes-tiele */
+.me-Dishes-tiele{
+  background: #F7F7FA;
+}
+
+/* Me-Dishes-list */
+.Me-Dishes-list .Dishes-time{
+  font-size: 14px;
+  color: #777777;
+  padding-bottom: 5px;
+  display: block;
+}
+.Me-Dishes-list .Dishes-Me-price{
+  font-size: 14px;
+  color: #777777;
+  display: block;
+}
+.Me-Dishes-list .Dishes-operating{
+  font-size: 13px;
+  width:65px;
+  border: 1px solid #923EDE;
+  border-radius: 2px;
+  display:inline-block;
+  text-align: center;
+  margin-right: 5px;
+  color: #666;
+  padding: 2px 0;
+}
+.Me-Dishes-list .operating{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.Me-Dishes-list .Dishes-Title{
+  padding-left: 0;
+}
+
+/******order_detailed********/
+.evaluation-Starrating{
+  color: #FF7E30;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.evaluation-Starrating .iconfont{
+  font-size:28px;
+  margin: 0 5%;
+}
+.evaluation-description{
+  border: 1px solid #ececec;
+  background: #F7F7FA;
+}
+.evaluation-description textarea{
+  height: 60px;
+  font-size: 13px;
+  padding: 10px;
+}
+.evaluation-description text{
+  font-size: 12px;
+  color: #ccc;
+  display: block;
+  padding: 10px 15px;
+}
+.wx-uploadFile .downloadFile-add{
+  margin-left: 5px;
+  margin-right: 10px;
+  font-size: 50px;
+}
+.wx-uploadFile .downloadFile .iconfont{
+  font-size: 35px;
+  color: #D8D5D5;
+}
+.wx-uploadFile .bordrsoid{
+  border: 1px solid #ececec;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+.wx-uploadFile .uploadFile-text{
+  line-height: 70px;
+  color: #999;
+  font-size: 13px;
+}
+.save{
+  #background-color: #EB2553 !important;
+  #margin-top: 30px;
+}
+.iconwuxing-img{
+  width: 29px;
+  height: 28px;
+  margin:0 5%;
+}
+/******my******/
+
+/* Me-Top-position */
+.Me-Top-position{
+  background:#923EDE;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.Me-Top-position .avatar{
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  /* border:4px solid #F27592; */
+  vertical-align:middle;
+  margin-left: 15px;
+}
+.Wechat-nickname{
+  color:#eee;
+  text-align: center;
+  padding-left: 30px;
+  font-size: 18px;
+}
+/* Me-Order-Status-Options */
+.Me-Order-Status-Options{
+  /* border-bottom: 1px solid #ececec; */
+}
+
+ /* Order-Status-Longitudinal */
+ .Order-Status-Longitudinal .weui-tabbar__item{
+    width: 100%;
+    display:block;
+    word-break: break-all;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 10px;
+ }
+ /* .clear-block{
+   display: block;
+   height: 10px;
+   width: 100%;
+ } */
+ .Order-Status-Longitudinal view{
+   width: 100%;
+ }
+ .weui-tabbar-me{
+   display: block;
+ }
+.weui-tabbar-me .weui-tabbar__item{
+  border-bottom:1px solid #ececec;
+  /* padding: 15px 0px; */
+}
+.weui-tabbar-me .weui-tabbar__item icon {
+   display: inline-block;
+   margin-right: 15px;
+   vertical-align: middle;
+ }
+.weui-tabbar-me .jintou{
+  /* margin-top: 15px; */
+  font-weight: 700;
+  color: #A5A5A5;
+ }
+ .Me-Order-Status-Options{
+  padding-top:0;
+ }
+.Me-Order-Status-Options .iconfont{
+  /* font-size: 16px; */
+  color: #8A8A8A;
+}
+.Me-Order-Status-Options  .weui-tabbar__item{
+  background: #fff;
+  color:#000;
+}
+.Me-Order-Status-Options  .weui-tabbar__item .icon-quanbudingdan{
+  margin-right: 8px;
+}
+.Me-Order-Status-Options  .padtopjianju{
+    margin-top: 20px;
+}
+.weui-media-box_appmsg .weui-media-box__thumb{
+  min-height: 100px;
+}

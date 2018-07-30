@@ -1,0 +1,365 @@
+<include file="public@header"/>
+<style type="text/css">
+    .pic-list li {
+        margin-bottom: 5px;
+    }
+</style>
+<script type="text/html" id="photos-item-tpl">
+    <li id="saved-image{id}">
+        <input id="photo-{id}" type="hidden" name="photo_urls[]" value="{filepath}">
+        <input class="form-control" id="photo-{id}-name" type="text" name="photo_names[]" value="{name}"
+               style="width: 200px;" title="图片名称">
+        <img id="photo-{id}-preview" src="{url}" style="height:36px;width: 36px;"
+             onclick="imagePreviewDialog(this.src);">
+        <a href="javascript:uploadOneImage('图片上传','#photo-{id}');">替换</a>
+        <a href="javascript:(function(){$('#saved-image{id}').remove();})();">移除</a>
+    </li>
+</script>
+<script type="text/html" id="files-item-tpl">
+    <li id="saved-file{id}">
+        <input id="file-{id}" type="hidden" name="file_urls[]" value="{filepath}">
+        <input class="form-control" id="file-{id}-name" type="text" name="file_names[]" value="{name}"
+               style="width: 200px;" title="文件名称">
+        <a id="file-{id}-preview" href="{preview_url}" target="_blank">下载</a>
+        <a href="javascript:uploadOne('图片上传','#file-{id}','file');">替换</a>
+        <a href="javascript:(function(){$('#saved-file{id}').remove();})();">移除</a>
+    </li>
+</script>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('AdminVideo/index')}">视频管理</a></li>
+        <li class="active"><a href="{:url('AdminVideo/add')}">添加视频</a></li>
+    </ul>
+    <form action="{:url('AdminVideo/addPost')}" method="post" class="form-horizontal js-ajax-form margin-top-20">
+        <div class="row">
+            <div class="col-md-9">
+                <table class="table table-bordered">
+                    <tr>
+                        <th width="100">分类<span class="form-required">*</span></th>
+                        <td>
+                            <input class="form-control" type="text" style="width:400px;" required value=""
+                                   placeholder="请选择分类" onclick="doSelectCategory();" id="js-categories-name-input"
+                                   readonly/>
+                            <input class="form-control" type="hidden" value="" name="post[categories]"
+                                   id="js-categories-id-input"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>标题<span class="form-required">*</span></th>
+                        <td>
+                            <input class="form-control" type="text" name="post[post_title]"
+                                   id="title" required value="" placeholder="请输入标题"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>副标</th>
+                        <td>
+                            <input class="form-control" type="text" name="post[subname]" id="subname" value=""
+                                   placeholder="请输入影片副标" style="display:inline-block;width: 45%;">
+                            <b style="margin-left: 33px;">拼音&nbsp;</b>
+                            <input class="form-control" type="text" name="post[enname]" id="enname" value=""
+                                   placeholder="请输入影片拼音" style="display:inline-block;width: 45%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>字母</th>
+                        <td>
+                            <input class="form-control" type="text" name="post[letter]" id="letter" value=""
+                                       placeholder="请输入影片首字母" style="display:inline-block;width: 45%;">
+                            <b style="margin-left: 33px;">备注&nbsp;</b>
+                            <input class="form-control" type="text" name="post[remarks]" id="remarks" value=""
+                                       placeholder="请输入影片备注" style="display:inline-block;width: 45%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>连载信息</th>
+                        <td><input class="form-control" type="text" name="post[state]" id="state" value=""
+                                   placeholder="请输入影片连载信息"></td>
+                    </tr>
+                    <tr>
+                        <th>主演</th>
+                        <td><input class="form-control" type="text" name="post[starring]" id="starring" value=""
+                                   placeholder="请输入影片主演"></td>
+                    </tr>
+                    <tr>
+                        <th>导演</th>
+                        <td>
+                            <input class="form-control" type="text" name="post[directed]" id="directed" value=""
+                                   placeholder="请输入影片导演" style="display:inline-block;width: 45%;">
+                            <b style="margin-left: 33px;">时长&nbsp;</b>
+                            <input class="form-control" type="text" name="post[duration]" id="duration" value=""
+                                   placeholder="请输入影片时长" style="display:inline-block;width: 45%;">
+                        </td>
+                    </tr>
+                     <tr>
+                        <th>剧情分类</th>
+                        <td class="plot_info">
+                            <foreach name="plot_info" item="vo">
+                                <input type="checkbox" name="post[class][]" value="{$vo.id}">{$vo.name} &nbsp; 
+                            </foreach>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>地区</th>
+                        <td>
+                            <select class="form-control" name="post[area]" id="area-select" style="width:400px;">
+                                <option value="">请选择地区</option>
+                                <foreach name="area_info" item="vo">
+                                    <option value="{$vo.id}">{$vo.name}</option>
+                                </foreach>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>年份</th>
+                        <td>
+                            <select class="form-control" name="post[year]" id="year-select" style="width:400px;">
+                                <option value="">请选择年份</option>
+                                <foreach name="age_info" item="vo">
+                                    <option value="{$vo.id} ">{$vo.name}</option>
+                                </foreach>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>TAG</th>
+                        <td><input class="form-control" type="text" name="post[tag]" id="tag" value=""
+                                   placeholder="请输入影片标签 多词用,标识"></td>
+                    </tr>
+                    <tr>
+                        <th>总人气</th>
+                        <td>
+                            <input class="form-control" type="text" name="post[hits]" id="hits" value=""
+                                   placeholder="请输入影片总人气" style="display:inline-block;width: 45%;">
+                            <b style="margin-left: 18px;">月人气&nbsp;</b>
+                            <input class="form-control" type="text" name="post[monthhits]" id="monthhits" value=""
+                                   placeholder="请输入影片月人气" style="display:inline-block;width: 45%;">
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th>周人气</th>
+                        <td>
+                            <input class="form-control" type="text" name="post[weekhits]" id="weekhits" value=""
+                                   placeholder="请输入影片周人气" style="display:inline-block;width: 45%;">
+                            <b style="margin-left: 18px;">日人气&nbsp;</b>
+                            <input class="form-control" type="text" name="post[dayhits]" id="dayhits" value=""
+                                   placeholder="请输入影片日人气" style="display:inline-block;width: 45%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>评分值</th>
+                        <td>
+                            <input class="form-control" type="text" name="post[scoreall]" id="scoreall" value=""
+                                   placeholder="请输入影片评分值" style="display:inline-block;width: 45%;">
+                            <b style="margin-left: 18px;">评分数&nbsp;</b>
+                            <input class="form-control" type="text" name="post[scorenum]" id="scorenum" value=""
+                                   placeholder="请输入影片评分人数" style="display:inline-block;width: 45%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>支持</th>
+                        <td>
+                            <input class="form-control" type="text" name="post[up]" id="tag" value=""
+                                   placeholder="请输入影片支持人数" style="display:inline-block;width: 45%;">
+                            <b style="margin-left: 33px;">反对&nbsp;</b>
+                            <input class="form-control" type="text" name="post[down]" id="source" value=""
+                                   placeholder="请输入影片反对人数" style="display:inline-block;width: 45%;">
+                        </td>
+                    </tr>
+                    <tbody class="Videourl">
+                        <tr>
+                            <th>播放地址1</th>
+                            <td>
+                                <textarea class="form-control" name="post[playurl][]" style="height: 150px;"
+                                          placeholder="请编辑播放地址"></textarea>
+                                <p class="help-block">注：自定义分集名称用"$"分隔，一行一集播放地址，留空则删除该组地址。</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tr>
+                        <th>播放地址</th>
+                        <td>
+                            <a href="javascript:add_url();" class="play_url_add"><img src="__TMPL__/Public/images/admin/add.gif" border="0">点击这里添加一组观看地址</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>简介</th>
+                        <td>
+                            <script type="text/plain" id="content" name="post[post_content]"></script>
+                        </td>
+                    </tr>
+                </table>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary js-ajax-submit">{:lang('ADD')}</button>
+                        <a class="btn btn-default" href="{:url('AdminVideo/index')}">{:lang('BACK')}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <table class="table table-bordered">
+                    <tr>
+                        <th><b>缩略图</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="text-align: center;">
+                                <input type="hidden" name="post[more][thumbnail]" id="thumbnail" value="">
+                                <a href="javascript:uploadOneImage('图片上传','#thumbnail');">
+                                    <img src="__TMPL__/public/assets/images/default-thumbnail.png"
+                                         id="thumbnail-preview"
+                                         width="135" style="cursor: pointer"/>
+                                </a>
+                                <input type="button" class="btn btn-sm btn-cancel-thumbnail" value="取消图片">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><b>发布时间</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="form-control js-bootstrap-datetime" type="text" name="post[published_time]"
+                                   value="{:date('Y-m-d H:i:s',time())}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><b>状态</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="post[post_status]" value="1" checked>发布</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="post[status]" value="1" >隐藏</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="post[is_top]" value="1">置顶</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="post[recommended]" value="1">推荐</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>视频模板</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="form-control" name="post[more][template]" id="more-template-select">
+                                <option value="">请选择模板</option>
+                                <foreach name="video_theme_files" item="vo">
+                                    <php>$value=preg_replace('/^portal\//','',$vo['file']);</php>
+                                    <option value="{$value}">{$vo.name} {$vo.file}.html</option>
+                                </foreach>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="__STATIC__/js/admin.js"></script>
+<script type="text/javascript">
+    //编辑器路径定义
+    var editorURL = GV.WEB_ROOT;
+</script>
+<script type="text/javascript" src="__STATIC__/js/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="__STATIC__/js/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        editorcontent = new baidu.editor.ui.Editor();
+        editorcontent.render('content');
+        try {
+            editorcontent.sync();
+        } catch (err) {
+        }
+
+        $('.btn-cancel-thumbnail').click(function () {
+            $('#thumbnail-preview').attr('src', '__TMPL__/public/assets/images/default-thumbnail.png');
+            $('#thumbnail').val('');
+        });
+
+    });
+
+    function doSelectCategory() {
+        var selectedCategoriesId = $('#js-categories-id-input').val();
+        openIframeLayer("{:url('AdminCategory/select')}?ids=" + selectedCategoriesId, '请选择分类', {
+            area: ['700px', '400px'],
+            btn: ['确定', '取消'],
+            yes: function (index, layero) {
+                //do something
+
+                var iframeWin          = window[layero.find('iframe')[0]['name']];
+                var selectedCategories = iframeWin.confirm();
+                if (selectedCategories.selectedCategoriesId.length == 0) {
+                    layer.msg('请选择分类');
+                    return;
+                }
+                $('#js-categories-id-input').val(selectedCategories.selectedCategoriesId.join(','));
+                $('#js-categories-name-input').val(selectedCategories.selectedCategoriesName.join(' '));
+                //console.log(layer.getFrameIndex(index));
+                layer.close(index); //如果设定了yes回调，需进行手工关闭
+
+                getClass($('#js-categories-id-input').val(),'');
+            }
+        });
+    }
+
+    function getClass(id,sclass)
+    {
+        if(id!=""){
+            $.ajax({
+                type: 'get',
+                cache: false,
+                dataType: 'json',
+                url: "{:url('AdminVideo/add')}?ac=getclass&category_id="+id+'&class='+sclass,
+                timeout: 3000, 
+                success:function(r){
+                    // console.log(JSON.stringify(r));
+                    $(".plot_info").html('');
+                    if(r.length>0){
+                        $.each(r, function(i,row){
+                            chk = row.chk=='true' ? 'checked' : '';
+                            $(".plot_info").append('<input type="checkbox" name="class[]" value="'+row.id+'" '+chk+' />' +row.name+' &nbsp');
+                      }); 
+                    }
+                }
+            });
+        }
+    }
+
+    var num = 1;
+   function add_url()
+   { 
+        num+=1;
+        var string = '\
+                    <tr>\
+                        <th>播放地址'+num+'</th>\
+                        <td>\
+                            <textarea class="form-control" name="post[playurl][]" style="height: 150px;" placeholder="请编辑播放地址"></textarea>\
+                            <p class="help-block">注：自定义分集名称用"$分隔，一行一集播放地址，留空则删除该组地址。</p>\
+                        </td>\
+                    </tr>';
+        $(".Videourl").append(string);
+   }
+</script>
+</body>
+</html>

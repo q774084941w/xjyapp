@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>菜单-菜系</title>
+    <include file="public@head"/>
+    <style type="text/css">
+      .weui-navbar:after{
+        border-bottom: none;
+      }
+      .shop-chaked-list .Dishes-list .Dishes-num{
+        padding: 0;
+      }
+      .shop-chaked-list .Dishes-list .plus-round-Reduce,
+      .shop-chaked-list .Dishes-list .Dishes-num-size{
+        display: inline-block;
+      }
+      .booking-select{
+        padding: 0 10px;
+        width: auto;
+        display: none;
+      }
+      .pay_button{
+        border: none;
+        height: 45px;
+        color: #fff;
+        font-size: 16px;
+        display: none;
+      }
+      .Notable_type{
+        display: none;
+      }
+      .food-list-li{
+        border-bottom: 1px solid #B03CE9;
+      }
+      #main div:nth-last-child(2){
+        border: none;
+      }
+      .weui-textarea{
+        background: none;
+      }
+    </style>
+  </head>
+  <body class="grade-a">
+
+    <!-- 搜索栏 -->
+    <div class="weui-search-bar" id="searchBar">
+      <form class="weui-search-bar__form" action="{:url('user/index/FoodList')}">
+        <div class="weui-search-bar__box">
+          <i class="weui-icon-search"></i>
+          <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="" name="keywords">
+          <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+        </div>
+        <label class="weui-search-bar__label" id="searchText">
+          <i class="weui-icon-search"></i>
+          <span>搜索</span>
+        </label>
+      </form>
+      <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+    </div>
+
+    <!-- 菜系导航 -->
+    <div class="weui-tab swiper-container swiper-container-xnav" style="z-index: 88;background-color:#fafafa;border-bottom:1px solid #E4E4E4;">
+      <div class="weui-navbar food_list_nav_slide swiper-wrapper">
+        <notempty name="$foodClassdata">
+          <php>
+            $parent_id = empty($parent_id) ?  $Request.param.parent_id : $parent_id;
+          </php>
+          <foreach name="$foodClassdata" item="vo">
+            <div class="swiper-slide" data-id="{:$vo.id}">
+              <a class="weui-navbar__item  <if condition='$vo.id  eq $parent_id'> weui-bar__item--on </if>" href="{:cmf_url('user/index/scan_order',['parent_id'=>$vo.id,'id'=>$table_id['id']])}">
+                {:$vo.name}
+              </a>
+            </div>
+          </foreach>
+        </notempty>
+      </div>
+    </div>
+
+    <!-- 菜系子菜单+菜品 -->
+    <div class="Department-menu-dishes">
+      <view>
+        <!-- 菜品菜单 -->
+        <view class="section fl Dishes-menu">
+        <!-- height: 200px; -->
+      <scroll-view scroll-y style="display: block;overflow: auto;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" id="nav">
+            <notempty name="$foodChildClass">
+              <foreach name="$foodChildClass" item="vo">
+                <view id="menuid-" data-idx='' data-foodclass='{:$vo.name}' data-foodinx='' class="scroll-view-item <if condition='$vo.id  eq $Request.param.child_id'> scroll-view-item-activ </if>" bindtap="filter" >
+                  <!-- <a href="{:cmf_url('user/index/scan_order',['parent_id'=>$vo.parent_id,'child_id'=>$vo.id,'id'=>$table_id['id']])}"> {:$vo.name} </a> -->
+              	  <a href="#FoodList-{:$vo.id}"  data-id="{:$vo.id}"> {:$vo.name} </a>
+                </view>
+              </foreach>
+            </notempty>
+          </scroll-view>
+        </view>
+
+    <!-- 菜品信息列表 -->
+    <view class='fr Dishes-maxlist-right'>
+      <scroll-view scroll-y style="display: block;overflow: auto;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" id="main">
+        <notempty name="$foods">
+          <foreach name="$foodChildClass" item="vos">
+            <div class="food-list-li mainPage" id="FoodList-{:$vos.id}">
+              <foreach name="$foods" item="vo">
+                <php>
+                  $vo['food_describe'] = htmlspecialchars($vo['food_describe']);
+                </php>
+                <eq name="$vos.id" value="$vo.food_class">
+                  <view class="Dishes-list Dishes-list-id-{:$vo.id}" id="Dishes-list-{:$vo.id}" >
+                    <view class="group">
+                      <view class="fl list-img">
+                        <image class="Dishes-picture" src="{:cmf_get_image_url($vo.food_icon)}" ></image>
+                      </view>
+                      <view class="fr list-pric-text">
+                          <view class=" address-tel-text">
+                            <text class='Dishes-Title'>{:$vo.food_name}</text>
+                            <text class='Dishes-price'>￥{:$vo.price}</text>
+                            <text class="Dishes-description">{:$vo.food_describe}</text>
+                          </view>
+                          <view class="fr Dishes-num">
+                            <view class="plus-round plus-round-Reduce" data-foodname='{:$vo.food_name}' data-id='{:$vo.id}' data-price='{:$vo.price}' bindtap="amountReduce"  >-</view>
+                            <text class='Dishes-num-size'>0</text>
+                            <view class="plus-round plus-round-add" data-foodname='{:$vo.food_name}' data-id='{:$vo.id}' data-price='{:$vo.price}' bindtap="amountAdd" >+</view>
+                          </view>
+                      </view>
+                      <view class="clear"></view>
+                    </view>
+                  </view>
+                </eq>
+              </foreach>
+            </div>
+          </foreach>
+        </notempty>
+        <!-- 滚动加载 -->
+        <div class="weui-loadmore">
+          <i class="weui-loading"></i>
+          <span class="weui-loadmore__tips">正在加载</span>
+        </div>
+      </scroll-view>
+    </view>
+    <view class="clear"> </view>
+  </view>
+</div>
+
+    <!-- 遮罩层 -->
+    <view class="mask" hidden="" bindtap="hideshopping" style="display: none;"></view>
+
+    <!-- <view class="nav-footer-claer"> </view>  -->
+<form action="{:cmf_url('user/index/place_order')}" class="js-ajax-form" method="post" onsubmit="return Scavenging()">
+    <!-- 购物车已选商品  -->
+    <view class="footer-shopping-Selected-products" hidden="" style="display: none;overflow-y: scroll;height:300px;">
+      <view class="Dishes-list Selected-products-title">
+        <view class="group">
+          <view class="Service-fee">
+            <text class='fl Selected-products-title-line'>|</text>
+            <text class='fl'>已选商品</text>
+            <text class='fr emptied-shopping' bindtap="emptiedshopping"> 清空 </text>
+            <view class="clear"></view>
+          </view>
+        </view>
+      </view>
+      <view class="group shop-chaked-list shop-chaked-listid-1" style="padding: 0px">
+        <view class="Dishes-list">
+        </view>
+      </view>
+      <div class='booking-select' style="border-top:1px solid #ECECEC;margin-bottom: 20px">
+        <table style="font-size: 20px;width: 100%">
+          <tr>
+            <th> {:$table_id['name']}厅</th>
+            <th>{:$table_id['table_name']}</th>
+            <th>  第 <font color="#A146E1">{:$table_id['tb_id']}</font>号桌</th>
+          </tr>
+        </table>
+      </div>
+      <div class='booking-select' style="border-top:1px solid #ECECEC;">
+        <p style="padding-top:5px;">备注：</p>
+        <div id="Notable_types2">
+          <div class="weui-cell">
+            <div class="weui-cell__bd">
+              <textarea class="weui-textarea" placeholder="请输入备注信息" rows="3" name="remarks"></textarea>
+              <div class="weui-textarea-counter"><span>最多</span>/200个字</div>
+            </div>
+          </div>
+          <div class="clear"> </div>
+        </div>
+      </div>
+
+    </view>
+
+    <!-- 购物车底部弹窗 -->
+    <view class="footer-shopping-cart-fixed" hidden="">
+        <input type='hidden' value='{:$table_id["id"]}' id="tb_id" name="tb_id" />
+        <input type="hidden" name="order_class" value="1">
+        <input type='hidden' value='' id="food" name="food" />
+        <input type='hidden' value='1' name="pay" />
+
+        <view class="footer-shopping-cart">
+          <view class="shopping-icon fl" bindtap="showshopping">
+              <view class='shopping-icon-position'>
+                <icon class="iconfont icon-finished-cart" type="" size=""/>
+                <text class="z-num-shop">0</text>
+              </view>
+          </view>
+          <view class="total fl" bindtap="">
+              <text>总计：￥<font class="Total-price">0.00</font></text>
+          </view>
+          <button type="submit" class="Selected fr pay_button js-ajax-submit" id="Notactive-button">选好了</button>
+          <view class="Selected fr" bindtap="pay" id="active-Selected">
+              <view>选好了</view>
+          </view>
+          <view class="clear"> </view>
+        </view>
+    </view>
+</form>
+ <!--    <view class="nav-footer-claer"> </view> -->
+
+<include file="public@nav"/>
+<include file="public@footer"/>
+
+<script type="text/javascript">
+  var otherTotalheight = $(".swiper-container-xnav").height()*1.7 + $("#searchBar").height() + $(".footer-shopping-cart-fixed").height()*2 + $(".weui-tabbar wx-food-foodnav").height()
+  $("scroll-view").css('height',$(window).height() - otherTotalheight);
+
+  setTimeout(function() {
+    $(".weui-loadmore").fadeOut();
+  }, 500);   //模拟延迟
+
+  // <!-- Initialize Swiper -->
+  var id = '{:$parent_id}';
+  var k  = 0;
+  var activ_key = 0;
+
+  $(".swiper-container-xnav .swiper-slide").each(function(){
+      k++;
+      var dataid = $(this).attr('data-id');
+      if(dataid == id)
+      {
+          activ_key = k;
+      }
+  });
+  var swiper = new Swiper('.swiper-container-xnav', {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      initialSlide: activ_key-1, //设定初始化时slide的索引 从第几个开始
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+  });
+
+</script>
+
+<script>
+    $(function () {
+
+        var nav = $("#nav");
+        var mainPage = $(".mainPage");
+        var mainTopArr = new Array();
+        var fuvalue_toppx = 0;
+
+        for(var i=0;i<mainPage.length;i++)
+        {
+            var top = mainPage.eq(i).offset().top;
+            mainTopArr.push(top);
+        }
+
+        $('#main').scroll(function()
+        {
+            var scrollTop = $(this).scrollTop();
+            var k;
+            for(var i=0;i<mainTopArr.length;i++){
+                //滚动距离 特殊加上 105 px
+                if((scrollTop+105)>=mainTopArr[i]){
+                    k=i;
+                }
+            }
+
+            if(nav.hasClass("activ") == false)
+            {
+              nav.find(".scroll-view-item").eq(k).addClass("scroll-view-item-activ").siblings().removeClass("scroll-view-item-activ");
+            }
+
+            if(fuvalue_toppx == scrollTop)
+            {
+              nav.removeClass("activ");
+            }
+        });
+
+        nav.find(".scroll-view-item").click(function(e)
+        {
+            var dataid = $(this).find("a[href^='#']").attr("data-id");
+            var toppx = 0;
+            var first_data_id = nav.find("a[href^='#']").eq(0).attr("data-id");
+
+            for(var i=0;i<$(this).index();i++)
+            {
+              toppx = toppx+mainPage.eq(i).height();
+            }
+
+            if(first_data_id == dataid){
+                toppx = 0;
+            }
+
+            nav.addClass("activ"); //对点击事件 进特殊处理
+
+            // $(this.hash).offset().top
+            e.preventDefault();
+            $('#main').animate({scrollTop: toppx}, 400);
+
+            fuvalue_toppx = toppx;
+        });
+    });
+
+</script>

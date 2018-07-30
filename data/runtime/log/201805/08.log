@@ -1,0 +1,70 @@
+---------------------------------------------------------------
+[ 2018-05-08T09:50:48+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2018-05-08T09:52:08+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-08T09:52:13+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-08T09:52:22+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013671s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.010743s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-08T09:52:33+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-08T09:52:55+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014648s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-08T11:24:50+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-08T11:25:03+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014648s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.006836s ]
+---------------------------------------------------------------
+[ 2018-05-08T11:25:04+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-08T11:39:35+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-08T11:39:36+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-08T14:20:09+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007813s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.012696s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-08T14:20:17+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2018-05-08T14:21:04+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.019532s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]

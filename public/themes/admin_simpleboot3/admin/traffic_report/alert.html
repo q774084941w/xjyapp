@@ -1,0 +1,69 @@
+<include file="public@header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('trafficReport/index')}">进货统计</a></li>
+        <li><a href="{:url('trafficReport/Shipments')}">出库统计</a></li>
+        <li class="active"><a href="">库存报警</a></li>
+        <li><a href="{:url('trafficReport/Statistics')}">库存统计</a></li>
+    </ul>
+    <form class="well form-inline margin-top-20 js-ajax-form" method="post" action="{:url('admin/trafficReport/alert')}">
+        <input type="hidden" name="time" value="{:empty($whereTime)?'today':$whereTime}">
+        <div class="form-inline">
+            <div class="form-group cy-mar-ver-s">
+                <notempty name="category">
+                    <select name="category"  class="form-control">
+                        <option value="">分类查找</option>
+                        <foreach name="category" item="vo">
+                            <option value="{$vo.id}" <if condition="input('request.category') eq $vo.id">selected</if>>{:$vo.name}</option>
+                        </foreach>
+                    </select>
+                </notempty>
+                <input class="form-control" type="text" name="keyword" style="width: 200px;" value="{:input('request.keyword')}" placeholder="货品名称/拼音">
+
+            </div>
+            <div class="form-group cy-mar-ver-s">
+                <input type="submit" class="btn btn-success" value="搜索" />
+            </div>
+
+        </div>
+    </form>
+    <form method="post" class="margin-top-20">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th width="5%">排号</th>
+                    <th width="5%">货品编号</th>
+                    <th width="8%" align="left">货品名称</th>
+                    <th width="5%" align="left">拼音码</th>
+                    <th width="8%" align="left">分类</th>
+                    <th width="8%">剩余库存</th>
+                    <th width="8%">报警库存</th>
+                    <th width="8%">进货价</th>
+                    <th width="8%" >零售价</th>
+                </tr>
+            </thead>
+            <tbody>
+            <if !empty($data)>
+                <foreach name="data" item="vo" key="key">
+                    <tr>
+                        <td>{$key+1}</td>
+                        <td>{$vo.traffic_number}</td>
+                        <td>{$vo.name}</td>
+                        <td>{$vo.pinyin}</td>
+                        <td>{$vo.category_name}</td>
+                        <td >{$vo.stock}</td>
+                        <td >{$vo.alert}</td>
+                        <td>{$vo.buy_price}</td>
+                        <td>{$vo.ret_price}</td>
+                    </tr>
+                </foreach>
+            </if>
+            </tbody>
+        </table>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

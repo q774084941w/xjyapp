@@ -1,0 +1,5 @@
+---------------------------------------------------------------
+[ 2018-05-19T14:53:17+08:00 ] 122.114.61.97 125.69.126.20 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.076172s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]

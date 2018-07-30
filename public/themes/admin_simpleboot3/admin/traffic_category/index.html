@@ -1,0 +1,44 @@
+<include file="public@header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:url('TrafficCategory/index',['type'=>$type])}">分类列表</a></li>
+        <li><a href="{:url('TrafficCategory/add',['type'=>$type])}">添加新分类</a></li>
+    </ul>
+    <form class="js-ajax-form" method="post" action="{:url('admin/TrafficCategory/sort')}">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th width="80">排序</th>
+                <th width="50">ID</th>
+                <th>分类名称</th>
+                <th width="80">状态</th>
+                <th width="180">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {$category}
+            </tbody>
+            <tfoot>
+            <tr>
+                <td width="80"><button type="submit" value="排序" class="js-ajax-submit btn btn-success">排序</button></td>
+                <td colspan="4"></td>
+            </tr>
+            </tfoot>
+        </table>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+</script>
+</body>
+</html>

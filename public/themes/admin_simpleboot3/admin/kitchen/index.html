@@ -1,0 +1,111 @@
+<include file="public@header" />
+<head>
+	<style type="text/css">
+		#Scavenger{
+	    	background: none;
+		    border: none;
+		    /* font-size: 0; */
+		}
+	</style>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#">后厨</a></li>
+	</ul>
+	<php>
+		$food_type      = 	array('0'=>'未出菜','1'=>'正在出菜','2'=>'已经全部出菜');
+	</php>
+
+	<form class="well form-inline margin-top-20" method="post" action="{:url('kitchen/index')}">
+
+		<div class="form-inline">
+			<div class="form-group cy-mar-ver-s">
+
+				<input class="form-control" type="text" name="keyword"  value="{:input('request.keyword')}"
+					   placeholder="请输入订单ID">
+
+				<select name="menu" style="text-align: center" class="form-control">
+					<if !empty($menu[0])>
+						<option value="">请选择服务厅</option>
+						<foreach name="menu" item="vo" >
+							<option value="{$vo.id}" <if condition="input('request.menu') eq $vo.id" > selected </if> >{$vo.name}</option>
+						</foreach>
+						<else/>
+						<option value="">你还未建立服务厅，请在分类建立！</option>
+					</if>
+				</select>
+				<input class="form-control" type="text" name="table" value="{:input('request.table')}"  placeholder="输入桌号">
+
+				<span class="cy-pad-hor-s">时间</span>
+			</div>
+			<div class="input-daterange input-group" id="datepicker">
+				<input type="text" class="js-bootstrap-date form-control" name="beginTime" id="qBeginTime" value="{:input('request.beginTime')}" />
+				<span class="input-group-addon">至</span>
+				<input type="text" class="js-bootstrap-date form-control" name="endTime" id="qEndTime"  value="{:input('request.endTime')}"/>
+			</div>
+			<div class="form-group cy-mar-ver-s">
+				<input type="submit" class="btn btn-success" value="搜索"/>
+				<a class="btn btn-danger" href="{:url('kitchen/index')}">清空</a>
+			</div>
+			<button id="Scavenger_take" class="btn btn-danger" style="float: right" type="button">
+				扫一扫查找
+			</button>
+		</div>
+
+
+
+	</form>
+
+	<form method="post" class="margin-top-20">
+		<table class="table table-hover table-bordered">
+			<thead>
+			<tr>
+				<th width="10%">订单号</th>
+				<th width="10%" align="left">下单时间</th>
+				<th width="5%">服务厅</th>
+				<th width="5%">餐桌号</th>
+				<th width="15%">快速操作</th>
+			</tr>
+			</thead>
+			<tbody>
+			<if !empty($order)>
+			<foreach name="order" item="vo">
+				<tr style="background-color: {:$vo.food_type==2?'#E74C3C':''};color: {:$vo.food_type==2?'#fff':''} " >
+					<td>{$vo.order_id}</td>
+					<td>{:date('Y-m-d H:i:s',$vo['order_time'])}</td>
+					<td>{$vo.name}</td>
+					<td>{$vo.tb_id}</td>
+					<td>
+						<if condition="($vo.food_type==2)">
+							<span class="btn">{$food_type[$vo.food_type]}</span>
+							<else/>
+							<a href="{:url('kitchen/menu',['id'=>$vo.order_id])}"  class="btn btn-success">点击出菜</a>
+						</if>
+
+					</td>
+				</tr>
+			</foreach>
+			</if>
+			</tbody>
+		</table>
+	</form>
+	<div class="col-xs-12"  style="text-align:center">
+		<ul class="pagination">{$page|default=''}</ul>
+	</div>
+</div>
+<form action="{:url('admin/kitchen/menu')}" method="post" style="position: fixed;right: 0;bottom: 0;">
+	<input type="text" name="id" id="Scavenger" class="form-control">
+</form>
+<div><script src="__STATIC__/js/admin.js"></script></div>
+<script>
+    $('#Scavenger_take').click(function () {
+        $(this).css('background-color','#32e744');
+        $('#Scavenger').focus();
+    });
+    $('#Scavenger').blur(function () {
+        $('#Scavenger_take').css('background-color','#E74C3C');
+    })
+</script>
+</body>
+</html>

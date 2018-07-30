@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html style="font-size:50px">
+  <head>
+    <title>订单</title>
+    <include file="public@head"/>
+    <style type="text/css">
+    .ionic-body, body{
+      overflow: auto !important;
+    }
+    </style>
+  </head>
+  <body class="grade-a">
+    <div von-app="" transition-direction="forward" class="page-forward" style="display: none;">
+      <div von-nav="" class="navbar" style="transition:0s;opacity:0;position:fixed">
+        <div class="navbar-container">
+          <div von-navbar="cached" class="bar bar-header bar-transparent cached">
+            <h1 class="title" style="transition:none;opacity:0;transform:translate3d(0px,0,0)">
+              <span>
+              </span>
+            </h1>
+          </div>
+          <div von-navbar="cached" class="bar bar-header bar-transparent cached">
+            <h1 class="title" style="transition:none;opacity:0;transform:translate3d(0px,0,0)">
+              <span>
+              </span>
+            </h1>
+          </div>
+          <div von-navbar="active" class="bar bar-header bar-transparent">
+            <h1 class="title" style="transition:none;opacity:1;transform:translate3d(0px,0,0)">
+              <span>
+              </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="">
+          <div class="has-navbar has-tabbar" transition="slide">
+            <div class="order_content">
+              <div class="tabs-striped tabs-top tabs-background-light tabs-color-positive">
+                <div class="tabs">
+                  <a class="tab-item <eq name='$paramarry.order_pay' value='0' > active </eq>" href="{:cmf_url('user/Trystplay/order_list',array('order_pay'=>0))}">
+                    全部订单
+                  </a>
+                  <a class="tab-item <eq name='$paramarry.order_pay' value='1' > active </eq>" href="{:cmf_url('user/Trystplay/order_list',array('order_pay'=>1))}">
+                    未完成
+                  </a>
+                  <if condition="$paramarry.user_type eq 3">
+                    <a class="tab-item <eq name='$paramarry.order_pay' value='2' > active </eq>" href="{:cmf_url('user/Trystplay/order_list',array('order_pay'=>2))}">
+                      待确认
+                    </a>
+                  <else />
+                    <a class="tab-item <eq name='$paramarry.order_pay' value='4' > active </eq>" href="{:cmf_url('user/Trystplay/order_list',array('order_pay'=>4))}">
+                    待评价
+                  </a>
+                  </if>
+                  <a class="tab-item <eq name='$paramarry.order_pay' value='3' > active </eq>" href="{:cmf_url('user/Trystplay/order_list',array('order_pay'=>3))}">
+                    已结束
+                  </a>
+                </div>
+              </div>
+              <div class="order_bigbox">
+                <if condition="$order_list && $paramarry.user_type neq 3">
+                  <!-- class="_v-container"   height: 100%; -->
+                  <div data-v-ecaca2b0="" id="outer-lg6i3" class=" page-content"
+                  style="width:100%;">
+                    <div data-v-ecaca2b0="" id="inner-1ghxn" class="_v-content" style="transform:translate3d(0px,0,0) scale(1)">
+                      <div data-v-ecaca2b0="">
+                        <foreach name="order_list" item="vo">
+                          <div class="order_box">
+                            <div class="order_head_right_box">
+                              <a href="{:cmf_url('user/Trystplay/order_detailed',array('order_id'=>$vo.oid))}">
+                                <div class="order_head_left_box">
+                                  <div class="fl order_head_left">
+                                    <img src="{:cmf_get_image_url($vo.serve_photo)}">
+                                  </div>
+                                </div>
+                                <div class="fr order_head_right">
+                                  <div class="order_head_right_topbox">
+                                    <div>
+                                      <div class="fl order_head_online">
+                                       {$vo.class_name}
+                                      </div>
+                                      <div class="fr order_head_advance">
+                                        <span style="color: #ff616b;">
+                                          <if condition="$vo.order_pay eq 1">
+                                            未支付：
+                                          <elseif condition="$vo.order_pay eq 2">
+                                            支付完成 , 商家未确认：
+                                          <elseif condition="$vo.order_pay eq 3">
+                                            商家确认 , 未完成：
+                                          <elseif condition="$vo.order_pay eq 4">
+                                            订单完成 , 未评价：
+                                          <elseif condition="$vo.order_pay eq 5">
+                                            已经评价：
+                                          </if>
+                                        </span>
+                                        ￥{$vo.order_prive}元
+                                      </div>
+                                      <div class="clearfix">
+                                      </div>
+                                    </div>
+                                    <div class="fl">
+                                      <div class="order_user">
+                                        导师:{$vo.seller_nickname}
+                                        <span class="grading_box">
+                                          {$vo.serve_lv}
+                                        </span>
+                                      </div>
+                                      <div class="order_time">
+                                       {$vo.order_time|date="Y-m-d",###} <!-- 18:30-19:30(1小时) -->
+                                       {$vo.order_reserve|date="H:s",###}
+                                       
+                                      </div>
+                                    </div>
+                                    <div class="fr right_icon">
+                                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAgCAYAAAAffCjxAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk4NzEwNTY4MTlDRjExRTdCRjI5OEMxRTRFNTM2RDNGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk4NzEwNTY5MTlDRjExRTdCRjI5OEMxRTRFNTM2RDNGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTg3MTA1NjYxOUNGMTFFN0JGMjk4QzFFNEU1MzZEM0YiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTg3MTA1NjcxOUNGMTFFN0JGMjk4QzFFNEU1MzZEM0YiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4dFJHAAAABfklEQVR42qSUPShFYRjHX9cZWDApg1AsJNdXMZCSfKWwMRhZ7sDMJrJRBp2bTdhYFNI1UMpnFFIWDJJBsRgY/N56bp1B97z3Of/6dZ7TOf06p+d5nxzf92+NMS/QZyIkBjXQCyeQH0XUAt/QCjdQohWdQh28QRVcQ7VGZPMosnsoli9r04hs3iEOx+DBEQxpRDY/0A7bcr8F4xpROsOQlNqHGa3IZgLmpJ6FRa3IyJdMST0JG1qRzRKMSj0Ce1qRzSb0SN0Nl1CgEdnsQyN8QYPMWplGZHMlg/sM5SKLa0Q2TyKzR6kQLqAypjzsn1Avg5trxyRmouVQrhVRRAlYlnpVK1oISOw16Skk64EBnYZ5I+vCNXmwCx1yPwZr6YeuolJIyQb9lSlPBV9wETXDgczMK3TCQ7ZnbRDORGKnuvY/SZgoEdiUO3LOPrJdI8H2rsBA2P97ru3NRpSxva6i0Pa6iJqkvUWZ2usiOg8sra5MnQkT3cnG64+yT/4EGABWNk5lngGOIwAAAABJRU5ErkJggg==">
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                              </a>
+                            </div>
+                            <if condition="$vo.order_pay eq 1">
+                              <div id="div202017112217145719434" class="order_btn_time_box">
+                                <div class="order_btn_time fr order_btn_pay jieorder order_btn_time01">
+                                  <a href="{:cmf_url('user/Trystplay/weixin_pay',array('order_id'=>$vo.oid))}">去支付 </a>
+                                  <!-- <span>
+                                    (剩余08分39秒)
+                                  </span> -->
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                              </div>
+                            <elseif condition="$vo.order_pay eq 4">
+                              <div id="div202017112217145719434" class="order_btn_time_box">
+                                <div class="order_btn_time fr order_btn_pay jieorder order_btn_time01">
+                                  <a href="{:cmf_url('user/Trystplay/order_detailed',array('order_id'=>$vo.oid,'evaluate'=>'ok'))}">去评价</a>
+                                  <!-- <span>
+                                    (剩余08分39秒)
+                                  </span> -->
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                              </div>
+                            </if>
+                          </div>
+                        </foreach>
+                      </div>
+                      <div data-v-ecaca2b0="" class="loading-layer" style="padding:10px;text-align: center;">
+                        <div data-v-ecaca2b0="" class="no-data-text" style="color:#aaa">
+                          没有更多数据
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <elseif condition="$paramarry.user_type eq 3">
+                  <if condition="$seller_order">
+                    <div data-v-ecaca2b0="" id="outer-lg6i3" class=" page-content"
+                    style="width:100%;">
+                      <div data-v-ecaca2b0="" id="inner-1ghxn" class="_v-content" style="transform:translate3d(0px,0,0) scale(1)">
+                        <div data-v-ecaca2b0="">
+                          <foreach name="seller_order" item="vo">
+                            <div class="order_box">
+                              <div class="order_head_right_box">
+                                <a href="{:cmf_url('user/Trystplay/order_detailed',array('order_id'=>$vo.oid))}">
+                                  <div class="order_head_left_box">
+                                    <div class="fl order_head_left">
+                                      <img src="{:cmf_get_image_url($vo.serve_photo)}">
+                                    </div>
+                                  </div>
+                                  <div class="fr order_head_right">
+                                    <div class="order_head_right_topbox">
+                                      <div>
+                                        <div class="fl order_head_online">
+                                         {$vo.class_name}
+                                        </div>
+                                        <div class="fr order_head_advance">
+                                          <span style="color: #ff616b;">
+                                            <if condition="$vo.order_pay eq 1">
+                                              用户未支付：
+                                            <elseif condition="$vo.order_pay eq 2">
+                                              支付完成 , 商家待确认：
+                                            <elseif condition="$vo.order_pay eq 3">
+                                              商家确认 , 未完成：
+                                            <elseif condition="$vo.order_pay eq 4">
+                                              订单完成 , 未评价：
+                                            <elseif condition="$vo.order_pay eq 5">
+                                              已经评价：
+                                            </if>
+                                          </span>
+                                          ￥{$vo.order_prive}元
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                      </div>
+                                      <div class="fl">
+                                        <div class="order_user">
+                                          导师:{$vo.seller_nickname}
+                                          <span class="grading_box">
+                                            {$vo.serve_lv}
+                                          </span>
+                                        </div>
+                                        <div class="order_time">
+                                         {$vo.order_time|date="Y-m-d",###} <!-- 18:30-19:30(1小时) -->
+                                         {$vo.order_reserve|date="H:s",###}
+                                         
+                                        </div>
+                                      </div>
+                                      <div class="fr right_icon">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAgCAYAAAAffCjxAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk4NzEwNTY4MTlDRjExRTdCRjI5OEMxRTRFNTM2RDNGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk4NzEwNTY5MTlDRjExRTdCRjI5OEMxRTRFNTM2RDNGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTg3MTA1NjYxOUNGMTFFN0JGMjk4QzFFNEU1MzZEM0YiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTg3MTA1NjcxOUNGMTFFN0JGMjk4QzFFNEU1MzZEM0YiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4dFJHAAAABfklEQVR42qSUPShFYRjHX9cZWDApg1AsJNdXMZCSfKWwMRhZ7sDMJrJRBp2bTdhYFNI1UMpnFFIWDJJBsRgY/N56bp1B97z3Of/6dZ7TOf06p+d5nxzf92+NMS/QZyIkBjXQCyeQH0XUAt/QCjdQohWdQh28QRVcQ7VGZPMosnsoli9r04hs3iEOx+DBEQxpRDY/0A7bcr8F4xpROsOQlNqHGa3IZgLmpJ6FRa3IyJdMST0JG1qRzRKMSj0Ce1qRzSb0SN0Nl1CgEdnsQyN8QYPMWplGZHMlg/sM5SKLa0Q2TyKzR6kQLqAypjzsn1Avg5trxyRmouVQrhVRRAlYlnpVK1oISOw16Skk64EBnYZ5I+vCNXmwCx1yPwZr6YeuolJIyQb9lSlPBV9wETXDgczMK3TCQ7ZnbRDORGKnuvY/SZgoEdiUO3LOPrJdI8H2rsBA2P97ru3NRpSxva6i0Pa6iJqkvUWZ2usiOg8sra5MnQkT3cnG64+yT/4EGABWNk5lngGOIwAAAABJRU5ErkJggg==">
+                                      </div>
+                                      <div class="clearfix">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="clearfix">
+                                  </div>
+                                </a>
+                              </div>
+                              <if condition="$vo.order_pay eq 2">
+                                <div id="div202017112217145719434" class="order_btn_time_box">
+                                  <div class="order_btn_time fr order_btn_pay jieorder order_btn_time01">
+                                    <a href="{:cmf_url('user/Trystplay/sellerOrderConfirm',array('order_id'=>$vo.oid))}">确认订单</a>
+                                    <!-- <span>
+                                      (剩余08分39秒)
+                                    </span> -->
+                                  </div>
+                                  <div class="clearfix">
+                                  </div>
+                                </div>                              
+                              </if>
+                            </div>
+                          </foreach>
+                        </div>
+                        <div data-v-ecaca2b0="" class="loading-layer" style="padding:10px;text-align: center;">
+                          <div data-v-ecaca2b0="" class="no-data-text" style="color:#aaa;" >
+                            没有更多数据
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <else />
+                    <div class="divNoData">
+                      暂无订单
+                    </div>
+                  </if>
+                <else />
+                  <div class="divNoData">
+                    暂无订单
+                  </div>
+                </if>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="divGobbs">
+        </div>
+      </div>
+    </div>
+   
+<include file="public@nav"/>
+<include file="public@footer"/>

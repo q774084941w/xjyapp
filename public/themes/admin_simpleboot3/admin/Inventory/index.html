@@ -1,0 +1,80 @@
+<include file="public@header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="">盘点</a></li>
+        <li><a href="{:url('Inventory/addNew')}">新增盘点</a></li>
+    </ul>
+    <form class="well form-inline margin-top-20 js-ajax-form" method="post" action="{:url('admin/trafficReport/index')}">
+        <php>
+            $whereTime = empty($whereTime)?'month':$whereTime;
+        </php>
+        <input type="hidden" name="time" value="{:$whereTime}">
+        <div class="form-inline">
+            <div class="form-group cy-mar-ver-s">
+                <span class="cy-pad-hor-s">时间</span>
+            </div>
+            <div class="input-daterange input-group" >
+                <input type="text" class="js-bootstrap-date form-control" name="Time"  value="{:input('request.Time')}" />
+            </div>
+            <div class="form-group cy-mar-ver-s">
+                <input type="submit" class="btn btn-success" value="搜索" />
+            </div>
+        </div>
+    </form>
+    <form method="post" class="margin-top-20">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th width="5%">排号</th>
+                    <th width="5%">业务时间</th>
+                    <th width="8%" align="left">单据编号</th>
+                    <th width="8%">盘点状态</th>
+                    <th width="8%">盘亏金额（元）</th>
+                    <th width="8%">盘盈金额（元）</th>
+                    <th width="8%">盘点人</th>
+                    <th width="8%">备注</th>
+                    <th width="8%">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <empty name="data">
+                    <tr><td colspan="8" style="text-align: center">暂无数据</td></tr>
+                    <else/>
+                    <php>
+                        $inven_type = array(1=>'有盈亏',2=>'无盈亏');
+                    </php>
+                    <foreach name="data" item="vo" key="key">
+                        <tr>
+                            <td>{:$key+1}</td>
+                            <td>{:date('Y-m-d',$vo.time)}</td>
+                            <td>{:$vo.inven_number}</td>
+                            <td>{:$inven_type[$vo.inven_type]}</td>
+                            <td>{:$vo.deficit}</td>
+                            <td>{:$vo.profit}</td>
+                            <td>{:empty($vo.user_nickname)?$vo.user_login:$vo.user_nickname}</td>
+                            <td>{:$vo.remark}</td>
+                            <td>
+                                <a href="{:url('Inventory/details',array('inven_number'=>$vo.inven_number))}" class="btn btn-link">详情</a>
+                                <!--<a href="">复制新增</a>-->
+                                <a href="{:url('Inventory/changeType',array('inven_id'=>$vo.inven_id))}" class="btn btn-link js-ajax-dialog-btn"  data-msg="确定作废！">作废</a>
+                            </td>
+                        </tr>
+                    </foreach>
+                </empty>
+            </tbody>
+
+        </table>
+    </form>
+    <div class="col-xs-12"  style="text-align:center">
+        <ul class="pagination"><if !empty($page)>
+            {$page|default=''}
+        </if></ul>
+    </div>
+
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+
+</body>
+</html>

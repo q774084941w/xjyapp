@@ -1,0 +1,121 @@
+<!-- loading toast -->
+<div id="loadingToast" style="display:none;">
+    <div class="weui-mask_transparent"></div>
+    <div class="weui-toast">
+        <i class="weui-loading weui-icon_toast"></i>
+        <p class="weui-toast__content">数据加载中</p>
+    </div>
+</div>
+
+<div id="toast" style="display: none;">
+    <div class="weui-mask_transparent"></div>
+    <div class="weui-toast">
+        <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+        <p class="weui-toast__content">已完成</p>
+    </div>
+</div>
+
+<!-- Msg 操作失败提示页 -->
+<div class="page" id="tpl_msg_warn" style="display: none;">
+    <div class="weui-msg">
+        <div class="weui-msg__icon-area"><i class="weui-icon-warn weui-icon_msg"></i></div>
+        <div class="weui-msg__text-area">
+            <h2 class="weui-msg__title">请在微信客户端打开</h2>
+            <!-- <p class="weui-msg__desc">内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现<a href="javascript:void(0);">文字链接</a></p> -->
+        </div>
+        <div class="weui-msg__extra-area">
+            <div class="weui-footer">
+                <p class="weui-footer__links">
+                    <a href="javascript:void(0);" class="weui-footer__link">{$site_info.site_name|default=''}</a>
+                </p>
+                <p class="weui-footer__text">{$site_info.site_icp|default=''}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer ================================================== -->
+    <script type="text/javascript" src="__TMPL__/public/assets/js/app.js"></script>
+
+  </body>
+
+<!-- WEUI js stare-->
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+
+<!-- 如果使用了某些拓展插件还需要额外的JS -->
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>
+<!-- WEUI js end-->
+
+<!-- 限制页面只能在微信浏览器打开 -->
+<script type="text/javascript">  
+
+    // loading
+    function loadingToast(){
+        $(function(){
+            var $loadingToast = $('#loadingToast');
+            if ($loadingToast.css('display') != 'none') return;
+
+            $loadingToast.fadeIn(100);
+            setTimeout(function () {
+                $loadingToast.fadeOut(100);
+            }, 500);
+        });
+    }
+    
+    //toast
+    function toast(){
+        var $toast = $('#toast');
+        if ($toast.css('display') != 'none') return;
+
+        $toast.fadeIn(100);
+        setTimeout(function () {
+            $toast.fadeOut(100);
+            
+        }, 2000);
+    }
+
+    // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器  
+    var useragent = navigator.userAgent;  
+    if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {  
+        // 这里警告框会阻塞当前页面继续加载  
+        console.log('已禁止本次访问：您必须使用微信内置浏览器访问本页面！'); 
+        $("#tpl_msg_warn").show();
+        $('.page-forward,.weui-tabbar').html('');
+        $('title').text('');
+        
+        // 以下代码是用javascript强行关闭当前页面  
+        // var opened = window.open('about:blank', '_self');  
+        // opened.opener = null;  
+        // opened.close();  
+    }else{
+      loadingToast();
+
+      setTimeout(function () {
+          $(".page-forward,.weui-tabbar,#divMaskDetail").show();
+      }, 500);
+    }  
+</script>
+
+<script type="text/javascript" charset="utf-8">
+    var user_id      = "{:$user_id}";
+    var stateurl     = "{:$stateurl}";
+    var state        = "{:$Think.server.http_referer}";
+    var redirect_uri = '{:urlencode("http://trystplay.98bs.com/api/index.php/wxapp/Public/login/")}';
+    var appid        = 'wx96ef9f9c7c573a51';
+    var code         = "{:input('request.code')}";
+
+    if(state == ''){
+        state = stateurl;
+    }
+
+    if(user_id){
+        console.log(code);
+    }else{
+        window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid="+ appid +"&redirect_uri="+ redirect_uri +"&response_type=code&scope=snsapi_userinfo&state="+ state +"#wechat_redirect";
+    }
+
+</script>
+
+</html>

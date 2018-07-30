@@ -1,0 +1,122 @@
+<include file="public@header" />
+<style type="text/css">
+    .pic-list li {
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:url('admin/reserve/index')}">预约订单</a></li>
+			<li class="active"><a href="#">订单详情</a></li>
+		</ul>
+		<form  method="post" class="form-horizontal js-ajax-form margin-top-20">
+        <div class="row">
+            <div class="col-md-9">
+            	<table  class="table table-bordered">  
+			        <tr>  
+			            <td  rowspan="2" style="width: 135px;height: 135px;text-align: center;">
+							<img src="<if empty($seller['seller_logo'])>__TMPL__/public/assets/images/default-thumbnail.png<else />{:cmf_get_image_preview_url($seller['seller_logo'])}</if>"
+                                         id="thumbnail-preview"
+                                         width="135" style="cursor: pointer"/>
+			            </td>  
+			            <td style="width: 25%">商家ID：{$seller['id']}</td>  
+			            <td style="width: 35%">商家名称：{$seller['seller_nickname']}</td> 
+			            <td style="width: 20%">订单号：{$order['order_id']}</td>
+			            <td style="width: 20%">下单时间：{:date('Y-m-d H:i:s',$order['order_time'])}</td>  
+			        </tr>
+
+			        <tr>
+			            <!--<td>2.1</td>-->  
+			            <td>用户ID：<if !empty($user)>{:$user['openid']}<else \>未知用户</if></td>  
+			            <td>用户名称：<if !empty($user)>{:$user['nickname']}<else \>未知用户</if></td>
+			            <php>$order_pay=array('1'=>'未支付','2'=>'已确认','3'=>'已拒绝','4'=>'已支付','5'=>'未评价','6'=>'已评价');
+							$order_complete = array('1'=>'未确认','2'=>'确认','3'=>'拒绝','4'=>'完成');
+							$pay_class 	 = 	array('1'=>'支付宝','2'=>'微信','3'=>'银联','4'=>'现金','5'=>'vip卡');
+			            </php> 
+			            <td>订单状况：{$order_complete[$order['order_complete']]}</td>
+			            <td>支付状态：{$order_pay[$order['pay']]}</td>   
+			        </tr>  
+			        <tr>  
+			        	<php>$oreder_class=array('1'=>'餐桌订单','2'=>'外卖订单','3'=>'预约订单','4'=>'直接收银');</php>
+			        	<td colspan="1">餐桌ID：{$order['table_id']}</td> 
+			        	<td colspan="1">订单类型：{$oreder_class[$order['order_class']]}</td> 
+			            <td colspan="1">配送方：<if condition="$order['order_class'] eq 2">{$delivery['delivery_name']}<else />非外卖订单</if></td> 
+			            <td colspan="1">配送评分：<if condition="$order['order_class'] eq 2">{$order['delivery_evaluate']}<else />非外卖订单</if></td>
+			            <php>$order_delivery=array('1'=>'未接单','2'=>'配送中','3'=>'配送完成','4'=>'系统接单','5'=>'分配骑手','6'=>'骑手到店')</php>
+			            <td colspan="1">配送状态：<if condition="$order['order_class'] eq 2">{$order_delivery[$order['order_delivery']]}<else />非外卖订单</if></td> 
+			        </tr> 
+
+						<tr>
+							<!-- 4: 用户违约 -->
+							<php>
+								$complete=array('1'=>'未完成','2'=>'完成','3'=>'商家违约','4'=>'用户取消');
+							</php>
+							<td colspan="1">预约桌数：{$reserve['table_nub']}</td> 
+				            <td colspan="1">预约人数：{$reserve['user_nub']}</td> 
+				            <td colspan="1">预约时间：{:date('Y-m-d H:i:s',$reserve['reserve_time'])}</td>
+				            <td colspan="1">商家是否确认：{$order_complete[$order['order_complete']]}</td>				          
+				            <td colspan="1">预约是否完成：{$complete[$reserve['complete']]}</td>
+						</tr>						
+				        <tr>  
+				        	<td>预约者：{$reserve['user_name']}</td>
+				        	<td>餐桌类型：{$reserve['table_name']}</td>
+				        	<td>预约电话：{$reserve['tel']}</td>
+				            <td colspan="1">优惠劵ID：<if condition="$order['coupon_id'] eq 0">没有使用优惠劵<else />{$order['coupon_id']}</if></td>  
+				            <td colspan="1">优惠劵信息：<if condition="$order['coupon_id'] eq 0">没有使用优惠劵<else />{$coupon[0]['coupon_name']}满{$coupon[0]['coupon_full']}立减{$coupon[0]['coupon_cut']}</if></td>  
+				        </tr>
+			        <tr>  
+			            <td colspan="3">订单备注：
+			            	<div>
+				            	<textarea readonly  style="width: 100%;height: 100px;resize: none;">&nbsp;&nbsp;&nbsp;&nbsp;<if empty($order['remarks'])>该订单没有备注<else />{$order['remarks']}</if></textarea>
+			            	</div>
+			            </td>
+						<td colspan="3">用户评价：
+							<div>
+								<textarea readonly  style="width: 100%;height: 100px;resize: none;">&nbsp;&nbsp;&nbsp;&nbsp;<if empty($order['user_evaluate'])>该用户尚未评价！<else />{$order['user_evaluate']}</if></textarea>
+							</div>
+						</td>
+					</tr>
+			    </table> 
+			    <div class="form-group">
+                    <div class="col-sm-offset-6 col-sm-9">
+
+                        <a class="btn btn-default" href="{:url('reserve/Edit',array('order_id'=>$order['order_id']))}">修改</a>
+
+                        <input class="btn btn-info" type="button" value="后退" onclick="javascript:history.go(-1);">
+                    </div>
+                </div>             
+            </div>
+            <if !empty($data)>
+            <div class="col-md-3">
+            	<div class="panel panel-default">
+			  		<div class="panel-heading">订单详情：</div>
+				  	<div class="panel-body" style="height:400px;overflow-y:scroll;">
+				    	<ul class="list-group">
+
+				    		<php>$b=0;</php>
+				    		<foreach name="food" item="vo" key='key'>
+					  		<li class="list-group-item">
+					    	<span class="col-md-2 badge"><span class="glyphicon glyphicon-yen" aria-hidden="true">{:$data[$vo.id]['price']*$vo.nub}</span></span>
+							{$data[$vo.id]['food_name']}
+							<span class="">*{$vo.nub}</span>
+					  		</li>
+					  		<p hidden>{$b+=$data[$vo.id]['price']*$vo.nub;} </p>
+					  		</foreach>
+
+						</ul>					
+				  	</div>
+				  	<div class="panel-footer">总金额：<span class="pull-right" style="margin-right: 50px">{$b}</span></div>
+				</div>           	
+            </div>
+        	</if>
+        </div>
+    </form>
+	</div>
+	<script type="text/javascript" src="__STATIC__/js/admin.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/ueditor/ueditor.all.min.js"></script>
+</body>
+</html>

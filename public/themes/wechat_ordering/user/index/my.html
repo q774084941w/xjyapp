@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>我的-个人中心</title>
+    <include file="public@head"/>
+    <style type="text/css">
+      .group {
+        padding: 10px;
+      }
+      text{
+        font-size: 14px;
+      }
+      .Top-position-all{
+        font-size: 14px;
+        color: #000;
+      }
+      .Top-position{
+        position: relative;
+        border-bottom: 0px;
+      }
+      .icon-paided{
+        font-size: 28px !important;
+        margin-top: 5px;
+        margin-bottom: 7px;
+      }
+      .Order-Status-Options .weui-tabbar__item{
+        font-size: 14px;
+      }
+      .grade-a{
+        background: #EBEDEE;
+      }
+      .iconfont{
+        font-size: 26px !important;
+      }
+      .padtopjianju{
+        padding: 0 10px;
+      }
+      .padtopjianju font{
+        vertical-align: middle;
+      }
+      .weui-tabbar-me .jintou{
+        line-height: 40px;
+      }
+      .icon-membership_card{
+        background: url('__TMPL__/public/assets/css/font-ico/font_wx/membership_card.svg');
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+      }
+      .membership_card{
+        margin-top: 7px;
+      }
+    </style>
+  </head>
+  <body class="grade-a">
+
+    <view class="group Me-Top-position">
+      <view>
+        <empty name="$user.avatar">
+          <image src="__TMPL__/public/assets/images/Default-avatar.png" class="avatar" />
+        <else />
+          <image src="{:cmf_get_image_url($user.avatar)}" class="avatar" />
+        </empty>
+        <text class='Wechat-nickname'>{:$user.user_nickname}</text>
+        <view class="clear"></view>
+      </view>  
+    </view>
+
+    <!-- 纵向菜单 -->
+    <div class=" weui-tabbar Order-Status-Options Me-Order-Status-Options weui-tabbar-me">
+        <!-- <a href="#" hover-class="mine-navigator-hover" class='group padtopjianju weui-tabbar__item weui-tabbar__item_'>
+          <view class='fl'>
+            <icon class="iconfont icon-shoucang" type="" /></icon>
+            <font>我的收藏</font>
+          </view>
+          <view class='fr jintou'> > </view>
+          <view class='clear'></view>
+        </a> -->
+        <a href="{:cmf_url('user/index/evaluation',['order_pay'=>6])}" hover-class="mine-navigator-hover" class='group padtopjianju weui-tabbar__item weui-tabbar__item_'>
+          <view class='fl'>
+             <icon class="iconfont icon-pingjia" type="" /></icon>
+             <font> 我的评价</font>
+          </view>
+          <view class='fr jintou'> > </view>
+          <view class='clear'></view>
+        </a>
+        <a href="#" hover-class="mine-navigator-hover" class='group padtopjianju weui-tabbar__item weui-tabbar__item_' onclick="Prompt()">
+          <view class='fl'>
+             <icon class="iconfont icon-coupon" type="" /></icon>
+             <font>我的优惠劵</font>
+          </view>
+          <view class='fr jintou'> > </view>
+          <view class='clear'></view>
+        </a>
+
+        <a href="{:cmf_url('user/index/reserve')}" hover-class="mine-navigator-hover" class='group padtopjianju weui-tabbar__item weui-tabbar__item_'>
+          <view class='fl'>
+             <icon class="iconfont icon-yuyue" type="" /></icon>
+             <font>我的预订</font>
+          </view>
+          <view class='fr jintou'> > </view>
+          <view class='clear'></view>
+        </a>
+        <a href="{:cmf_url('user/index/user_card')}" hover-class="mine-navigator-hover" class='group padtopjianju weui-tabbar__item weui-tabbar__item_'>
+          <view class='fl membership_card'>
+             <icon class="iconfont icon-membership_card" type="" /></icon>
+             <font>会员卡管理</font>
+          </view>
+          <view class='fr jintou'> > </view>
+          <view class='clear'></view>
+        </a>
+
+        <a href="{:url('user/index/login_out')}" hover-class="mine-navigator-hover" class='group padtopjianju weui-tabbar__item weui-tabbar__item_ login_out' style="display: none;">
+          <view class='fl'>
+             <icon class="iconfont icon-qiehuanzuhu" type="" /></icon>
+             <font>退出</font>
+          </view>
+          <view class='fr jintou'> > </view>
+          <view class='clear'></view>
+        </a>
+       <!--  <a href="" hover-class="mine-navigator-hover" class='group padtopjianju weui-tabbar__item weui-tabbar__item_'>
+          <view class='fl'>
+             <icon class="iconfont icon-wodedizhi" type="" /></icon>
+             <font> 我的地址</font>
+          </view>
+          <view class='fr jintou'> > </view>
+          <view class='clear'></view>
+        </a> -->
+      <view class="clear"></view>
+    </div>
+   
+<include file="public@nav"/>
+<include file="public@footer"/>
+
+<script type="text/javascript">
+  //weixin  js-sdk
+
+    function Prompt() {
+        layer.msg('该功能还在研发中！');
+    }
+
+  wx.ready(function(){
+    wx.checkJsApi({
+        jsApiList: ['openAddress'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+        success: function(res) {
+          console.log('true');
+            // 以键值对的形式返回，可用的api值true，不可用为false
+            // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+
+          // wx.openAddress({
+          //   success: function (res) {
+          //     console.log(res);  
+          //     var userName = res.userName; // 收货人姓名
+          //     var postalCode = res.postalCode; // 邮编
+          //     var provinceName = res.provinceName; // 国标收货地址第一级地址（省）
+          //     var cityName = res.cityName; // 国标收货地址第二级地址（市）
+          //     var countryName = res.countryName; // 国标收货地址第三级地址（国家）
+          //     var detailInfo = res.detailInfo; // 详细收货地址信息
+          //     var nationalCode = res.nationalCode; // 收货地址国家码
+          //     var telNumber = res.telNumber; // 收货人手机号码
+          //   }
+          // }); 
+        }
+    });
+  });
+</script>

@@ -1,0 +1,58 @@
+
+
+<include file="public@header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+	<ul class="nav nav-tabs">
+		<li><a href="{:url('traffic/apply')}">申请列表</a></li>
+		<li class="active"><a href="{:url('traffic/addapply')}">填写申请</a></li>
+	</ul>
+
+	<form method="post" class="form-horizontal js-ajax-form margin-top-20" action="{:url('traffic/addapply')}" >
+		<div class="form-group">
+			<label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>货品名称</label>
+			<div class="col-md-6 col-sm-10">
+				<input type="text" class="form-control" id="input-name" name="name" placeholder="货品名称" required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="input-pinyin" class="col-sm-2 control-label"><span class="form-required">*</span>拼音码</label>
+			<div class="col-md-6 col-sm-10">
+				<input type="text" class="form-control" id="input-pinyin" name="pinyin" placeholder="拼音码" required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="input-stock" class="col-sm-2 control-label"><span class="form-required">*</span>数量</label>
+			<div class="col-md-6 col-sm-10">
+				<input type="number" class="form-control" id="input-stock" name="stock" placeholder="数量" required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="input-remark" class="col-sm-2 control-label">备注</label>
+			<div class="col-md-6 col-sm-10">
+				<textarea class="form-control" id="input-remark" name="remark"></textarea>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-primary js-ajax-submit">添加</button>
+			</div>
+		</div>
+	</form>
+
+
+
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script src="__TMPL__/public/assets/js/pinyin.js"></script>
+
+<script>
+	$('#input-name').blur(function () {
+		var name = $(this).val();
+        var pinyin = codefans_net_CC2PY(name);
+        $('#input-pinyin').val(pinyin)
+    });
+</script>
+</body>
+</html>

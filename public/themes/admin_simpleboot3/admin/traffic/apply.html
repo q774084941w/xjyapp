@@ -1,0 +1,162 @@
+<include file="public@header" />
+<style>
+	#explain{
+		float: left;
+		width: 100%;
+	}
+	#explain>li>div{
+		width: 20px;
+		height: 20px;
+		border: 1px solid black;
+		float: left;
+	}
+	#explain>li>span{
+		margin-left: 5px;
+		float: left;
+	}
+	#explain>li{
+		list-style:none; /* 将默认的列表符号去掉 */
+		padding:0; /* 将默认的内边距去掉 */
+		margin:0; /* 将默认的外边距去掉 */
+	}
+</style>
+<head>
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<php>
+			$result = array('未确认','配送中','完成','拒绝');
+		</php>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:url('traffic/apply')}">申请列表</a></li>
+			<li><a href="{:url('traffic/addapply')}">填写申请</a></li>
+		</ul>
+		<form class="well form-inline margin-top-20 js-ajax-form" method="post" action="{:url('admin/traffic/apply')}">
+			<div class="form-inline">
+				<div class="form-group cy-mar-ver-s">
+					<input class="form-control" type="text" name="keyword" style="width: 200px;" value="{:input('request.keyword')}" placeholder="名称/拼音">
+					<input class="form-control" type="text" name="user_nickname" style="width: 200px;" value="{:input('request.user_nickname')}" placeholder="申请人">
+					<span class="cy-pad-hor-s">时间</span>
+				</div>
+				<div class="input-daterange input-group" id="datepicker">
+					<input type="text" class="js-bootstrap-date form-control" name="beginTime" id="qBeginTime" value="{:input('request.beginTime')}" />
+					<span class="input-group-addon">至</span>
+					<input type="text" class="js-bootstrap-date form-control" name="endTime" id="qEndTime"  value="{:input('request.endTime')}"/>
+				</div>
+				<div class="form-group cy-mar-ver-s">
+					<input type="submit" class="btn btn-success" value="搜索" />
+					<a class="btn btn-danger" href="{:url('traffic/apply')}">清空</a>
+				</div>
+			</div>
+		</form>
+		<form method="post" class="margin-top-20">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="5%">排号</th>
+						<th width="8%" align="left">货品名称</th>
+						<th width="5%" align="left">价格</th>
+						<th width="5%">数量</th>
+						<th width="8%" >总价</th>
+						<th width="8%" >申请人</th>
+						<th width="8%">申请时间</th>
+						<th width="8%">结束时间</th>
+						<th width="8%">备注</th>
+						<th width="8%">状态</th>
+						<th width="15%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				<if !empty($data)>
+					<foreach name="data" item="vo" key="key">
+						<tr>
+							<td>{$key+1}</td>
+							<td>{$vo.name}</td>
+							<td>{$vo.ret_price}</td>
+							<td>{$vo.tra_num}</td>
+							<td>{$vo.all_price}</td>
+							<td>
+								<if empty($vo.user_nickname)>
+									{$vo.user_login}
+									<else/>
+									{$vo.user_nickname}
+								</if>
+
+							</td>
+							<td>{:date('Y-m-d H:i:s',$vo.start_time)}</td>
+							<td><if !empty($vo.end_time)>{:date('Y-m-d H:i:s',$vo.end_time)}<else/>还未完成</if></td>
+							<td>{$vo.remark}</td>
+							<td>{:$result[$vo.result]}</td>
+							<td>
+								<if empty($seller_id)>
+								<switch name="vo.result">
+									<case value="0">
+										<switch name="Supermarket">
+											<case value="1">
+												<a type="button" class="btn btn-link" href="{:url('traffic/apply_result',array('re_id'=>$vo['re_id'],'result'=>1))}" data-msg="确定该配送申请？" >确认配送</a>
+												<a type="button"class="btn btn-link js-ajax-delete" href="{:url('traffic/apply_result',array('re_id'=>$vo['re_id'],'result'=>3))}" data-msg="确定该申请拒绝？" >拒绝</a>
+											</case>
+											<default>
+												申请中
+											</default>
+										</switch>
+									</case>
+									<case value="1">
+										<switch name="Supermarket">
+											<case value="1">
+												配送中
+											</case>
+											<default>
+												<a type="button"class="btn btn-link js-ajax-delete" href="{:url('traffic/apply_result',array('re_id'=>$vo['re_id'],'result'=>2))}" data-msg="确定该申请接收完成？">接收完成</a>
+											</default>
+										</switch>
+
+									</case>
+									<case value="2">
+										已完成
+									</case>
+									<case value="3">
+										已拒绝
+									</case>
+									<default>
+										数据错误，请联系管理员
+									</default>
+								</switch>
+									<else/>
+									<switch name="Supermarket">
+										<switch name="vo.result">
+											<case value="0">
+											<a type="button" class="btn btn-link js-ajax-dialog-btn"  data-msg="确定该配送申请？" href="{:url('traffic/apply_result',array('re_id'=>$vo['re_id'],'result'=>1))}">确认配送</a>
+											<a type="button"class="btn btn-link js-ajax-delete" href="{:url('traffic/apply_result',array('re_id'=>$vo['re_id'],'result'=>3))}" data-msg="确定该申请拒绝？">拒绝</a>
+											</case>
+											<case value="1">
+											<a type="button"class="btn btn-link js-ajax-delete" href="{:url('traffic/apply_result',array('re_id'=>$vo['re_id'],'result'=>2))}" data-msg="确定该申请接收完成？">接收完成</a>
+											</case>
+											<case value="2">
+												已完成
+											</case>
+											<case value="3">
+												已拒绝
+											</case>
+											<default>
+												数据错误，请联系管理员
+											</default>
+									</switch>
+								</if>
+							</td>
+						</tr>
+					</foreach>
+				</if>
+				</tbody>
+			</table>
+		</form>
+		<div class="col-xs-12"  style="text-align:center">
+			<ul class="pagination"><if !empty($page)>
+				{$page|default=''}
+			</if></ul>
+		</div>
+
+	</div>
+	<div><script src="__STATIC__/js/admin.js"></script></div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="pragma" content="no-cache">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- weui Start-->
+<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+<!-- weui end -->
+
+<!-- artDialog Start-->
+<link rel="stylesheet" href="__STATIC__/js/artDialog/skins/default.css?v=">
+<link rel="stylesheet" href="__STATIC__/js/layer/skin/default/layer.css?v=">
+<!-- artDialog end -->
+
+<!-- <link rel="stylesheet" type="text/css" href="__TMPL__/public/assets/css/cropper.css">
+<link rel="stylesheet" href="__TMPL__/public/assets/css/geeteststyle.css"> -->
+<!-- <script src="__TMPL__/public/assets/js/jweixin-1.0.0.js"></script> -->
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+<script>
+  window.ROOTURL = location.href;
+  function SetShareConfig(appId, timestamp, nonceStr, signature) {
+    wx.config({
+      debug: false,//true false
+      appId: appId,
+      timestamp: timestamp,
+      nonceStr: nonceStr,
+      signature: signature,
+      jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareWeibo", "onMenuShareQZone", 'startRecord', 'stopRecord', 'onVoiceRecordEnd', 'playVoice', 'onVoicePlayEnd', 'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice','chooseWXPay','openAddress','scanQRCode']
+    });
+  }
+  function PlayShareConfig(title, desc, img, titleTow, url) {
+    wx.ready(function() {
+      wx.onMenuShareTimeline({
+        title: titleTow,
+        link: url,
+        imgUrl: img,
+        success: function() {},
+        cancel: function() {}
+      });
+      wx.onMenuShareAppMessage({
+        title: title,
+        desc: desc,
+        link: url,
+        imgUrl: img,
+        type: "",
+        dataUrl: "",
+        success: function() {},
+        cancel: function() {}
+      });
+      wx.onMenuShareQQ({
+        title: title,
+        desc: desc,
+        link: url,
+        imgUrl: img,
+        success: function() {},
+        cancel: function() {}
+      });
+      wx.onMenuShareWeibo({
+        title: title,
+        desc: desc,
+        link: url,
+        imgUrl: img,
+        success: function() {},
+        cancel: function() {}
+      });
+      wx.onMenuShareQZone({
+        title: title,
+        desc: desc,
+        link: url,
+        imgUrl: img,
+        success: function() {},
+        cancel: function() {}
+      });
+    });
+  }
+</script>
+
+<link href="__TMPL__/public/assets/css/app.css?v=20180412" rel="stylesheet">
+
+<script type="text/javascript">
+    //全局变量
+    var GV = {
+        ROOT: "__ROOT__/",
+        WEB_ROOT: "__WEB_ROOT__/",
+        JS_ROOT: "static/js/"
+    };
+</script>	
+
+<php>
+  $default_thumb= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAeFBMVEUAwAD///+U5ZTc9twOww7G8MYwzDCH4YcfyR9x23Hw+/DY9dhm2WZG0kbT9NP0/PTL8sux7LFe115T1VM+zz7i+OIXxhes6qxr2mvA8MCe6J6M4oz6/frr+us5zjn2/fa67rqB4IF13XWn6ad83nxa1loqyirn+eccHxx4AAAC/klEQVRo3u2W2ZKiQBBF8wpCNSCyLwri7v//4bRIFVXoTBBB+DAReV5sG6lTXDITiGEYhmEYhmEYhmEYhmEY5v9i5fsZGRx9PyGDne8f6K9cfd+mKXe1yNG/0CcqYE86AkBMBh66f20deBc7wA/1WFiTwvSEpBMA2JJOBsSLxe/4QEEaJRrASP8EVF8Q74GbmevKg0saa0B8QbwBdjRyADYxIhqxAZ++IKYtciPXLQVG+imw+oo4Bu56rjEJ4GYsvPmKOAB+xlz7L5aevqUXuePWVhvWJ4eWiwUQ67mK51qPj4dFDMlRLBZTqF3SDvmr4BwtkECu5gHWPkmDfQh02WLxXuvbvC8ku8F57GsI5e0CmUwLz1kq3kD17R1In5816rGvQ5VMk5FEtIiWislTffuDpl/k/PzscdQsv8r9qWq4LRWX6tQYtTxvI3XyrwdyQxChXioOngH3dLgOFjk0all56XRi/wDFQrGQU3Os5t0wJu1GNtNKHdPqYaGYQuRDfbfDf26AGLYSyGS3ZAK4S8XuoAlxGSdYMKwqZKM9XJMtyqXi7HX/CiAZS6d8bSVUz5J36mEMFDTlAFQzxOT1dzLRljjB6+++ejFqka+mXIe6F59mw22OuOw1F4T6lg/9VjL1rLDoI9Xzl1MSYDNHnPQnt3D1EE7PrXjye/3pVpr1Z45hMUdcACc5NVQI0bOdS1WA0wuz73e7/5TNqBPhQXPEFGJNV2zNqWI7QKBd2Gn6AiBko02zuAOXeWIXjV0jNqdKegaE/kJQ6Bfs4aju04lMLkA2T5wBSYPKDGF3RKhFYEa6A1L1LG2yacmsaZ6YPOSAMKNsO+N5dNTfkc5Aqe26uxHpx7ZirvgCwJpWq/lmX1hA7LyabQ34tt5RiJKXSwQ+0KU0V5xg+hZrd4Bn1n4EID+WkQdgLfRNtvil9SPfwy+WQ7PFBWQz6dGWZBLkeJFXZGCfLUjCgGgqXo5TuSu3cugdcTv/HjqnBTEMwzAMwzAMwzAMwzAMw/zf/AFbXiOA6frlMAAAAABJRU5ErkJggg==";
+</php>

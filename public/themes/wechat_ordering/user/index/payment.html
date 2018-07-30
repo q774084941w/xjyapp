@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>订单在线支付</title>
+    <include file="public@head"/>
+    <style type="text/css">
+      .group {
+        padding: 10px;
+      }
+      text{
+        font-size: 14px;
+      }
+      .weui-cells{
+        margin-top: 0;
+      }
+      .iconfont {
+        font-size: 26px;
+        vertical-align: middle;
+      }
+      .iconfont text{
+        font-size: 16px;
+        vertical-align: middle;
+      }
+      .icon-weixinzhifu{
+        color: #2EB33C;
+      }
+      .icon-zhifubaozhifu{
+        color: #2096D4;
+      }
+      .icon-shuaqiacard-copy{
+        color: #535353;
+      }
+      .icon-xianjin{
+        color: #FF6600;
+      }
+    </style>
+  </head>
+  <body class="grade-a">
+  
+  <form action="{:url('user/index/not_payment')}" method="post" class='js-ajax-form'>
+    <!--<input type='hidden' value='{{user_id}}' name="user_id" />
+    <input type='hidden' value='{{seller_id}}' name="seller_id" />
+    <input type='hidden' value='{{order_class}}' name="order_class" />
+    <input type='hidden' value='{{food}}' name="food" />
+    <input type='hidden' value='{{pay}}' name="pay" />-->
+    <input type="hidden" value="{:$order.order_id}" name="order_id">
+    <!-- 商家店铺信息 -->
+    <view class="Business-information pay-Business-information">
+      <view class="group">
+        <view>
+          <image class="Business-logo" src="{:cmf_get_image_url($order['seller_logo'])}" ></image>
+          <text class='logo-title'>  {:$order.seller_nickname}</text>
+        </view>
+      </view>
+    </view>
+
+    <view>
+      <!-- 下订单信息列表 -->
+      <view class='Dishes-maxlist-right Dishes-maxlist-shoppingcart'>
+        <view class="Dishes-list">
+
+          <if !empty($food)>
+            <foreach name="food" item="vo" >
+              <view class="group">
+                <view class="fl list-img">
+                  <image class="Dishes-picture" src="{:cmf_get_image_url($data[$vo['id']][1])}" ></image>
+                </view>
+                <view class="fl list-pric-text">
+                  <view class="fl address-tel-text">
+                    <text class='Dishes-Title'>{:$data[$vo['id']][0]}</text>
+                    <text class='Dishes-price'>x {:$vo.nub}</text>
+                  </view>
+                  <view class="fr Dishes-num">
+                    {:$data[$vo['id']][2]}
+                  </view>
+                </view>
+                <view class="clear"></view>
+              </view>
+            </foreach>
+          </if>
+
+        </view>
+        <view class="Dishes-list">
+          <view class="group">
+            <view class="Service-fee">
+              <text class='fl' style='background:#F39C12;color:#fff;padding:0 5px;margin-right:5px;font-size:14px;border-radius:3px;'>惠</text>
+              <text class='fl'> 优惠 </text>
+              <text class='fr' style='color:#D13BF5;'> -￥{:empty($order.discount_price) ? 0 : ($order.order_price-$order.discount_price)} </text>
+              <view class="clear"></view>
+            </view>
+          </view>
+        </view>
+
+
+        <div class="weui-cells weui-cells_radio">
+          <label class="weui-cell weui-check__label" for="x1" onclick="not_open()">
+            <div class="weui-cell__bd">
+              <icon class="iconfont icon-weixinzhifu" />
+              <text> 微信支付 </text>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" class="weui-check" name="radio1" id="x1" value="2">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+          <label class="weui-cell weui-check__label" for="x2" onclick="not_open()">
+            <div class="weui-cell__bd">
+              <icon class="iconfont icon-zhifubaozhifu" />
+              <text> 支付宝支付 </text>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" name="radio1" class="weui-check" id="x2" value="1">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+          <label class="weui-cell weui-check__label" for="x3" onclick="not_open()">
+            <div class="weui-cell__bd">
+              <icon class="iconfont icon-shuaqiacard-copy" />
+              <text> 刷卡支付 </text>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" name="radio1" class="weui-check" id="x3" value="3">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+          <label class="weui-cell weui-check__label" for="x4">
+            <div class="weui-cell__bd">
+              <icon class="iconfont icon-xianjin" />
+              <text> 现金支付 </text>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" name="radio1" class="weui-check" id="x4" checked="checked" value="4">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+        </div>
+
+        <view class="Dishes-list">
+          <view class="group">
+            <view class="Remarks-description">
+              <text> 订单备注（请输入备注内容 （可不填）） </text>
+            </view>
+            <textarea class='Remarks weui-textarea' placeholder="" name="remarks" auto-focus rows="3" /></textarea>
+          </view>
+        </view>
+
+      </view>
+      <view class="clear"> </view>
+      <view class="footer-shoppingpay-claer"> </view>
+    </view>
+
+    <!-- 价格合计及支付底部悬窗 -->
+    <view class="footer-shopping-cart-fixed footer-shopping-totals-pay" style='bottom:0;'>
+      <view class="footer-shopping-cart"> 
+        <view class="total fl">
+            <text>合计：</text>
+            <text class='totals-prc'>￥{:$order.order_price} </text>
+        </view>
+        <view class="Selected fr">
+            <button  type="warn" formType="submit" bindtap="warn" class='save js-ajax-submit'> 支付订单 </button>
+        </view>
+        <view class="clear"> </view>
+      </view>
+    </view>
+
+  </form>
+   
+<include file="public@footer"/>

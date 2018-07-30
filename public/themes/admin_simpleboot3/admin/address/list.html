@@ -1,0 +1,165 @@
+<include file="public@header"/>
+<head>
+<script> 
+function show_child() 
+{ 
+    var iHeight =500;
+    var iWidth =1000;
+    //获得窗口的垂直位置 
+    var iTop = (window.screen.availHeight - 30 - iHeight) / 2; 
+    //获得窗口的水平位置 
+    var iLeft = (window.screen.availWidth - 10 - iWidth) / 2; 
+	var child=window .open("{:url('Seller/map')}","child",'height=' + iHeight + ',innerHeight=' + iHeight + ',width=' + iWidth + ',innerWidth=' + iWidth + ',top=' + iTop + ',left=' + iLeft + "status=yes,toolbar=no,menubar=no,location=no,resizable=no,scrollbars=no"); 
+} 
+</script> 
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('address/index')}">用户表</a></li>
+        <li class="active"><a>收货地址</a></li>
+    </ul>
+    <form method="post" class="js-ajax-form margin-top-20">
+        <table class="table table-hover table-bordered">
+            <thead>
+            <tr>
+                <th width="5%">默认</th>
+                <th width="20%">联系人</th>
+                <th width="15%">手机</th>
+                <th width="30%">收货地址</th>
+                <th width="10%">经度</th>
+                <th width="10%">纬度</th>
+                <if condition="cmf_get_current_admin_id() eq 1">
+                	<th width="10%">操作</th>
+            	</if>
+            </tr>
+            </thead>
+            <tbody>
+        	<php>$default = array('0'=>'','1'=>'默认');</php>
+            <foreach name="data" item="vo">
+                <tr>
+                    <td>{$default[$vo.default]}</td> 
+                    <td>{$vo.Contacts}</td>    
+                    <td>{$vo.tel}</td>  
+                    <td>{$vo.address}</td>
+                    <td>{$vo.lng}</td>
+                    <td>{$vo.lat}</td>
+                    <td style="display: none;">{$vo.id}</td>
+                    <if condition="cmf_get_current_admin_id() eq 1">
+	                    <td>
+							<button type="button" class="btn" data-toggle="modal" data-target="#edit" onclick="editseller(this)" >修改</button>
+							<a class="btn btn-danger " href="{:url('address/del',array('id'=>$vo['id']))}">删除</a>
+	                    </td>   
+                    </if>   
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+        <if condition="cmf_get_current_admin_id() eq 1">
+	        <div><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add">添加</button></div>
+	    </if>
+        <ul class="pagination">{$page}</ul>
+    </form>
+    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="addLabel">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+      			<div class="modal-header">
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        		<h4 class="modal-title" id="addLabel">收货地址添加</h4>
+	      		</div>
+	      		<form method="post" href="{:url('address/addpost',array('id'=>$id))}" class="form-horizontal js-ajax-form margin-top-20">
+		      		<div class="modal-body">
+			   			<table class="table table-hover table-bordered">
+			   				<tr>
+								<th width="20%">联系人：</th>
+								<td colspan="2"><input type="text" class="form-control"  placeholder="收货人名称" name="add[Contacts]"></td>
+			   				</tr>
+			   				<tr>
+								<th width="20%">电话：</th>
+								<td colspan="2"><input type="text" class="form-control" required placeholder="收货人电话(必填)" name="add[tel]"></td>
+			   				</tr>
+			   				<tr>
+								<th width="20%">收货地址：</th>
+								<td colspan="2"><input type="text" class="form-control" required  placeholder="收货地址(必填)" name="add[address]"></td>
+			   				</tr>
+			   				<tr>
+								<th width="20%"><a href="javascript:show_child();">获取坐标</a> </th>
+								<td>									
+									<input class="form-control" type="text" name="add[lng]" id="lng" readonly value="" placeholder="经度"/>
+								</td>
+								<td>									
+									<input class="form-control" type="text" name="add[lat]" id="lat" readonly value="" placeholder="纬度"/>
+								</td>
+			   				</tr>
+			   			</table>
+	  				</div>
+		      		<div class="modal-footer">
+		        		<button type="submit" class="btn btn-primary" >添加</button>
+		        		<button type="button" class="btn btn-default" data-dismiss="modal">在想想</button>
+	      			</div>
+      			</form>
+    		</div>
+	  	</div>
+	</div>
+	<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="editLabel">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+      			<div class="modal-header">
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        		<h4 class="modal-title" id="editLabel">地址修改</h4>
+	      		</div>
+	      		<form method="post" href="{:url('address/addpost',array('id'=>$id))}" class="form-horizontal js-ajax-form margin-top-20">
+		      		<div class="modal-body">
+			   			<table class="table table-hover table-bordered">
+			   				<tr>
+								<th width="20%">联系人：</th>
+								<td colspan="2"><input type="text" class="form-control" id="Contacts"  placeholder="收货人名称" name="edit[Contacts]"></td>
+			   				</tr>
+			   				<tr>
+								<th width="20%">电话：</th>
+								<td colspan="2"><input type="text" class="form-control" id="tel" required placeholder="收货人电话(必填)" name="edit[tel]"></td>
+			   				</tr>
+			   				<tr>
+								<th width="20%">收货地址：</th>
+								<td colspan="2"><input type="text" class="form-control" id="address" required  placeholder="收货地址(必填)" name="edit[address]"></td>
+			   				</tr>
+			   				<tr>
+								<th width="20%"><a href="javascript:show_child();">获取坐标</a> </th>
+								<td>									
+									<input class="form-control" type="text" id="edit_lng" name="edit[lng]"  readonly placeholder="经度"/>
+								</td>
+								<td>									
+									<input class="form-control" type="text" id="edit_lat" name="edit[lat]"  readonly placeholder="纬度"/>
+								</td>
+			   				</tr>
+			   				<tr>
+			   					<td style="display: none;"><input class="form-control" type="text" id="id" name="edit[id]" readonly/></td>
+			   				</tr>
+			   			</table>
+	  				</div>
+		      		<div class="modal-footer">
+		        		<button type="submit" class="btn btn-primary" >修改</button>
+		        		<button type="button" class="btn btn-default" data-dismiss="modal">在想想</button>
+	      			</div>
+      			</form>
+    		</div>
+	  	</div>
+	</div>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script type="text/javascript">
+function editseller(obj){
+	var row = obj.parentNode.parentNode; //标签所在行
+	var tb = row.parentNode.parentNode; //当前表格
+	var rowIndex = row.rowIndex; //A标签所在行下标
+	document.getElementById("Contacts").value = tb.rows[rowIndex].cells[1].innerHTML;
+	document.getElementById("tel").value = tb.rows[rowIndex].cells[2].innerHTML;
+	document.getElementById("address").value = tb.rows[rowIndex].cells[3].innerHTML;
+	document.getElementById("edit_lng").value = tb.rows[rowIndex].cells[4].innerHTML;
+	document.getElementById("edit_lat").value = tb.rows[rowIndex].cells[5].innerHTML;
+	document.getElementById("id").value = tb.rows[rowIndex].cells[6].innerHTML;
+
+}
+</script>
+</body>
+</html>

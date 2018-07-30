@@ -1,0 +1,213 @@
+<include file="public@header" />
+<style>
+	#explain{
+		float: left;
+		width: 100%;
+	}
+	#explain>li>div{
+		width: 20px;
+		height: 20px;
+		border: 1px solid black;
+		float: left;
+	}
+	#explain>li>span{
+		margin-left: 5px;
+		float: left;
+	}
+	#explain>li{
+		list-style:none; /* 将默认的列表符号去掉 */
+		padding:0; /* 将默认的内边距去掉 */
+		margin:0; /* 将默认的外边距去掉 */
+	}
+	#Scavenger{
+    	background: none;
+	    border: none;
+	    /* font-size: 0; */
+	}
+</style>
+<head>
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:url('Order/index')}">订单列表</a></li>
+			<!-- <li><a href="{:url('Seller/sellerAdd')}">{:lang('ADMIN_SELLER_SELLERADD')}</a></li> -->
+		</ul>
+		<php>
+			$pay 			= 	array('1'=>'未支付','2'=>'确认订单','3'=>'拒绝订单','4'=>'已支付','5'=>'未评价','6'=>'已评价');
+			$order_class 	= 	array('1'=>'餐桌订单','2'=>'外卖订单','4'=>'直接收银');
+			$order_complete = 	array('1'=>'未确认','2'=>'确认','3'=>'拒绝','4'=>'完成');
+			function payType($id,$it){
+			switch ($id){
+			case 1:
+			$color = '';
+			switch($it){
+			case 1:
+			$color = '';
+			break;
+			case 2:
+			$color = '#e0f967';
+			break;
+			case 3:
+			$color = '#eefeaf';
+			break;
+			default:
+			$color = '#d0beb3';
+			}
+			break;
+			case 2:
+			$color='#d0beb3';
+			break;
+			case 3:
+			$color='#e0f967';
+			break;
+			case 4:
+			$color='#eefeaf';
+			break;
+			case 5:
+			$color='#b3f2f2';
+			break;
+			default:
+			$color='#cbebba';
+			}
+			return $color;
+			}
+		</php>
+		<form class="well form-inline margin-top-20" method="post" action="{:url('admin/order/index')}">
+			<div class="form-inline">
+				<div class="form-group cy-mar-ver-s">
+					<select name="menu" style="text-align: center" class="form-control">
+						<if !empty($menu[0])>
+							<option value="">请选择服务厅</option>
+							<foreach name="menu" item="vo" >
+								<option value="{$vo.id}" <if condition="input('request.menu') eq $vo.id" > selected </if> >{$vo.name}</option>
+							</foreach>
+							<else/>
+							<option value="">你还未建立服务厅，请在分类建立！</option>
+						</if>
+					</select>
+					<select class="form-control" name="order_class" id="more-template-select">
+						<option value="">订单类型</option>
+						<foreach name="$order_class" item="vo">
+							<option value="{:$key}" <if condition="input('request.order_class') eq $key">selected</if>>{$vo}</option>
+						</foreach>
+					</select>
+					<select class="form-control" name="pay" id="more-template-select">
+						<option value="">支付状态</option>
+						<foreach name="$pay" item="vo">
+							<option value="{:$key}" <if condition="input('request.pay') eq $key">selected</if>>{$vo}</option>
+						</foreach>
+					</select>
+					<select class="form-control" name="order_complete" id="more-template-select">
+						<option value="">订单状态</option>
+						<foreach name="$order_complete" item="vo">
+							<option value="{:$key}" <if condition="input('request.order_complete') eq $key">selected</if>>{$vo}</option>
+						</foreach>
+					</select>
+
+					<input class="form-control" type="text" name="keyword" style="width: 200px;" value="{:input('request.keyword')}"
+						   placeholder="请输入订单ID/商家ID">
+					<span class="cy-pad-hor-s">时间</span>
+				</div>
+				<div class="input-daterange input-group" id="datepicker">
+					<input type="text" class="js-bootstrap-date form-control" name="beginTime" id="qBeginTime" value="{:input('request.beginTime')}" />
+					<span class="input-group-addon">至</span>
+					<input type="text" class="js-bootstrap-date form-control" name="endTime" id="qEndTime"  value="{:input('request.endTime')}"/>
+				</div>
+				<div class="form-group cy-mar-ver-s">
+					<input type="submit" class="btn btn-success" value="搜索" />
+					<a class="btn btn-danger" href="{:url('admin/order/index')}">清空</a>
+				</div>
+				<span style="float:right">
+					<a class="btn btn-info" href="{:url('admin/order/index',array('pay'=>'2','order_complete'=>'1'))}">最新订单</a>
+					<a class="btn btn-info" href="{:url('admin/order/index',array('pay'=>'2','order_complete'=>'2'))}">确认订单</a>
+					<button id="Scavenger_take" class="btn btn-info" type="button">
+					扫一扫查找
+					</button>
+				</span>
+			</div>
+	    </form>
+		<form method="post" class="margin-top-20">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="10%">订单号</th>
+						<th width="5%" align="left">订单类型</th>
+						<th width="10%" align="left">下单时间</th>
+						<th width="5%">消费金额</th>
+						<th width="10%" align="left">商家ID</th>
+						<th width="5%">订单状态</th>
+						<th width="5%">支付状态</th>
+						<th width="10%">操作</th>
+						<th width="15%">快速操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="order" item="vo">
+
+						<tr style="background-color: {:payType($vo.pay,$vo.order_complete)}">
+							<td>{$vo.order_id}</td>
+							<td>{$order_class[$vo.order_class]}</td>
+							<td>{:date('Y-m-d H:i:s',$vo['order_time'])}</td>
+							<td>{:$vo.order_price}元</td>
+							<td>{$vo.seller_nickname}</td>
+							<td>{$order_complete[$vo.order_complete]}</td>
+							<td>{$pay[$vo.pay]}</td>
+							<td>
+								<if condition="($vo.pay==1) AND ($vo.order_complete!=4)">
+									<a type="button" class="btn btn-link" href="{:url('Order/orderEdit',array('order_id'=>$vo['order_id']))}">修改</a>
+								</if>
+								<a type="button" class="btn btn-link" href="{:url('Order/orderDetailed',array('order_id'=>$vo['order_id']))}">查看</a>
+								<if condition="cmf_get_current_admin_id() eq 1">
+								<a type="button"class="btn btn-link js-ajax-delete" href="{:url('Order/orderDel',array('order_id'=>$vo['order_id']))}">删除</a>	
+								</if>	
+							</td>
+							<td>
+								<if condition="$vo['order_complete'] neq 3 and $vo['order_complete'] neq 4">
+									<a type="button" class="btn btn-link js-ajax-dialog-btn" data-msg="确定订单将标记为完成！" href="{:url('Order/quick',array('order_id'=>$vo['order_id'],'order_complete'=>4))}">完成订单</a>
+									<a type="button" class="btn btn-link js-ajax-dialog-btn" data-msg="确定拒绝该订单？" href="{:url('Order/quick',array('order_id'=>$vo['order_id'],'order_complete'=>3))}">拒绝订单</a>
+									<if condition="$vo['order_complete'] neq 2">
+										<a type="button" class="btn btn-link js-ajax-dialog-btn" data-msg="确定确认该订单？" href="{:url('Order/quick',array('order_id'=>$vo['order_id'],'order_complete'=>2))}">确认订单</a>
+									</if>
+								</if>
+								<if condition="$vo['order_complete'] neq 1">
+									<a type="button" class="btn btn-link js-ajax-dialog-btn" data-msg="确定打印订单？" href="{:url('admin/order/Print',array('order_id'=>$vo['order_id']))}">打印订单</a>
+								</if>
+							</td>
+						</tr>
+					</foreach>
+				</tbody>
+			</table>
+		</form>
+		<div class="col-xs-12"  style="text-align:center">
+			<ul class="pagination">{$page}</ul>
+		</div>
+
+		<ul id="explain">
+			<li><span> 未确认：</span><div style=""></div></li>
+			<li><span> 确认：</span><div style="background-color: #e0f967"></div></li>
+			<li><span> 拒绝：</span><div style="background-color: #eefeaf"></div></li>
+			<li><span> 完成：</span><div style="background-color: #d0beb3"></div></li>
+			<li><span> 未评价：</span><div style="background-color: #b3f2f2"></div></li>
+			<li><span> 已评价：</span><div style="background-color: #cbebba"></div></li>
+
+			<li style="float: right">
+				<span style="color: red">销量：{:empty($allCount[0]['cont'])?0:$allCount[0]['cont']} 单 ； &nbsp;</span>&nbsp;
+				<span style="color: red">总销售额：{:empty($allCount[0]['sum'])?0:$allCount[0]['sum']} 元</span></li>
+		</ul>
+	</div>
+	<form action="{:url('admin/order/index')}" method="post" style="position: fixed;right: 0;bottom: 0;">
+		<input type="text" name="keyword" id="Scavenger" class="form-control">
+	</form>
+	<div><script src="__STATIC__/js/admin.js"></script></div>
+	<script>
+        $('#Scavenger_take').click(function () {
+            $(this).css('background-color','#32e744');
+            $('#Scavenger').focus();
+        });
+        $('#Scavenger').blur(function () {
+            $('#Scavenger_take').css('background-color','#3498DB');
+        })
+	</script>
+</body>
+</html>

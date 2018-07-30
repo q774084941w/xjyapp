@@ -1,0 +1,123 @@
+<include file="public@header" />
+</head>
+
+    <body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('Inventory/index')}">盘点</a></li>
+        <li ><a href="{:url('Inventory/addNew')}">新增盘点</a></li>
+        <li  class="active"><a href="">盘点详情</a></li>
+    </ul>
+    <form method="post" class="margin-top-20" >
+        <div class="margin-top-20">
+            <h4 style="text-align: center">商品盘点单</h4>
+        </div>
+        <div class="form-inline" >
+            <!--<select name="menu" style="text-align: center" class="form-control" id="menu_id">
+                <if !empty($menu[0])>
+                    <option value="" {$menu_id==""?"selected":""}>请选择服务厅</option>
+                    <foreach name="menu" item="vo" >
+                        <option value="{$vo.id}" {$menu_id==$vo.id?"selected":""}>{$vo.name}</option>
+                    </foreach>
+                    <else/>
+                    <option value="">你还未建立服务厅，请在分类建立！</option>
+                </if>
+            </select>-->
+            <div style="float:right;margin-bottom: 20px;">
+                <div class="form-group cy-mar-ver-s">
+                    <span class="cy-pad-hor-s">盘点人：</span>
+                </div>
+                <div class="input-daterange input-group" style="margin-right: 10px">
+                    <input type="text" class=" form-control"  value="{:empty($all['user_nickname'])?$all['user_login']:$all['user_nickname']}" readonly />
+                </div>
+                <div class="form-group cy-mar-ver-s">
+                    <span class="cy-pad-hor-s">业务日期：</span>
+                </div>
+                <div class="input-daterange input-group" style="margin-right: 10px">
+                    <input readonly type="text" class="js-bootstrap-date form-control" value="{:date('Y-m-d H:i:s',$all['time'])}"  name="time"/>
+                </div>
+                <div class="form-group cy-mar-ver-s">
+                    <span class="cy-pad-hor-s">单据编号：</span>
+                </div>
+                <div class="input-daterange input-group" style="margin-right: 10px">
+                    <input readonly type="text" class=" form-control" value="{:$all['inven_number']}" name="number" />
+                </div>
+            </div>
+
+        </div>
+        <table class="table table-hover table-bordered margin-top-20">
+            <thead>
+                <tr>
+                    <th width="5%">排号</th>
+                    <th width="10%">货品名称</th>
+                    <th width="8%" align="left">货品编号</th>
+                    <th width="8%">账目数量</th>
+                    <th width="8%">实际数量</th>
+                    <th width="8%">盘亏数量</th>
+                    <th width="8%">盘亏金额</th>
+                    <th width="8%">盘盈数量</th>
+                    <th width="8%">盘盈金额</th>
+                    <th width="8%">备注</th>
+                </tr>
+            </thead>
+            <tbody>
+                <notempty name="data">
+                    <foreach name="data" item="vo" key="key">
+                        <php>
+                            $profit = 0;
+                            $deficit = 0;
+                            if($vo['record']>$vo['actual']){
+                            $profit = $vo['record']-$vo['actual'];
+                            }
+                            else
+                            {
+                            $deficit = $vo['actual']-$vo['record'];
+                            }
+                        </php>
+                        <tr>
+                            <td>{:$key+1}</td>
+                            <td>{:$vo.name}</td>
+                            <td>{:$vo.traffic_number}</td>
+                            <td >{:$vo.record}</td>
+                            <td>{:$vo.actual}</td>
+                            <td>{:$profit}</td>
+                            <td class="before">{:$profit*$vo.buy_price}</td>
+                            <td>{:$deficit}</td>
+                            <td>{:$deficit*$vo.buy_price}</td>
+                            <td>{:$vo.why}</td>
+                        </tr>
+                    </foreach>
+                </notempty>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>合计</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="all_before">{:$all['deficit']}</td>
+                    <td></td>
+                    <td>{:$all['profit']}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>备注：</td>
+                    <td colspan="9">{:$all['remark']}</td>
+
+                </tr>
+           <!-- <tr>
+                <td><button  class="btn btn-success ">打印</button></td>
+            </tr>-->
+            </tfoot>
+        </table>
+    </form>
+</div>
+
+    <script src="__STATIC__/js/admin.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<include file="public@header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:url('Classification/index')}">菜系列表</a></li>
+        <li><a href="{:url('Classification/add')}">新菜系添加</a></li>
+    </ul>
+    <form class="js-ajax-form" method="post" action="{:url('admin/Classification/sort')}">
+        <table class="table table-hover table-bordered table-list" id="menus-table">
+            <thead>
+            <tr>
+                <th width="80">排序</th>
+                <th width="50">ID</th>
+                <th>菜系名称</th>
+                <th width="80">状态</th>
+                <th width="180">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {$category}
+            </tbody>
+            <tfoot>
+            <tr>
+                <td width="80"><button type="submit" value="排序" class="js-ajax-submit btn btn-success">排序</button></td>
+                <td colspan="4"></td>
+            </tr>
+            </tfoot>
+        </table>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script>
+    $(document).ready(function() {
+        Wind.css('treeTable');
+        Wind.use('treeTable', function() {
+            $("#menus-table").treeTable({
+                indent : 20
+            });
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<include file="public@header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+            <li><a href="{:url('adminOauth/index')}">{:lang('USER_OAUTHADMIN_INDEX')}</a></li>
+			<li class="active"><a href="#">详细信息</a></li>
+		</ul>
+        <php>
+            $type = array(1=>'正常',2=>'冻结',);
+        </php>
+		<form action="" method="post" class="form-horizontal js-ajax-form margin-top-20">   <!-- js-ajax-form -->
+        <div class="row">
+            <div class="col-md-3">
+                <table class="table table-bordered">
+                    <tr>
+                        <th><b>用户头像</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="text-align: center;">
+                                <input type="hidden" name="post[avatarUrl]" id="avatarUrl" value="{$avatarUrl}">
+                                <img src="{:empty($avatarUrl)?'__TMPL__/public/assets/images/default-thumbnail.png':$avatarUrl}"
+                                     id="thumbnail-preview" width="135" style="cursor: pointer"/>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><b>用户昵称</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="form-control" readonly type="text"  value="{$nickname}">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-9">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>真实姓名</th>
+                        <td>
+                            <input class="form-control" readonly type="text"
+                                    required value="{:empty($real_name)?'':$real_name}" />
+                        </td>
+                        <th>
+                           性别
+                        </th>
+                        <td>
+                            <php>$allSex = array('保密','男','女');</php>
+                            <input class="form-control" type="text"
+                                    readonly value="{:empty($sex)?'':$allSex[$sex]}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>生日</th>
+                        <td>
+                            <input class="form-control" readonly type="text"
+                                    required value="{:empty($birthday)?'':date('Y-m-d',$birthday)}" />
+                        </td>
+                        <th>积分</th>
+                        <td>
+                            <input class="form-control" type="text"
+                                    readonly value="{:$score}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>用户状态</th>
+                        <td>
+                            <php>$userStatus = array('禁用','正常','未验证');</php>
+                            <input class="form-control" readonly type="text" value="{:$userStatus[$user_status]}">
+                        </td>
+                        <th><b>注册时间</b></th>
+                        <td>
+                            <input class="form-control" readonly type="text" value="{:date('Y-m-d H:i:s',$create_time)}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>手机号<span class="form-required"></span></th>
+                        <td>
+                            <input class="form-control" readonly type="text"
+                                    value="{:$mobile}" />
+                        </td>
+                        <th>邮箱<span class="form-required"></span></th>
+                        <td>
+                            <input class="form-control" readonly type="text"
+                                    required value="{$user_email}" />
+                        </td>
+                    </tr>
+                    <!--<tr>
+                       <th>用户优惠劵<span class="form-required"></span></th>
+                       <td>
+                           <input class="form-control" readonly type="text"
+                                   value="{:$coupon}" />
+                       </td>
+                       <th>金币<span class="form-required"></span></th>
+                       <td>
+                           <input class="form-control" readonly type="text"
+                                   required value="{$coin}" />
+                       </td>
+                   </tr>-->
+                    <tr>
+                        <th>用户所在地区<span class="form-required"></span></th>
+                        <td colspan="3">
+                            <input class="form-control" readonly type="text"
+                                    value="{:$user_address}" />
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th>个性签名<span class="form-required"></span></th>
+                        <td colspan="3">
+                            <input class="form-control" readonly type="text"
+                                   required value="{$signature}" />
+                        </td>
+                    </tr>
+
+                </table>
+                <div class="form-group">
+                    <div class="col-sm-offset-6 col-sm-10">
+                        <a class="btn btn-default" href="{:url('adminOauth/edit',array('id'=>$edit_id))}">修改信息</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <tr class="success">
+                        <th>序号</th>
+                        <th>会员卡号</th>
+                        <th>内置卡号</th>
+                        <th>等级</th>
+                        <th>折扣</th>
+                        <th>余额</th>
+                        <th width="13%">注册时间</th>
+                        <th>备注</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                    <notempty name="user_card">
+
+                        <foreach name="$user_card" item="vo" key="key">
+                            <tr>
+                                <td>{$key+1}</td>
+                                <td>{$vo.card_no}</td>
+                                <td>{$vo.card_number}</td>
+                                <td>{$vo.grade_name}</td>
+                                <td>{$vo.discount}%</td>
+                                <td>{$vo.user_RMB}</td>
+                                <td>{:empty($vo.card_time)?'':date('Y-m-d H:i:s',$vo.card_time)}</td>
+                                <td>{$vo.remark}</td>
+                                <td>{$type[$vo.type]}</td>
+                                <td>
+                                    <a href="javaScript:" name='addOne' >修改</a>
+                                    <a href="javaScript:" name='Recharge' >充值</a>
+                                </td>
+                                <input type="hidden" value="{$vo.id}">
+                                <input type="hidden" value="{$vo.user_lv}">
+                                <input type="hidden" value="{$vo.type}">
+                                <input type="hidden" value="{$vo.user_id}">
+                            </tr>
+                        </foreach>
+                    </notempty>
+                </table>
+                <ul class="pagination">{$page}</ul>
+            </div>
+        </div>
+    </form>
+	</div>
+    <!--修改页面-->
+    <div class="modal fade"  id="myModal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="myModalLabel">
+
+        <div class="modal-dialog"
+             role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+
+                    <h4 class="modal-title"
+                        id="">修改</h4>
+
+                </div>
+
+                <form action="{:url('user/adminOauth/changeLevel')}" method="post" class="js-ajax-form">
+                    <input type="hidden" name="id" id="card_id">
+                    <input type="hidden" name="user_id" id="user_id">
+                    <div class="modal-body">
+                        <div class="form-group">
+
+                            <label >会员卡号</label>
+
+                            <input type="text"
+                                   name="edit[card_no]"
+                                   class="form-control"
+                                   id="card_no"
+                                   required>
+
+                        </div>
+                        <div class="form-group">
+
+                            <label >会员卡内置卡号</label>
+
+                            <input type="text"
+                                   name="edit[card_number]"
+                                   class="form-control"
+                                   id="card_number"
+                                   required>
+
+                        </div>
+                        <div class="form-group">
+
+                            <label>状态</label>
+                            <select name="edit[type]" class="form-control" id="type" >
+                                <foreach name="type" item="vo" key="key">
+                                    <option value="{$key}">{$vo}</option>
+                                </foreach>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label >备注</label>
+
+                            <input type="text"
+                                   name="edit[remark]"
+                                   class="form-control"
+                                   id="remark"
+                                   placeholder="备注" >
+
+                        </div>
+                        <div class="form-group">
+
+                            <label>会员等级</label>
+                            <select name="edit[user_lv]" class="form-control" id="user_lv" >
+                                <foreach name="level" item="vo">
+                                    <option value="{$vo.id}">{$vo.grade_name}</option>
+                                </foreach>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button"
+                                class="btn btn-default"  data-dismiss="modal">
+                            关闭</button>
+                        <button type="submit" class="btn btn-primary js-ajax-submit">修改</button>
+                    </div>
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--修改页面-->
+
+    <!--充值页面-->
+    <div class="modal fade"  id="Recharge"
+
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="myModalLabel">
+
+        <div class="modal-dialog"
+             role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+
+                    <h4 class="modal-title"></h4>
+
+                </div>
+
+                <form action="{:url('user/adminOauth/user_RMB')}" method="post" class="js-ajax-form">
+                    <input type="hidden" name="card_id" id="third_id">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>账号余额</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="user_RMB"
+                                   placeholder="账号余额"
+                                   value=""
+                                   readonly>
+
+                        </div>
+                        <div class="form-group">
+
+                            <label>充值金额</label>
+                            <input type="text"
+                                   class="form-control"
+                                   name="number"
+                                   placeholder="充值金额" required>
+                        </div>
+                        <div class="form-group">
+
+                            <label>充值密码</label>
+                            <input type="password"
+                                   class="form-control"
+                                   name="harge"
+                                   placeholder="充值密码" required>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button"
+                                class="btn btn-default"  data-dismiss="modal">
+                            关闭</button>
+                        <button type="submit" class="btn btn-primary js-ajax-submit">充值</button>
+                    </div>
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--充值页面-->
+
+    <script src="__STATIC__/js/admin.js"></script>
+    <script>
+        /*修改页面*/
+        $("[name='addOne']").click(function () {
+            var children = $(this).parent().parent().children();
+            var user_lv_id  = $(this).parent().next().next().val();
+            var type_id     = $(this).parent().next().next().next().val();
+            $('#card_no').val(children.eq(1).text());
+            $('#card_number').val(children.eq(2).text());
+            $('#remark').val(children.eq(7).text());
+            var user_lv  =  $('#user_lv').children();
+            user_lv.each(function () {
+                $(this).removeAttr("selected");
+            });
+            user_lv.eq(user_lv_id-1).attr('selected','selected');
+            $('#type').children().eq(type_id-1).attr('selected','selected');
+            $('#card_id').val($(this).parent().next().val());
+            $('#user_id').val($(this).parent().next().next().next().next().val());
+            $('#myModal').modal();
+        });
+        /*充值页面*/
+        $("[name='Recharge']").click(function () {
+            $('#user_RMB').val($(this).parent().parent().children().eq(5).text());
+            var user_id  = $(this).parent().next().val();
+            $('#third_id').val(user_id);
+            $('#Recharge').modal();
+        });
+    </script>
+</body>
+</html>

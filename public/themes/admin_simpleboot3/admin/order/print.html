@@ -1,0 +1,90 @@
+<include file="public@header" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<script language="javascript">
+	function printPage()  
+	{  
+	    $("#printImg").css("display","none");  
+	    $("#asd").css("display","none");
+	    window.print();   
+	    $("#printImg").css("display","");
+	    $("#asd").css("display","");   
+	    return false;  
+	} 
+	</script>
+</head>
+<body>
+    <div class=" margin-top-20">
+    	<div class="col-md-6 col-md-offset-3" style="width: 228px;padding-right: 13.8px;padding-left: 0px;">
+    		<div class="panel panel-primary">
+			  	<div id="asd" class="panel-heading">打印内容：</div>
+		  		<div class="panel-body" style="padding: 15px 0;">
+					<div id="div_print">
+						<div class="col-md-12 col-md-offset-1" style="margin-left: 0;padding-left: 5px;padding-right: 5px;">
+							<div class="text-center">
+								<php>
+									$order_class = array('1'=>'餐桌','2'=>'外卖');
+								</php>
+								<div style="font-size: 90%">——{:$order_class[$data['order_class']]}订单信息——</div>
+								<div style="border-top:1px dashed #000;width:100%"></div>								
+							</div>
+							<div style="margin-left: 3%;margin-top: 5%;margin-bottom: 5%;font-size: 100%">
+
+								订单编号：{:$data['order_id']}<br />
+								<if condition="$data['order_class'] eq 1">
+									餐桌号：{:$data['table_name']}
+								</if>
+							</div>
+							<div style="border-top:1px dashed #000;width:100%;margin-bottom: 5%"></div>
+							<table style="width: 100%">
+							<foreach name="$data['food_list']" item="vo">
+								<tr>
+									<td style="width: 53%">{$vo.0}</td>
+									<td style="width: 13%">x{$vo.1}</td>
+									<td style="width: 13%">{:$vo.1*$vo.2}</td>
+								</tr>
+							</foreach>
+							</table>
+							<!--<div style="border-top:1px dashed #000;width:100%;margin-bottom: 5%;margin-top: 5%"></div>
+							<div style="margin-left: 3%;margin-bottom: 5%;font-size: 80%">
+								配送费：{:$data['delivery']}<br />
+								餐盒费：{:$data['lunch_box']}
+							</div>-->
+							<div style="border-top:1px dashed #000;width:100%;margin-bottom: 5%;margin-top: 5%"></div>
+							<div style="margin-left: 3%;margin-bottom: 5%;font-size: 150%">
+								<table style="width: 100%">
+									<tr>
+									<td style="width: 73%">总价：</td>
+									<td style="width: 27%">￥{:$data['order_price']}</td>
+								</tr>
+									<tr>下单时间：{:date("Y-m-d H:i:s",$data['order_time'])}<br /></tr>
+								</table>
+							</div>
+							<div style="border-top:1px dashed #000;width:100%;margin-bottom: 5%;margin-top: 5%"></div>
+						<!--	<if condition="$data['order_class'] eq 2">
+							<div style="margin-left: 3%;margin-top: 5%;margin-bottom: 5%;font-size: 120%">
+								<p>联系人：{:$data['Contacts']}</p>
+								<p>电话：{:$data['tel']}</p>
+								<p>地址：{:$data['address']}<p>
+								<p>备注：{:$data['remarks']}</p>
+							</div>
+							</if>
+							<div style="border-top:1px dashed #000;width:100%;margin-bottom: 5%;margin-top: 5%"></div>-->
+							<div>
+								<img src="{:url('order/barcode',['id'=>$data['order_id']])}" alt="没有二维码"  >
+							</div>
+						</div>
+					</div>
+	  			</div>
+	  			<div class="text-center">
+	  				<input type="button" id="printImg" class="btn btn-primary" onClick="printPage();" value=" 打印 ">
+	  			</div>
+    			
+			</div>
+    	</div>
+	</div>
+	<div><script src="__STATIC__/js/admin.js"></script></div>
+</body>
+</html>

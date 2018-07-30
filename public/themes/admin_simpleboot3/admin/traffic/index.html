@@ -1,0 +1,286 @@
+<include file="public@header" />
+<style>
+	#explain{
+		float: left;
+		width: 100%;
+	}
+	#explain>li>div{
+		width: 20px;
+		height: 20px;
+		border: 1px solid black;
+		float: left;
+	}
+	#explain>li>span{
+		margin-left: 5px;
+		float: left;
+	}
+	#explain>li{
+		list-style:none; /* 将默认的列表符号去掉 */
+		padding:0; /* 将默认的内边距去掉 */
+		margin:0; /* 将默认的外边距去掉 */
+	}
+</style>
+<head>
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="">商品管理</a></li>
+			<if empty($seller_id)>
+				<switch name="Supermarket">
+					<case value="1">
+						<li><a href="{:url('traffic/trafficAdd')}">添加商品</a></li>
+					</case>
+					<default></default>
+				</switch>
+				<else/>
+				<li><a href="{:url('traffic/trafficAdd')}">添加商品</a></li>
+			</if>
+
+		</ul>
+		<form class="well form-inline margin-top-20 js-ajax-form" method="post" action="{:url('admin/traffic/index')}">
+
+			<div class="form-inline">
+				<div class="form-group cy-mar-ver-s">
+					<notempty name="category">
+						<select name="category"  class="form-control">
+							<option value="">分类查找</option>
+							<foreach name="category" item="vo">
+								<option value="{$vo.id}" <if condition="input('request.category') eq $vo.id">selected</if>>{:$vo.name}</option>
+							</foreach>
+						</select>
+					</notempty>
+
+					<input class="form-control" type="text" name="keyword" style="width: 200px;" value="{:input('request.keyword')}" placeholder="名称/拼音">
+					<span class="cy-pad-hor-s">时间</span>
+				</div>
+				<div class="input-daterange input-group" id="datepicker">
+					<input type="text" class="js-bootstrap-date form-control" name="beginTime" id="qBeginTime" value="{:input('request.beginTime')}" />
+					<span class="input-group-addon">至</span>
+					<input type="text" class="js-bootstrap-date form-control" name="endTime" id="qEndTime"  value="{:input('request.endTime')}"/>
+				</div>
+				<div class="form-group cy-mar-ver-s">
+					<input type="submit" class="btn btn-success" value="搜索" />
+				</div>
+			</div>
+		</form>
+		<form method="post" class="margin-top-20">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="4%">排号</th>
+						<th width="5%">货品编号</th>
+						<th width="8%" align="left">货品名称</th>
+						<th width="5%" align="left">拼音码</th>
+						<th width="8%" align="left">分类</th>
+						<th width="8%">当前库存</th>
+						<th width="8%">进货价</th>
+						<th width="8%" >零售价</th>
+						<th width="8%" >会员价</th>
+						<th width="5%">单位</th>
+						<th width="5%">品牌</th>
+						<th width="10%">备注</th>
+						<th width="15%">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				<if !empty($data)>
+					<foreach name="data" item="vo" key="key">
+						<tr>
+							<td>{$key+1}</td>
+							<td>{$vo.traffic_number}</td>
+							<td>{$vo.name}</td>
+							<td>{$vo.pinyin}</td>
+							<td>{$vo.category_name}</td>
+							<td>{$vo.stock}</td>
+							<td>{$vo.buy_price}</td>
+							<td>{$vo.ret_price}</td>
+							<td>{$vo.member_price}</td>
+							<td>{$vo.company}</td>
+							<td>{$vo.brand}</td>
+							<td>{$vo.remark}</td>
+							<td>
+								<if empty($seller_id)>
+									<switch name="Supermarket">
+										<case value="1">
+											<button type="button" class="btn btn-link" name="add_goods">添加</button>
+										</case>
+										<default>
+											<button type="button" class="btn btn-link" name="btn_add">申请</button>
+										</default>
+									</switch>
+									<else/>
+									<a type="button" class="btn btn-link" href="{:url('traffic/trafficEdit',array('tra_id'=>$vo['tra_id']))}">编辑</a>
+									<a type="button"class="btn btn-link js-ajax-delete" href="{:url('traffic/trafficDel',array('tra_id'=>$vo['tra_id'],'type'=>0))}" data-msg="确定删除该商品？" >删除</a>
+									<button type="button" class="btn btn-link" name="btn_add">申请</button>
+									<button type="button" class="btn btn-link" name="add_goods">添加</button>
+								</if>
+							</td>
+							<input type="hidden" value="{$vo.tra_id}" name="tra_id">
+						</tr>
+					</foreach>
+				</if>
+				</tbody>
+			</table>
+		</form>
+		<div class="col-xs-12"  style="text-align:center">
+			<ul class="pagination"><if !empty($page)>
+				{$page|default=''}
+			</if></ul>
+		</div>
+
+	</div>
+
+
+	<!--申请商品弹窗-->
+	<div class="modal fade"  id="myModal"
+		 tabindex="-1"
+		 role="dialog"
+		 aria-labelledby="myModalLabel">
+
+		<div class="modal-dialog"
+			 role="document">
+
+			<div class="modal-content">
+
+				<div class="modal-header">
+
+					<button type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"><span
+							aria-hidden="true">×</span></button>
+
+					<h4 class="modal-title"
+						id="myModalLabel">申请</h4>
+
+				</div>
+
+				<form action="{:url('admin/traffic/applyAdd')}" method="post" id="apply_form" class="js-ajax-form">
+					<input type="hidden" name="add[tra_id]" id="apply_id">
+
+					<div class="modal-body">
+
+
+
+					<div class="form-group">
+
+						<label for="txt_tra_num">申请数量</label>
+
+						<input type="number"
+								name="add[tra_num]"
+								class="form-control"
+								id="txt_tra_num"
+								placeholder="申请数量" required>
+
+					</div>
+						<div class="form-group">
+
+						<label for="txt_remark">备注</label>
+
+						<input type="text"
+								name="add[remark]"
+								class="form-control"
+								id="txt_remark"
+								placeholder="备注">
+
+					</div>
+				</div>
+
+					<div class="modal-footer">
+
+						<button type="button"
+								class="btn btn-default"  data-dismiss="modal">
+							<!--<span
+								class="glyphicon glyphicon-remove"  aria-hidden="true"></span>-->
+							关闭</button>
+						<button type="submit"
+								class="btn btn-primary  js-ajax-submit" >
+							<span class="glyphicon glyphicon-floppy-disk"  aria-hidden="true">
+
+							</span>
+							申请
+						</button>
+
+					</div>
+
+				</form>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<!--申请商品弹窗-->
+	<!--添加商品弹窗-->
+	<div class="modal fade"  id="addModal"
+		 tabindex="-1"
+		 role="dialog"
+		 aria-labelledby="myModalLabel">
+
+		<div class="modal-dialog"
+			 role="document">
+
+			<div class="modal-content">
+
+				<div class="modal-header">
+
+					<button type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"><span
+							aria-hidden="true">×</span></button>
+
+					<h4 class="modal-title">添加</h4>
+
+				</div>
+
+				<form action="{:url('admin/traffic/addGoods')}" method="post" class="js-ajax-form">
+					<input type="hidden" name="tra_id" id="tra_id">
+
+					<div class="modal-body">
+					<div class="form-group">
+
+						<label for="txt_tra_num">添加数量</label>
+
+						<input type="number"
+								name="tra_num"
+								class="form-control"
+								placeholder="添加数量" required>
+					</div>
+
+				</div>
+
+					<div class="modal-footer">
+
+						<button type="button"
+								class="btn btn-default"  data-dismiss="modal">
+							关闭</button>
+						<button type="submit" class="btn btn-primary js-ajax-submit" ><span
+								class="glyphicon glyphicon-floppy-disk"  aria-hidden="true"></span>添加</button>
+					</div>
+
+				</form>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<!--添加商品弹窗-->
+	<div><script src="__STATIC__/js/admin.js"></script></div>
+	<script>
+        $("[name='btn_add']").click(function () {
+			$('#apply_id').val($(this).parent().next().val());
+            $('#myModal').modal();
+
+        });
+        $("[name='add_goods']").click(function () {
+			$('#tra_id').val($(this).parent().next().val());
+            $('#addModal').modal();
+        });
+	</script>
+</body>
+</html>

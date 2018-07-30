@@ -1,0 +1,48 @@
+<include file="public@header" />
+<style type="text/css">
+    .pic-list li {
+        margin-bottom: 5px;
+    }
+</style> 
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">消费下单</a></li>
+		</ul>
+		<form action="{:url('order/orderAddPost',array('id'=>$seller['id']))}" method="post" class="form js-ajax-form margin-top-20">   <!-- js-ajax-form -->
+	        <div class="row">
+	            <div class="col-md-9">
+	            	<table  class="table table-bordered">  
+				        <tr>	
+				        	<td  rowspan="2" style="width: 135px;height: 135px;text-align: center;">
+								<img src="<if empty($seller['seller_logo'])>__TMPL__/public/assets/images/default-thumbnail.png<else />{:cmf_get_image_preview_url($seller['seller_logo'])}</if>"
+	                                         id="thumbnail-preview"
+	                                         width="135" style="cursor: pointer"/>
+				            </td>		 
+				        	<td>商家名称：{$seller['seller_nickname']}</td>         
+				            <td>下单时间：<input class="form-control js-bootstrap-datetime" type="text" name="order[order_time]"
+	                                   value="{:date('Y-m-d H:i:s',time())}"></td>  
+				        </tr>  
+				        <tr>  			   
+				        	<td colspan="2">收银金额：
+				        		<input type='text' class="form-control" name="order[order_price]" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();" />
+				        	</td>  				       		            		
+				        </tr>
+				    </table>  
+				    <div class="form-group">
+	                    <div class="col-sm-offset-6 col-sm-9">
+	                    	<button type="submit" class="btn btn-primary js-ajax-submit">结账</button>
+	                        <a class="btn btn-default" href="{:url('order/index')}">返回</a>
+	                    </div>
+	                </div>            
+	            </div>	            
+	        </div>
+		</div>
+	    </form>		
+	</div>
+	<script type="text/javascript" src="__STATIC__/js/admin.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/ueditor/ueditor.all.min.js"></script>
+</body>
+</html>

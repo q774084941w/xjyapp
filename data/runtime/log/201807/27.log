@@ -1,0 +1,1046 @@
+---------------------------------------------------------------
+[ 2018-07-27T18:40:25+08:00 ] 127.0.0.1 127.0.0.1 GET /YunJiuMin
+[ info ] city.com/YunJiuMin [运行时间：0.597034s][吞吐率：1.67req/s] [内存消耗：1,748.38kb] [文件加载：47]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-07-27T18:40:26+08:00 ] 127.0.0.1 127.0.0.1 GET /favicon.ico
+[ info ] city.com/favicon.ico [运行时间：0.092005s][吞吐率：10.87req/s] [内存消耗：1,748.40kb] [文件加载：47]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-07-27T18:42:55+08:00 ] 127.0.0.1 127.0.0.1 GET /YunJiuMin
+[ info ] city.com/YunJiuMin [运行时间：0.721041s][吞吐率：1.39req/s] [内存消耗：2,202.23kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.091005s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.037002s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.114007s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 0 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:42:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/public/login.html
+[ info ] city.com/admin/public/login.html [运行时间：0.309018s][吞吐率：3.24req/s] [内存消耗：2,445.11kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.073004s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\PublicController->login[ F:\amp\admin\phpstudy\WWW\xjyapplet\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/plugins/custom_admin_login/view/widget.html [ array (
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\custom_admin_login\CustomAdminLoginPlugin @admin_login [ RunTime:0.131007s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:42:56+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18
+[ info ] city.com/captcha/new.html?height=32&width=150&font_size=18 [运行时间：0.346020s][吞吐率：2.89req/s] [内存消耗：1,923.30kb] [文件加载：52]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.082005s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/admin/public/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.006001s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:43:02+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/public/dologin.html
+[ info ] city.com/admin/public/dologin.html [运行时间：0.233013s][吞吐率：4.29req/s] [内存消耗：2,198.65kb] [文件加载：65]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.093006s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/admin/public/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://city.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '48',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'captcha' => '',
+  'redirect' => '',
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\PublicController->doLogin[ F:\amp\admin\phpstudy\WWW\xjyapplet\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:43:02+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18&refresh=0.9089703215394134
+[ info ] city.com/captcha/new.html?height=32&width=150&font_size=18&refresh=0.9089703215394134 [运行时间：0.139008s][吞吐率：7.19req/s] [内存消耗：1,923.50kb] [文件加载：52]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.061004s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/admin/public/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+  'refresh' => '0.9089703215394134',
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:43:09+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/public/dologin.html
+[ info ] city.com/admin/public/dologin.html [运行时间：0.312018s][吞吐率：3.20req/s] [内存消耗：2,246.63kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.077004s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/admin/public/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://city.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => '',
+  'redirect' => '',
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003001s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\PublicController->doLogin[ F:\amp\admin\phpstudy\WWW\xjyapplet\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `b` ON `a`.`role_id`=`b`.`id` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_token` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_token` WHERE  `user_id` = 1  AND `device_type` = 'web' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `xjy_user_token`  SET `token`='d15bca6c343d3051e7aee60f0b57eee0d15bca6c343d3051e7aee60f0b57eee0',`expire_time`=1548240189,`create_time`=1532688189  WHERE  `user_id` = 1  AND `device_type` = 'web' [ RunTime:0.005000s ]
+[ sql ] [ SQL ] UPDATE `xjy_user`  SET `parent_id`=1,`user_type`=1,`sex`=0,`birthday`=1459440000,`last_login_time`=1532688189,`score`=2,`coin`=0,`create_time`=1506178927,`user_status`=1,`user_nickname`='云九科技',`user_lv`=1,`user_email`='963024514@qq.com',`user_address`='',`user_url`='',`avatar`='',`signature`='',`last_login_ip`='127.0.0.1',`user_activation_key`='',`mobile`='',`more`=NULL,`coupon`=0,`user_RMB`=0,`user_login`='admin',`user_pass`='###af86cfadf817a90bf88dcaa14a7fa0cd',`withdrawals_time`=0,`seller_openid`='',`seller_name`='',`Alipay_RMB`=0,`Supermarket`=0,`card_no`='',`card_number`='',`real_name`='',`card_time`=0,`harge`='',`menu_id`=0  WHERE  `id` = 1 [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:43:12+08:00 ] 127.0.0.1 127.0.0.1 GET /YunJiuMin.html
+[ info ] city.com/YunJiuMin.html [运行时间：0.762044s][吞吐率：1.31req/s] [内存消耗：2,917.84kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.087005s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/admin/public/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.007000s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ F:\amp\admin\phpstudy\WWW\xjyapplet\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.037003s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_admin_menu` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 6  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 71  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 15  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 75  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 93  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 158  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 109  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 49  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 50  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 110  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 111  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 113  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 152  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 153  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 156  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 201  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 202  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 150  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 176  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 177  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 184  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 182  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 190  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 179  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 180  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 188  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 189  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 186  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 115  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 73  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 192  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 193  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 194  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 195  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 196  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 187  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 191  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 197  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 198  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 203  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 199  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 204  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 200  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 205  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 206  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 207  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 58  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_sum_count` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT `count_id` FROM `xjy_sum_count` WHERE  `count_time` BETWEEN 1532534400 AND 1532620800 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT sum(order_price) as money,count(*) as sheets,`b`.`menu_id` FROM `xjy_order` `a` RIGHT JOIN `xjy_rest` `b` ON `a`.`table_id`=`b`.`id` WHERE  `a`.`end_time` BETWEEN '1532534400' AND '1532620800'  AND `b`.`seller_id` = 1 GROUP BY `menu_id` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_rest` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT `menu_id` FROM `xjy_rest` WHERE  `seller_id` = 1 GROUP BY `menu_id` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:43:13+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/main/index.html
+[ info ] city.com/admin/main/index.html [运行时间：0.787045s][吞吐率：1.27req/s] [内存消耗：2,525.61kb] [文件加载：77]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.072004s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/YunJiuMin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.023001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ F:\amp\admin\phpstudy\WWW\xjyapplet\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\system_info\SystemInfoPlugin @admin_dashboard [ RunTime:0.229013s ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:44:03+08:00 ] 127.0.0.1 127.0.0.1 GET /YunJiuMin.html
+[ info ] city.com/YunJiuMin.html [运行时间：0.663038s][吞吐率：1.51req/s] [内存消耗：2,858.04kb] [文件加载：77]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.092005s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/admin/public/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ F:\amp\admin\phpstudy\WWW\xjyapplet\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_admin_menu` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 6  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 71  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 15  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 75  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 93  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 158  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 109  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 49  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 50  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 110  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 111  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 113  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 152  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 153  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 156  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 201  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 202  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 150  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 176  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 177  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 184  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 182  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 190  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 179  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 180  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 188  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 189  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 186  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 115  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 73  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 192  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 193  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 194  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 195  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 196  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 187  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 191  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 197  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 198  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 203  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 199  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 204  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 200  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 205  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 206  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 207  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 58  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:44:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/main/index.html
+[ info ] city.com/admin/main/index.html [运行时间：0.281016s][吞吐率：3.56req/s] [内存消耗：2,525.68kb] [文件加载：77]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.077005s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/YunJiuMin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.008001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ F:\amp\admin\phpstudy\WWW\xjyapplet\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\system_info\SystemInfoPlugin @admin_dashboard [ RunTime:0.056003s ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.032001s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:45:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/menu/index.html
+[ info ] city.com/admin/menu/index.html [运行时间：0.510030s][吞吐率：1.96req/s] [内存消耗：2,978.80kb] [文件加载：75]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.082004s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/YunJiuMin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004001s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.012000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MenuController->index[ F:\amp\admin\phpstudy\WWW\xjyapplet\app\admin\controller\MenuController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\menu\index.html [ array (
+  0 => 'admin',
+  1 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_admin_menu` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` ORDER BY `list_order`  ASC [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:46:07+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/public/logout.html
+[ info ] city.com/admin/public/logout.html [运行时间：0.178011s][吞吐率：5.62req/s] [内存消耗：2,221.29kb] [文件加载：65]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.067004s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/YunJiuMin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\PublicController->logout[ F:\amp\admin\phpstudy\WWW\xjyapplet\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:46:08+08:00 ] 127.0.0.1 127.0.0.1 GET /YunJiuMin
+[ info ] city.com/YunJiuMin [运行时间：0.186011s][吞吐率：5.38req/s] [内存消耗：2,204.16kb] [文件加载：67]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.080004s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/YunJiuMin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.007000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 0 LIMIT 1 [ RunTime:0.004000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:46:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/public/login.html
+[ info ] city.com/admin/public/login.html [运行时间：0.218013s][吞吐率：4.59req/s] [内存消耗：2,446.49kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.080004s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/YunJiuMin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002001s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\PublicController->login[ F:\amp\admin\phpstudy\WWW\xjyapplet\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/plugins/custom_admin_login/view/widget.html [ array (
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\custom_admin_login\CustomAdminLoginPlugin @admin_login [ RunTime:0.063003s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.004000s ]
+---------------------------------------------------------------
+[ 2018-07-27T18:46:08+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18
+[ info ] city.com/captcha/new.html?height=32&width=150&font_size=18 [运行时间：0.118007s][吞吐率：8.47req/s] [内存消耗：1,924.01kb] [文件加载：52]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.053003s ]
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'sdmenu_my_menu=11111111111111111111111111; zh_choose=t; thinkphp_show_page_trace=0|0; PHPSESSID=j6hg12rf4sp1qqah2geb651ee2; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://city.com/admin/public/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'city.com',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+)
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\amp\admin\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001000s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ F:\amp\admin\phpstudy\WWW\xjyapplet\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.002000s ]

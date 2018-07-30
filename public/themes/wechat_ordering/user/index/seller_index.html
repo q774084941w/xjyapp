@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>微信点餐-首页</title>
+    <include file="public@head"/>
+    <style type="text/css">
+      .swiper-container .swiper-slide img{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="grade-a">
+
+      <!-- 幻灯片 -->
+      <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+        <div class="swiper-wrapper">
+          <notempty name="$seller_advert">
+            <foreach name="$seller_advert" item="vo">
+              <div class="swiper-slide"><img src="{:cmf_get_image_url($vo)}" alt=""></div>
+            </foreach>
+          </notempty>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- 菜单导航 -->
+      <div class="weui-grids index-nav-food">
+        <!-- 菜系项 -->
+        <notempty name="$menu">
+          <foreach name="$menu" item="vo" key='key'>
+           <if condition="($key<5)">
+            <a href="{:cmf_url('user/index/FoodList',['parent_id'=>$vo.id])}" class="weui-grid js_grid">
+              <div class="weui-grid__icon">
+                <icon class="iconfont icon-{:$vo.icon}" type="" size=""/>
+              </div>
+              <p class="weui-grid__label">
+                {:$vo.name}
+              </p>
+            </a>
+            </if>
+          </foreach>
+        </notempty>
+        <!-- 功能项 -->
+        <a href="{:cmf_url('user/index/sellerReserve')}" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-yuyue" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            预订餐桌
+          </p>
+        </a>
+        <!-- <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-quhaopaidui" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            预约排号
+          </p>
+        </a> -->
+        <a href="" class="weui-grid js_grid" id="scanQRCode">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-saoma" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            扫码点餐
+          </p>
+        </a>
+        <!-- <a href="" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-shouyin1" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            收银
+          </p>
+        </a> -->
+        <a href="{:cmf_url('user/index/FoodList')}" class="weui-grid js_grid">
+          <div class="weui-grid__icon">
+            <icon class="iconfont icon-iconfontgengduo" type="" size=""/>
+          </div>
+          <p class="weui-grid__label">
+            更多
+          </p>
+        </a>
+      </div>
+      
+      <!-- 推荐菜品 -->
+      <div class="weui-panel weui-panel_access">
+        <div class="weui-panel__hd title-lists">
+          <div  class="fl title-hide">推荐菜品</div>
+          <div class="weui-panel__ft fr">
+            <a href="{:cmf_url('user/index/FoodList')}" class="weui-cell weui-cell_access weui-cell_link">
+              <div class="weui-cell__bd">查看更多</div>
+              <span class="weui-cell__ft"></span>
+            </a>    
+          </div>
+          <div class="clear"> </div>
+        </div>
+        <div class="weui-panel__bd conont-lists">
+          <notempty name="$data">
+            <foreach name="$data" item="vo">
+              <lt name="$key" value="2">
+                <a href="{:cmf_url('user/index/FoodList',['parent_id'=>$vo.parent_id,'child_id'=>$vo.food_menu_id])}#Dishes-list-{:$vo.id}" class="weui-media-box weui-media-box_appmsg">
+                  <div class="weui-media-box__hd">
+                    <img class="weui-media-box__thumb" src="{:cmf_get_image_url($vo.food_icon)}">
+                  </div>
+                  <div class="weui-media-box__bd">
+                    <h4 class="weui-media-box__title">{:$vo.food_name}</h4>
+                    <h5 class="weui-media-box__price">￥ {:$vo.price}</h5>
+                    <p class="weui-media-box__desc">{:$vo.food_describe}</p>
+                  </div>
+                </a>
+              </lt>
+            </foreach>
+          </notempty>
+        </div>
+      </div>
+      
+      <!-- 热销菜品 -->
+      <div class="weui-panel weui-panel_access">
+        <div class="weui-panel__hd title-lists">
+          <div  class="fl title-hide">热销菜品</div>
+          <div class="weui-panel__ft fr">
+            <a href="{:cmf_url('user/index/FoodList')}" class="weui-cell weui-cell_access weui-cell_link">
+              <div class="weui-cell__bd">查看更多</div>
+              <span class="weui-cell__ft"></span>
+            </a>    
+          </div>
+          <div class="clear"> </div>
+        </div>
+        <div class="weui-panel__bd conont-lists">
+          <notempty name="$data">
+            <foreach name="$data" item="vo">
+              <egt name="$key" value="2">
+                <a href="{:cmf_url('user/index/FoodList',['parent_id'=>$vo.parent_id,'child_id'=>$vo.food_menu_id])}#Dishes-list-{:$vo.id}" class="weui-media-box weui-media-box_appmsg">
+                  <div class="weui-media-box__hd">
+                    <img class="weui-media-box__thumb" src="{:cmf_get_image_url($vo.food_icon)}">
+                  </div>
+                  <div class="weui-media-box__bd">
+                    <h4 class="weui-media-box__title">{:$vo.food_name}</h4>
+                    <h5 class="weui-media-box__price">￥ {:$vo.price}</h5>
+                    <p class="weui-media-box__desc">{:$vo.food_describe}</p>
+                  </div>
+                </a>
+              </egt>
+            </foreach>
+          </notempty>
+        </div>
+      </div>
+
+<include file="public@nav"/>
+<include file="public@footer"/>
+
+<script type="text/javascript">
+  $(".swiper-container").swiper();
+
+  //weixin  js-sdk
+
+
+  wx.ready(function(){
+    wx.checkJsApi({
+        jsApiList: ['scanQRCode'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+        success: function(res) {
+          console.log('true');
+            // 以键值对的形式返回，可用的api值true，不可用为false
+            // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+          
+          $("#scanQRCode").click(function(){
+            wx.scanQRCode({
+              needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+              scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+              success: function (res) {
+                console.log(res);
+                var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+              }
+            }); 
+          })
+        }
+    });
+  });
+</script>

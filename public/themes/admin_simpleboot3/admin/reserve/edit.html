@@ -1,0 +1,299 @@
+<include file="public@header" />
+<style type="text/css">
+    .pic-list li {
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:url('admin/reserve/index')}">预约订单</a></li>
+			<li class="active"><a href="#">订单修改</a></li>
+		</ul>
+		<form action="{:url('order/orderEditPost')}" method="post" class="form-horizontal js-ajax-form margin-top-20">   <!-- js-ajax-form -->
+        <div class="row">
+            <div class="col-md-9">
+            	<php>
+					$pay 			= 	array('1'=>'未支付','2'=>'确认订单','3'=>'拒绝订单','4'=>'已支付','5'=>'未评价','6'=>'已评价');
+					$order_class 	= 	array('1'=>'餐桌订单','2'=>'外卖订单','3'=>'预约订单');
+					$order_complete = 	array('1'=>'未确认','2'=>'确认','3'=>'拒绝','4'=>'完成');
+					$pay_class 	 = 	array('1'=>'支付宝','2'=>'微信','3'=>'银联','4'=>'现金','5'=>'vip卡');
+				</php>
+            	<table  class="table table-bordered">  
+			        <tr>  
+		             	<td style="width: 20%">订单号：<input readonly class="form-control" type="text" name="order[order_id]"
+                                    value="{$order['order_id']}" placeholder="订单号不给于修改"/></td>
+			            <td style="width: 25%">商家ID：<input readonly class="form-control" type="text" name="order[seller_id]"
+                                    value="{$order['seller_id']}" placeholder="商家ID不给于修改"/></td>   
+			            <td style="width: 25%">用户ID：<input readonly class="form-control" type="text" name="order[user_id]"
+                                    value="{$order['user_id']}" placeholder="用户ID不给于修改"/></td>  			            
+			            <td style="width: 30%">下单时间：<input class="form-control js-bootstrap-datetime" type="text" name="order[order_time]"
+                                   value="{:date('Y-m-d H:i:s',$order['order_time'])}" disabled></td>
+			        </tr>  
+			        <tr>  			   
+			        	<td>订单类型：
+							<input type="text" class="form-control"  id="order_class" name="order[order_class]" disabled value="{$order_class[$order['order_class']]}">
+			        	</td>  
+			        	<td>支付状态：
+
+			        		<select class="form-control" name="order[pay]" disabled>
+			        			<foreach name="$pay" item="vo">
+									<option value="{:$key}" <if condition="$order['pay'] eq $key">selected</if> >{$vo}</option>
+					        	</foreach>                             
+                            </select>
+			        	</td>   
+			            <td>订单状况：
+			            	<foreach name="$order_complete" item="vo">
+								<input type="radio" disabled name="order[order_complete]" value="{:$key}" <if condition="$order['order_complete'] eq $key">checked</if> >{$vo}
+				        	</foreach> 
+						</td>		
+						<if condition="$order['order_class'] neq 4">
+						<td>餐桌ID：<input class="form-control" type="text" disabled name="order[table_id]" value="{:$order['table_id']}"placeholder="没有使用就不填"></td>
+						<else \>
+						<td>订单价格：<input class="form-control" type="text" name="order[order_price]" value="{:$order['order_price']}" id="allPrice"></td>
+						</if>           
+			            <!-- <td>优惠劵ID：<input class="form-control" type="text" name="order[coupon_id]" <if condition="$order['coupon_id'] eq 0"><else />value="{//$order['coupon_id']}"</if> placeholder="没有使用就不填"></td>  -->
+			        </tr>
+			        <tr id="delivery_n" <if condition="$order['order_class'] eq 1 or $order['order_class'] eq 3 or $order['order_class'] eq 4 "> style="display: none;"  </if> >	
+			            <td colspan="1">配送方：
+							<select class="form-control" name="order[delivery_type]">
+							<foreach name="delivery1" item="vo">
+								<option value ="{$vo.delivery_id}" <if condition="$order['delivery_type'] eq $vo.delivery_id"> selected = 'selected'</if>>{$vo.delivery_name}</option>
+							</foreach>
+			            </td> 
+			            <td colspan="1">配送评分：<input class="form-control" type="text" name="order[delivery_evaluate]" value="{$order['delivery_evaluate']}"  placeholder="配送评分"></td>
+			            <php>$order_delivery=array('1'=>'未接单','2'=>'配送中','3'=>'配送完成','4'=>'系统接单','5'=>'分配骑手','6'=>'骑手到店')</php>
+			            <td colspan="2">配送状态：
+			            	<foreach name="order_delivery" item="val">
+			            		<input type="radio" name="order[order_delivery]" value="{:$key}" <if condition="$order['order_delivery'] eq $key">checked</if> > {:$val}
+			            	</foreach>
+			            </td> 
+			        </tr>
+			        <if condition="$order['order_class'] neq 3">
+			        	<php>
+			        		$reserve['table_nub']=0;
+				        	$reserve['reserve_time']=time();
+				        	$reserve['complete']=1;
+				        </php>
+		        	</if>
+					<tr id="reserve_s" <if condition="$order['order_class'] eq 1 or $order['order_class'] eq 2 or $order['order_class'] eq 4 "> style="display: none;"  </if> >
+						<td colspan="1">预约桌数：<input class="form-control" type="text" value="{$reserve['table_nub']}" name="reserve[table_nub]" placeholder="预约桌数"></td> 
+			            <td colspan="1">预约时间：<input class="form-control js-bootstrap-datetime" type="text" name="reserve[reserve_time]"
+                               value="{:date('Y-m-d H:i:s',$reserve['reserve_time'])}"></td> 
+
+			            <td colspan="3">预约是否完成：
+							<input type="radio" name="reserve[complete]" value="1" <if condition="$reserve['complete'] eq 1">checked</if> >未确认
+							<input type="radio" name="reserve[complete]" value="2" <if condition="$reserve['complete'] eq 2">checked</if> >完成
+							<input type="radio" name="reserve[complete]" value="3" <if condition="$reserve['complete'] eq 3">checked</if> >商家违约
+							<input type="radio" name="reserve[complete]" value="4" <if condition="$reserve['complete'] eq 4">checked</if> >用户违约
+			            </td>
+					</tr>	
+					<tr id="reserve_a" >
+						<td>就餐人数：<input class="form-control" type="text" value="{$reserve['user_nub']}" name="reserve[user_nub]" placeholder="就餐人数"></td>
+						<td>预约电话：<input class="form-control" type="text" value="{$reserve['tel']}" name="reserve[tel]" placeholder="预约电话"></td>
+						<td>预约者名字：<input class="form-control" type="text" value="{$reserve['user_name']}" name="reserve[user_name]" placeholder="预约者名字"></td>
+
+
+					</tr>
+
+					<tr>
+
+						<td>预约服务厅：
+							<select class="form-control" name="reserve[reserve_class]">
+								<option value="">默认服务厅</option>
+								<foreach name="$menu" item="vo">
+									<option value ="{$vo.id}" <if condition="$reserve['menu_id'] eq $vo.id"> selected = 'selected'</if>>{:$vo.name}</option>
+								</foreach>
+							</select>
+
+						</td>
+						<td >预约餐桌：
+						<select class="form-control" name="reserve[reserve_class]">
+							<option value="">默认餐桌</option>
+							<foreach name="$table" item="vo">
+								<option value ="{$vo.id}" <if condition="$reserve['reserve_class'] eq $vo.id"> selected = 'selected'</if>>{:$vo.table_name}</option>
+							</foreach>
+						</select>
+						</td>
+					</tr>
+
+			        <tr>  
+			            <td colspan="2">用户评价：
+			            	<div>
+				            	<textarea  name="order[user_evaluate]" style="width: 100%;height: 100px;resize: none;"><if empty($order['user_evaluate'])>该用户尚未评价！<else />{$order['user_evaluate']}</if></textarea>
+			            	</div>
+			            </td>
+						<td colspan="2">备注：
+							<div>
+								<textarea  name="order[remarks]" style="width: 100%;height: 100px;resize: none;">{:$order.remarks}</textarea>
+							</div>
+						</td>
+			        </tr>
+			    </table>
+				<input type="hidden" name="type" value="{:$type}">
+			    <div class="form-group">
+                    <div class="col-sm-offset-6 col-sm-9">
+
+                    	<button type="submit" class="btn btn-primary"  >修改</button>
+                        <a class="btn btn-default" href="javaScript:history.go(-1)">返回</a>
+                    </div>
+                </div>            
+            </div>
+
+            <div class="col-md-3">
+            	<div class="panel panel-default">
+			  		<div class="panel-heading">订单详情：</div>
+				  	<div class="panel-body" style="height:400px;overflow-y:scroll;">
+						<table class="table table-bordered" id="testTbl">
+				    		<tr>
+				    			<td width="25%">菜品</th>
+					    			<td width="30%">数量</th>
+					    			<td width="30%">单价</th>
+					    			<td width="15%">操作</th>
+				    		</tr>
+							<notempty name="food">
+								<foreach name="food" item="vo">
+									<tr>
+										<td>{$data[$vo.id]['food_name']}</td>
+										<td>
+											<input class="form-control" type="number" name="food[{$vo.id}]" value="{$vo.nub}">
+										</td>
+										<td><input readonly class="form-control" type="number"  min="1"  value="{$data[$vo.id]['price']}" name="price"></td>
+										<td><input  type="button" class="btn btn-default" value="删除" onclick="res(this)"></td>
+									</tr>
+								</foreach>
+							</notempty>
+
+						</table>					
+				  	</div>
+				  	<div class="panel-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+					  添加
+						</button>
+					</div>
+				</div>           	
+            </div>
+
+        </div>
+    </form>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+      			<div class="modal-header">
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        		<h4 class="modal-title" id="myModalLabel">菜品添加</h4>
+					<form  class=" form-inline margin-top-20" id="seller_menu_form">
+
+						<select name="menu_id" style="text-align: center" class="form-control" id="menu_parent_id">
+							<notempty name="menu">
+								<option value="">请选择服务厅</option>
+								<foreach name="menu" item="vo" >
+									<option value="{$vo.id}" >{$vo.name}</option>
+								</foreach>
+								<else/>
+								<option value="">你还未建立服务厅，请在分类建立！</option>
+							</notempty>
+						</select>
+						<select name="child_id" style="text-align: center" class="form-control" id="menu_child_id">
+							<option value="">请选择菜系</option>
+						</select>
+						<input class="form-control" type="text" name="menu_keyword" style="width: 200px;" value="{:input('request.keyword')}"
+							   placeholder="菜名/拼音">
+						<button type="button" class="btn btn-success" id="submit_menu">搜索</button>
+					</form>
+	      		</div>
+	      		<div class="modal-body" style="height: 600px;overflow-x: auto;">
+		        	<table class="table table-bordered" id="seller_menu_table">
+		    			<tr>
+			    			<th width="75%">菜品名字</th>
+			    			<th width="15%">价格</th>
+			    		</tr>	
+			    		<foreach name='seller_menu' item='vo'>
+			    		<tr>
+			    			<td>
+			    				<div class="input-group">
+							      <span class="input-group-addon">
+							        <input type="checkbox" name="food1" value="{:$vo.id}">
+							      </span>
+							      <input readonly type="text" class="form-control" name='food_name' value="{:$vo.food_name}" >
+							    </div>										  
+			    			</td>
+			    			<td><input readonly type="text" class="form-control" name='food_price' value="{:$vo.price}" ></td>
+			    		</tr>	
+			    		</foreach>	    		
+					</table>
+  				</div>
+	      		<div class="modal-footer">
+	        		<button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+	        		<button type="button" class="btn btn-primary" onclick="chk()">添加</button>
+      			</div>
+    		</div>
+	  	</div>
+	</div>
+
+	<script type="text/javascript" src="__STATIC__/js/admin.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/bootbox/bootbox.min.js"></script>
+		<script type="text/javascript" src="__TMPL__/public/assets/js/orderedit.js"></script>
+		<!--有php标签的-->
+		<script>
+			//验证密码
+            function res(obj){
+                var password = {:lang('ADMIN_USER_PASSWORD')};
+                bootbox.setLocale("zh_CN");
+                bootbox.prompt("请输入权限密码", function (result)
+				{
+                    if(result==password)
+                    {
+                        var row = obj.parentNode.parentNode; //标签所在行
+                        var tb = row.parentNode; //当前表格
+                        var rowIndex = row.rowIndex; //A标签所在行下标
+                        tb.deleteRow(rowIndex); //删除当前行
+                        all_price();
+                    }
+                    else
+                        {
+                        if (result!=null && result!=undefined && result!='')
+                        {
+                            bootbox.setLocale("zh_CN");
+                            bootbox.alert('密码不正确')
+                        }
+                    }
+
+                });
+            }
+
+
+            //请求子集数据
+            function ajaxChildren(parent_id)
+			{
+                $.post(
+                    "{:url('foodmenu/getAllChild')}",
+                    {'parent_id':parent_id},
+                    function (msg) {
+                        takeMenuChild(msg)
+                    },
+                    'json');
+            }
+
+
+			/*获取菜单信息*/
+            function ajaxToGet(formdata)
+			{
+                $.ajax({
+                        url		: "{:url('SellerMenu/index')}",
+                        type	: 'post',
+                        processData : false,
+                        contentType : false,
+                        dataType    :  'json',
+                        data		:   formdata,
+                        success 	:  function (msg) {
+                            seller_menu_table(msg);
+                        }
+                    }
+                )
+            }
+
+
+		</script>
+</body>
+</html>

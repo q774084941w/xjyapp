@@ -1,0 +1,613 @@
+---------------------------------------------------------------
+[ 2018-05-09T10:45:13+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024414s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.053711s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:45:15+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:23+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.207031s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:24+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.032227s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.093750s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.026367s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:25+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:26+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:31+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/wechatto/appid/wx4612824b7c9f43b5.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:35+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` IS NULL ORDER BY name ASC [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` IS NULL ORDER BY name ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.016602s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` IS NULL  AND `food_class` = 0 ORDER BY food_name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 0 AND `seller_id` IS NULL )  AND `parent_id` = 0 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:36+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:39+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.016602s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` IS NULL ORDER BY name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` IS NULL  AND `food_class` = 0 ORDER BY food_name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 0 AND `seller_id` IS NULL )  AND `parent_id` = 0 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:40+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.032227s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:45+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/seller_index/appid/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT `a`.*,c.id as food_menu_id,`c`.*,`b`.* FROM `xjy_seller` `a` INNER JOIN `xjy_seller_menu` `b` ON `a`.`id`=`b`.`seller_id` INNER JOIN `xjy_food_menu` `c` ON `b`.`food_class`=`c`.`id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `b`.`delete_time` = 0 ORDER BY c.name ASC LIMIT 4 [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `c`.* FROM `xjy_seller` `a` INNER JOIN `xjy_food_menu` `c` ON `a`.`id`=`c`.`seller_id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `c`.`parent_id` = 0 ORDER BY `c`.`list_order` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/seller_index' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:46+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:49+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.018554s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 182 ORDER BY food_name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:50+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:50:59+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist/parent_id/203.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 203  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.010743s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 0 ORDER BY food_name ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:00+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.021484s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.058594s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:01+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist/parent_id/205.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 205  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 0 ORDER BY food_name ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:01+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:03+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist/parent_id/184.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.019531s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 184  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 193 ORDER BY food_name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.003906s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:03+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.017578s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:05+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist/parent_id/198.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 198  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 199 ORDER BY food_name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:05+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:07+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.012696s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 182 ORDER BY food_name ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:09+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:1.065430s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.040039s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:12+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.018554s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:13+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:19+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002930s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 182 ORDER BY food_name ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:21+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:23+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/order.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.010743s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_order` WHERE  `user_id` = '22'  AND `seller_id` = 10  AND `order_class` <> 3 [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/order' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:24+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.334961s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.030273s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:33+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/payment/order_id/2018042923350052495198.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT `a`.`delivery_evaluate`,`a`.`order_id`,`a`.`food`,`a`.`user_evaluate`,`a`.`order_price`,`a`.`discount_price`,`c`.`table_name`,`b`.`tb_id`,`d`.`name`,`e`.`seller_nickname`,`e`.`seller_logo` FROM `xjy_order` `a` INNER JOIN `xjy_rest` `b` ON `a`.`table_id`=`b`.`id` INNER JOIN `xjy_seller_table` `c` ON `b`.`table_id`=`c`.`id` INNER JOIN `xjy_food_menu` `d` ON `b`.`menu_id`=`d`.`id` INNER JOIN `xjy_seller` `e` ON `e`.`id`=`a`.`seller_id` WHERE  `a`.`order_id` = '2018042923350052495198' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `id`,`food_name`,`food_icon`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (11,17,18,20,24) [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/payment' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:34+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011718s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:39+08:00 ] 122.114.61.97 61.151.226.76 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:39+08:00 ] 122.114.61.97 61.151.226.76 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:44+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/not_payment.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] UPDATE `xjy_order`  SET `order_complete`=4  WHERE  `order_id` = '2018042923350052495198' [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `a`.`food`,`c`.`name`,`a`.`remarks`,`a`.`order_price`,`a`.`order_time`,`d`.`printer_id`,`a`.`order_id`,`b`.`tb_id`,`a`.`seller_id` FROM `xjy_order` `a` INNER JOIN `xjy_rest` `b` ON `a`.`table_id`=`b`.`id` INNER JOIN `xjy_food_menu` `c` ON `b`.`menu_id`=`c`.`id` INNER JOIN `xjy_printer` `d` ON `c`.`id`=`d`.`menu_id` WHERE  `a`.`order_id` = '2018042923350052495198'  AND `d`.`position` = 0 LIMIT 1 [ RunTime:0.113281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `food_name`,`id`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (11,17,18,20,24) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_printer` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `printer_id` FROM `xjy_printer` WHERE  `seller_id` = 10  AND `position` = 1 LIMIT 1 [ RunTime:0.000977s ]
+[ error ] [8]未定义变量: nums
+[ error ] [8]Only variables should be passed by reference
+[ error ] [8]Only variables should be passed by reference
+---------------------------------------------------------------
+[ 2018-05-09T10:51:44+08:00 ] 122.114.61.97 117.135.173.80 GET /user/index/seller_index/appid/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019531s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:45+08:00 ] 122.114.61.97 117.135.173.80 GET /user/index/seller_index/appid/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011718s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:47+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/seller_index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011718s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `a`.*,c.id as food_menu_id,`c`.*,`b`.* FROM `xjy_seller` `a` INNER JOIN `xjy_seller_menu` `b` ON `a`.`id`=`b`.`seller_id` INNER JOIN `xjy_food_menu` `c` ON `b`.`food_class`=`c`.`id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `b`.`delete_time` = 0 ORDER BY c.name ASC LIMIT 4 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `c`.* FROM `xjy_seller` `a` INNER JOIN `xjy_food_menu` `c` ON `a`.`id`=`c`.`seller_id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `c`.`parent_id` = 0 ORDER BY `c`.`list_order` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/seller_index' ) [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:48+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:51+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/order.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_order` WHERE  `user_id` = '22'  AND `seller_id` = 10  AND `order_class` <> 3 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/order' ) [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:51+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:58+08:00 ] 122.114.61.97 61.151.225.155 GET /user/index/foodlist/parent_id/203.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:51:58+08:00 ] 122.114.61.97 61.151.225.155 GET /user/index/foodlist/parent_id/203.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:00+08:00 ] 122.114.61.97 117.185.117.59 GET /user/index/foodlist/parent_id/205.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.012696s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:01+08:00 ] 122.114.61.97 117.185.117.59 GET /user/index/foodlist/parent_id/205.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014648s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.006836s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:02+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/payment/order_id/2018042923350052495198.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `a`.`delivery_evaluate`,`a`.`order_id`,`a`.`food`,`a`.`user_evaluate`,`a`.`order_price`,`a`.`discount_price`,`c`.`table_name`,`b`.`tb_id`,`d`.`name`,`e`.`seller_nickname`,`e`.`seller_logo` FROM `xjy_order` `a` INNER JOIN `xjy_rest` `b` ON `a`.`table_id`=`b`.`id` INNER JOIN `xjy_seller_table` `c` ON `b`.`table_id`=`c`.`id` INNER JOIN `xjy_food_menu` `d` ON `b`.`menu_id`=`d`.`id` INNER JOIN `xjy_seller` `e` ON `e`.`id`=`a`.`seller_id` WHERE  `a`.`order_id` = '2018042923350052495198' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `id`,`food_name`,`food_icon`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (11,17,18,20,24) [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/payment' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:02+08:00 ] 122.114.61.97 61.151.226.76 GET /user/index/foodlist/parent_id/184.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.018555s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:02+08:00 ] 122.114.61.97 61.151.226.76 GET /user/index/foodlist/parent_id/184.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.008790s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:04+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.004883s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:06+08:00 ] 122.114.61.97 117.135.173.78 GET /user/index/foodlist/parent_id/198.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:06+08:00 ] 122.114.61.97 117.135.173.78 GET /user/index/foodlist/parent_id/198.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:22+08:00 ] 122.114.61.97 117.135.170.150 GET /user/index/order.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016602s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:22+08:00 ] 122.114.61.97 117.135.170.150 GET /user/index/order.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021485s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:26+08:00 ] 122.114.61.97 112.44.100.81 POST /user/index/not_payment.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.008790s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] UPDATE `xjy_order`  SET `order_complete`=4  WHERE  `order_id` = '2018042923350052495198' [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SELECT `a`.`food`,`c`.`name`,`a`.`remarks`,`a`.`order_price`,`a`.`order_time`,`d`.`printer_id`,`a`.`order_id`,`b`.`tb_id`,`a`.`seller_id` FROM `xjy_order` `a` INNER JOIN `xjy_rest` `b` ON `a`.`table_id`=`b`.`id` INNER JOIN `xjy_food_menu` `c` ON `b`.`menu_id`=`c`.`id` INNER JOIN `xjy_printer` `d` ON `c`.`id`=`d`.`menu_id` WHERE  `a`.`order_id` = '2018042923350052495198'  AND `d`.`position` = 0 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `food_name`,`id`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (11,17,18,20,24) [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_printer` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `printer_id` FROM `xjy_printer` WHERE  `seller_id` = 10  AND `position` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义变量: nums
+[ error ] [8]Only variables should be passed by reference
+[ error ] [8]Only variables should be passed by reference
+---------------------------------------------------------------
+[ 2018-05-09T10:52:30+08:00 ] 122.114.61.97 112.44.100.81 GET /user/index/seller_index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `a`.*,c.id as food_menu_id,`c`.*,`b`.* FROM `xjy_seller` `a` INNER JOIN `xjy_seller_menu` `b` ON `a`.`id`=`b`.`seller_id` INNER JOIN `xjy_food_menu` `c` ON `b`.`food_class`=`c`.`id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `b`.`delete_time` = 0 ORDER BY c.name ASC LIMIT 4 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SELECT `c`.* FROM `xjy_seller` `a` INNER JOIN `xjy_food_menu` `c` ON `a`.`id`=`c`.`seller_id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `c`.`parent_id` = 0 ORDER BY `c`.`list_order` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/seller_index' ) [ RunTime:0.012695s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:34+08:00 ] 122.114.61.97 61.151.226.67 GET /user/index/payment/order_id/2018042923350052495198.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT `a`.`delivery_evaluate`,`a`.`order_id`,`a`.`food`,`a`.`user_evaluate`,`a`.`order_price`,`a`.`discount_price`,`c`.`table_name`,`b`.`tb_id`,`d`.`name`,`e`.`seller_nickname`,`e`.`seller_logo` FROM `xjy_order` `a` INNER JOIN `xjy_rest` `b` ON `a`.`table_id`=`b`.`id` INNER JOIN `xjy_seller_table` `c` ON `b`.`table_id`=`c`.`id` INNER JOIN `xjy_food_menu` `d` ON `b`.`menu_id`=`d`.`id` INNER JOIN `xjy_seller` `e` ON `e`.`id`=`a`.`seller_id` WHERE  `a`.`order_id` = '2018042923350052495198' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.019531s ]
+[ sql ] [ SQL ] SELECT `id`,`food_name`,`food_icon`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (11,17,18,20,24) [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/payment' ) [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:34+08:00 ] 122.114.61.97 61.151.226.67 GET /user/index/payment/order_id/2018042923350052495198.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:46+08:00 ] 122.114.61.97 61.151.218.118 GET /user/index/seller_index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T10:52:47+08:00 ] 122.114.61.97 61.151.218.118 GET /user/index/seller_index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.017578s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.010743s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-09T11:23:01+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003907s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T11:24:40+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018555s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-09T15:42:52+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-09T15:42:53+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006836s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.018555s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-05-09T16:40:33+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-05-09T17:15:59+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.023437s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2018-05-09T18:31:48+08:00 ] 122.114.61.97 118.112.123.232 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]

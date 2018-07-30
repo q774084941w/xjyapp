@@ -1,0 +1,1495 @@
+---------------------------------------------------------------
+[ 2018-06-25T19:35:27+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/payment.html
+[ info ] cwyx.com/admin/cashier/payment.html [运行时间：0.134766s][吞吐率：7.42req/s] [内存消耗：2,436.66kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.044921s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'payment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'text/plain, */*; q=0.01',
+  'content-length' => '12',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'allPrice' => '224',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000976s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->Payment[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011718s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.027343s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_pay_class` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_order_pay_class` WHERE  `seller_id` = 10  AND `delete_time` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:36:11+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cashier/index/order/2018062019574798565451.html
+[ info ] cwyx.com/admin/cashier/index/order/2018062019574798565451.html [运行时间：0.175782s][吞吐率：5.69req/s] [内存消耗：2,940.63kb] [文件加载：75]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.037109s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/is_order/editpost.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\cashier\index.html [ array (
+  0 => 'id',
+  1 => 'order',
+  2 => 'page',
+  3 => 'all_table_type',
+  4 => 'menu',
+  5 => 'menu_id',
+  6 => 'begin_order_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_rest` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.*,`c`.`name`,`d`.`table_name` FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 ORDER BY a.tb_id ASC LIMIT 0,15 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT count(*) as number,`type` FROM `xjy_rest` `a` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 GROUP BY `type` ORDER BY `type` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.022461s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  `seller_id` = 10  AND `parent_id` = 0 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:36:11+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/seller_menu/index.html
+[ info ] cwyx.com/admin/seller_menu/index.html [运行时间：0.166015s][吞吐率：6.02req/s] [内存消耗：2,727.62kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.048828s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'seller_menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000976s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\SellerMenuController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\SellerMenuController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013671s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.029297s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`food_name`,`a`.`price`,`a`.`food_class` FROM `xjy_seller_menu` `a` INNER JOIN `xjy_food_menu` `b` ON `a`.`food_class`=`b`.`id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:36:12+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/orderdetails.html
+[ info ] cwyx.com/admin/cashier/orderdetails.html [运行时间：0.188476s][吞吐率：5.31req/s] [内存消耗：2,319.24kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.047851s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'orderdetails',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '31',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->orderDetails[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `a`.`order_id`,date_format(from_unixtime(a.order_time),"%Y-%m-%d %H:%i:%s") as order_time,`a`.`food`,`e`.`nickname`,`b`.`user_login`,`b`.`mobile`,`b`.`score`,`a`.`remarks`,`c`.`tb_id`,`d`.`name` FROM `xjy_order` `a` INNER JOIN `xjy_user` `b` ON `a`.`user_id`=`b`.`id` INNER JOIN `xjy_rest` `c` ON `a`.`table_id`=`c`.`id` INNER JOIN `xjy_food_menu` `d` ON `c`.`menu_id`=`d`.`id` LEFT JOIN `xjy_third_party_user` `e` ON `e`.`user_id`=`b`.`id` WHERE  `a`.`order_id` = '2018062019574798565451' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `id`,`food_name`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (34,57,90,180,384) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_food` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 34  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 57  AND `status` = 2 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 90  AND `status` = 2 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 180  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 384  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:36:14+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/payment.html
+[ info ] cwyx.com/admin/cashier/payment.html [运行时间：0.097656s][吞吐率：10.24req/s] [内存消耗：2,485.91kb] [文件加载：69]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.036133s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'payment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'text/plain, */*; q=0.01',
+  'content-length' => '12',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'allPrice' => '224',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->Payment[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [2]Missing argument 1 for app\admin\model\OrderModel::pay_class(), called in D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php on line 1043 and defined[D:\phpstudy\WWW\xjyapplet\app\admin\model\OrderModel.php:125]
+---------------------------------------------------------------
+[ 2018-06-25T19:36:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cashier/index/order/2018062019574798565451.html
+[ info ] cwyx.com/admin/cashier/index/order/2018062019574798565451.html [运行时间：0.181641s][吞吐率：5.51req/s] [内存消耗：2,940.94kb] [文件加载：75]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.038086s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/is_order/editpost.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001953s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\cashier\index.html [ array (
+  0 => 'id',
+  1 => 'order',
+  2 => 'page',
+  3 => 'all_table_type',
+  4 => 'menu',
+  5 => 'menu_id',
+  6 => 'begin_order_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.026368s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_rest` [ RunTime:0.028320s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.*,`c`.`name`,`d`.`table_name` FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 ORDER BY a.tb_id ASC LIMIT 0,15 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT count(*) as number,`type` FROM `xjy_rest` `a` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 GROUP BY `type` ORDER BY `type` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  `seller_id` = 10  AND `parent_id` = 0 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:36:48+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/seller_menu/index.html
+[ info ] cwyx.com/admin/seller_menu/index.html [运行时间：0.151368s][吞吐率：6.61req/s] [内存消耗：2,727.62kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.036133s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'seller_menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000976s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\SellerMenuController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\SellerMenuController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.024415s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`food_name`,`a`.`price`,`a`.`food_class` FROM `xjy_seller_menu` `a` INNER JOIN `xjy_food_menu` `b` ON `a`.`food_class`=`b`.`id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 [ RunTime:0.003907s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:36:49+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/orderdetails.html
+[ info ] cwyx.com/admin/cashier/orderdetails.html [运行时间：0.177734s][吞吐率：5.63req/s] [内存消耗：2,319.55kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.037109s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'orderdetails',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '31',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000976s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->orderDetails[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002930s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.025390s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.027343s ]
+[ sql ] [ SQL ] SELECT `a`.`order_id`,date_format(from_unixtime(a.order_time),"%Y-%m-%d %H:%i:%s") as order_time,`a`.`food`,`e`.`nickname`,`b`.`user_login`,`b`.`mobile`,`b`.`score`,`a`.`remarks`,`c`.`tb_id`,`d`.`name` FROM `xjy_order` `a` INNER JOIN `xjy_user` `b` ON `a`.`user_id`=`b`.`id` INNER JOIN `xjy_rest` `c` ON `a`.`table_id`=`c`.`id` INNER JOIN `xjy_food_menu` `d` ON `c`.`menu_id`=`d`.`id` LEFT JOIN `xjy_third_party_user` `e` ON `e`.`user_id`=`b`.`id` WHERE  `a`.`order_id` = '2018062019574798565451' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `id`,`food_name`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (34,57,90,180,384) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_food` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 34  AND `status` = 2 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 57  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 90  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 180  AND `status` = 2 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 384  AND `status` = 2 LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:36:52+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/payment.html
+[ info ] cwyx.com/admin/cashier/payment.html [运行时间：0.141601s][吞吐率：7.06req/s] [内存消耗：2,438.61kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.052734s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'payment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'text/plain, */*; q=0.01',
+  'content-length' => '12',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'allPrice' => '224',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000976s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->Payment[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.029297s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_pay_class` [ RunTime:0.026368s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_order_pay_class` WHERE  `seller_id` = 10  AND `delete_time` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:38:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cashier/index/order/2018062019574798565451.html
+[ info ] cwyx.com/admin/cashier/index/order/2018062019574798565451.html [运行时间：0.187500s][吞吐率：5.33req/s] [内存消耗：2,941.06kb] [文件加载：75]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.041016s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/is_order/editpost.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000976s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\cashier\index.html [ array (
+  0 => 'id',
+  1 => 'order',
+  2 => 'page',
+  3 => 'all_table_type',
+  4 => 'menu',
+  5 => 'menu_id',
+  6 => 'begin_order_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.018555s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.028320s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_rest` [ RunTime:0.028320s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.*,`c`.`name`,`d`.`table_name` FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 ORDER BY a.tb_id ASC LIMIT 0,15 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT count(*) as number,`type` FROM `xjy_rest` `a` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 GROUP BY `type` ORDER BY `type` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.024414s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  `seller_id` = 10  AND `parent_id` = 0 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:38:16+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/seller_menu/index.html
+[ info ] cwyx.com/admin/seller_menu/index.html [运行时间：0.155274s][吞吐率：6.44req/s] [内存消耗：2,727.62kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.039062s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'seller_menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000976s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\SellerMenuController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\SellerMenuController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005859s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.024414s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.028320s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.030273s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`food_name`,`a`.`price`,`a`.`food_class` FROM `xjy_seller_menu` `a` INNER JOIN `xjy_food_menu` `b` ON `a`.`food_class`=`b`.`id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:38:17+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/orderdetails.html
+[ info ] cwyx.com/admin/cashier/orderdetails.html [运行时间：0.175782s][吞吐率：5.69req/s] [内存消耗：2,319.68kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.036133s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'orderdetails',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '31',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->orderDetails[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002930s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.025390s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `a`.`order_id`,date_format(from_unixtime(a.order_time),"%Y-%m-%d %H:%i:%s") as order_time,`a`.`food`,`e`.`nickname`,`b`.`user_login`,`b`.`mobile`,`b`.`score`,`a`.`remarks`,`c`.`tb_id`,`d`.`name` FROM `xjy_order` `a` INNER JOIN `xjy_user` `b` ON `a`.`user_id`=`b`.`id` INNER JOIN `xjy_rest` `c` ON `a`.`table_id`=`c`.`id` INNER JOIN `xjy_food_menu` `d` ON `c`.`menu_id`=`d`.`id` LEFT JOIN `xjy_third_party_user` `e` ON `e`.`user_id`=`b`.`id` WHERE  `a`.`order_id` = '2018062019574798565451' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.024414s ]
+[ sql ] [ SQL ] SELECT `id`,`food_name`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (34,57,90,180,384) [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_food` [ RunTime:0.025390s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 34  AND `status` = 2 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 57  AND `status` = 2 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 90  AND `status` = 2 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 180  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 384  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:38:19+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/payment.html
+[ info ] cwyx.com/admin/cashier/payment.html [运行时间：0.119141s][吞吐率：8.39req/s] [内存消耗：2,438.73kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.038086s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'payment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'text/plain, */*; q=0.01',
+  'content-length' => '12',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'allPrice' => '224',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000976s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->Payment[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.024414s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_pay_class` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_order_pay_class` WHERE  `seller_id` = 10  AND `delete_time` = 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:40:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cashier/index/order/2018062019574798565451.html
+[ info ] cwyx.com/admin/cashier/index/order/2018062019574798565451.html [运行时间：0.180664s][吞吐率：5.54req/s] [内存消耗：2,941.38kb] [文件加载：75]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.044922s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/is_order/editpost.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\cashier\index.html [ array (
+  0 => 'id',
+  1 => 'order',
+  2 => 'page',
+  3 => 'all_table_type',
+  4 => 'menu',
+  5 => 'menu_id',
+  6 => 'begin_order_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_rest` [ RunTime:0.026368s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.*,`c`.`name`,`d`.`table_name` FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 ORDER BY a.tb_id ASC LIMIT 0,15 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT count(*) as number,`type` FROM `xjy_rest` `a` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 GROUP BY `type` ORDER BY `type` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.024414s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  `seller_id` = 10  AND `parent_id` = 0 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:40:10+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/seller_menu/index.html
+[ info ] cwyx.com/admin/seller_menu/index.html [运行时间：0.162109s][吞吐率：6.17req/s] [内存消耗：2,727.62kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.038086s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'seller_menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\SellerMenuController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\SellerMenuController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002930s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.032227s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`food_name`,`a`.`price`,`a`.`food_class` FROM `xjy_seller_menu` `a` INNER JOIN `xjy_food_menu` `b` ON `a`.`food_class`=`b`.`id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 [ RunTime:0.003906s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:40:11+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/orderdetails.html
+[ info ] cwyx.com/admin/cashier/orderdetails.html [运行时间：0.173828s][吞吐率：5.75req/s] [内存消耗：2,319.99kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.036133s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'orderdetails',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '31',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->orderDetails[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.024415s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.025390s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.028320s ]
+[ sql ] [ SQL ] SELECT `a`.`order_id`,date_format(from_unixtime(a.order_time),"%Y-%m-%d %H:%i:%s") as order_time,`a`.`food`,`e`.`nickname`,`b`.`user_login`,`b`.`mobile`,`b`.`score`,`a`.`remarks`,`c`.`tb_id`,`d`.`name` FROM `xjy_order` `a` INNER JOIN `xjy_user` `b` ON `a`.`user_id`=`b`.`id` INNER JOIN `xjy_rest` `c` ON `a`.`table_id`=`c`.`id` INNER JOIN `xjy_food_menu` `d` ON `c`.`menu_id`=`d`.`id` LEFT JOIN `xjy_third_party_user` `e` ON `e`.`user_id`=`b`.`id` WHERE  `a`.`order_id` = '2018062019574798565451' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.026368s ]
+[ sql ] [ SQL ] SELECT `id`,`food_name`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (34,57,90,180,384) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_food` [ RunTime:0.021484s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 34  AND `status` = 2 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 57  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 90  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 180  AND `status` = 2 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 384  AND `status` = 2 LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:40:12+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/payment.html
+[ info ] cwyx.com/admin/cashier/payment.html [运行时间：0.115234s][吞吐率：8.68req/s] [内存消耗：2,439.05kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.025390s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'payment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'text/plain, */*; q=0.01',
+  'content-length' => '12',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'allPrice' => '224',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000976s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->Payment[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_pay_class` [ RunTime:0.030274s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_order_pay_class` WHERE  `seller_id` = 10  AND `delete_time` = 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:40:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cashier/index/order/2018062019574798565451.html
+[ info ] cwyx.com/admin/cashier/index/order/2018062019574798565451.html [运行时间：0.202149s][吞吐率：4.95req/s] [内存消耗：2,936.88kb] [文件加载：75]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.044922s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001953s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\cashier\index.html [ array (
+  0 => 'id',
+  1 => 'order',
+  2 => 'page',
+  3 => 'all_table_type',
+  4 => 'menu',
+  5 => 'menu_id',
+  6 => 'begin_order_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002930s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.032226s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.033203s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_rest` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.*,`c`.`name`,`d`.`table_name` FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 ORDER BY a.tb_id ASC LIMIT 0,15 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT count(*) as number,`type` FROM `xjy_rest` `a` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 GROUP BY `type` ORDER BY `type` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  `seller_id` = 10  AND `parent_id` = 0 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:40:52+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cashier/index/order/2018062019574798565451.html
+[ info ] cwyx.com/admin/cashier/index/order/2018062019574798565451.html [运行时间：0.166016s][吞吐率：6.02req/s] [内存消耗：2,941.38kb] [文件加载：75]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.038086s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/is_order/editpost.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\cashier\index.html [ array (
+  0 => 'id',
+  1 => 'order',
+  2 => 'page',
+  3 => 'all_table_type',
+  4 => 'menu',
+  5 => 'menu_id',
+  6 => 'begin_order_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.026368s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_rest` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.*,`c`.`name`,`d`.`table_name` FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 ORDER BY a.tb_id ASC LIMIT 0,15 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT count(*) as number,`type` FROM `xjy_rest` `a` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 GROUP BY `type` ORDER BY `type` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  `seller_id` = 10  AND `parent_id` = 0 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:40:52+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/seller_menu/index.html
+[ info ] cwyx.com/admin/seller_menu/index.html [运行时间：0.166015s][吞吐率：6.02req/s] [内存消耗：2,727.62kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.041016s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'seller_menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\SellerMenuController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\SellerMenuController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005859s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.030274s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.030273s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`food_name`,`a`.`price`,`a`.`food_class` FROM `xjy_seller_menu` `a` INNER JOIN `xjy_food_menu` `b` ON `a`.`food_class`=`b`.`id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:40:53+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/orderdetails.html
+[ info ] cwyx.com/admin/cashier/orderdetails.html [运行时间：0.188476s][吞吐率：5.31req/s] [内存消耗：2,319.99kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.037109s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'orderdetails',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '31',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->orderDetails[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.026368s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.030273s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.028321s ]
+[ sql ] [ SQL ] SELECT `a`.`order_id`,date_format(from_unixtime(a.order_time),"%Y-%m-%d %H:%i:%s") as order_time,`a`.`food`,`e`.`nickname`,`b`.`user_login`,`b`.`mobile`,`b`.`score`,`a`.`remarks`,`c`.`tb_id`,`d`.`name` FROM `xjy_order` `a` INNER JOIN `xjy_user` `b` ON `a`.`user_id`=`b`.`id` INNER JOIN `xjy_rest` `c` ON `a`.`table_id`=`c`.`id` INNER JOIN `xjy_food_menu` `d` ON `c`.`menu_id`=`d`.`id` LEFT JOIN `xjy_third_party_user` `e` ON `e`.`user_id`=`b`.`id` WHERE  `a`.`order_id` = '2018062019574798565451' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `id`,`food_name`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (34,57,90,180,384) [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_food` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 34  AND `status` = 2 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 57  AND `status` = 2 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 90  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 180  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 384  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:41:02+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/payment.html
+[ info ] cwyx.com/admin/cashier/payment.html [运行时间：0.137696s][吞吐率：7.26req/s] [内存消耗：2,439.05kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.048828s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'payment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'text/plain, */*; q=0.01',
+  'content-length' => '12',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'allPrice' => '224',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->Payment[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.029296s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.029297s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_pay_class` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_order_pay_class` WHERE  `seller_id` = 10  AND `delete_time` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:42:19+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cashier/index/order/2018062019574798565451.html
+[ info ] cwyx.com/admin/cashier/index/order/2018062019574798565451.html [运行时间：0.220703s][吞吐率：4.53req/s] [内存消耗：2,941.63kb] [文件加载：75]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.055664s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/is_order/editpost.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001953s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\cashier\index.html [ array (
+  0 => 'id',
+  1 => 'order',
+  2 => 'page',
+  3 => 'all_table_type',
+  4 => 'menu',
+  5 => 'menu_id',
+  6 => 'begin_order_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019531s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.025391s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_rest` [ RunTime:0.026368s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.*,`c`.`name`,`d`.`table_name` FROM `xjy_rest` `a` LEFT JOIN `xjy_food_menu` `c` ON `c`.`id`=`a`.`menu_id` LEFT JOIN `xjy_seller_table` `d` ON `d`.`id`=`a`.`table_id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 ORDER BY a.tb_id ASC LIMIT 0,15 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SELECT count(*) as number,`type` FROM `xjy_rest` `a` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 GROUP BY `type` ORDER BY `type` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.034180s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  `seller_id` = 10  AND `parent_id` = 0 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:42:20+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/seller_menu/index.html
+[ info ] cwyx.com/admin/seller_menu/index.html [运行时间：0.174805s][吞吐率：5.72req/s] [内存消耗：2,727.62kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.051758s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'seller_menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000976s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\SellerMenuController->index[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\SellerMenuController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.037109s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.029297s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.029297s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`food_name`,`a`.`price`,`a`.`food_class` FROM `xjy_seller_menu` `a` INNER JOIN `xjy_food_menu` `b` ON `a`.`food_class`=`b`.`id` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 [ RunTime:0.004883s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:42:21+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/orderdetails.html
+[ info ] cwyx.com/admin/cashier/orderdetails.html [运行时间：0.196289s][吞吐率：5.09req/s] [内存消耗：2,320.24kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.042969s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'orderdetails',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '31',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'order_id' => '2018062019574798565451',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->orderDetails[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.028321s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.027343s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.027344s ]
+[ sql ] [ SQL ] SELECT `a`.`order_id`,date_format(from_unixtime(a.order_time),"%Y-%m-%d %H:%i:%s") as order_time,`a`.`food`,`e`.`nickname`,`b`.`user_login`,`b`.`mobile`,`b`.`score`,`a`.`remarks`,`c`.`tb_id`,`d`.`name` FROM `xjy_order` `a` INNER JOIN `xjy_user` `b` ON `a`.`user_id`=`b`.`id` INNER JOIN `xjy_rest` `c` ON `a`.`table_id`=`c`.`id` INNER JOIN `xjy_food_menu` `d` ON `c`.`menu_id`=`d`.`id` LEFT JOIN `xjy_third_party_user` `e` ON `e`.`user_id`=`b`.`id` WHERE  `a`.`order_id` = '2018062019574798565451' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.029297s ]
+[ sql ] [ SQL ] SELECT `id`,`food_name`,`price` FROM `xjy_seller_menu` WHERE  `id` IN (34,57,90,180,384) [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_food` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 34  AND `status` = 2 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 57  AND `status` = 2 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 90  AND `status` = 2 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 180  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `come_out_num`,`status` FROM `xjy_order_food` WHERE  `order_id` = '2018062019574798565451'  AND `food_id` = 384  AND `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-25T19:42:22+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/cashier/payment.html
+[ info ] cwyx.com/admin/cashier/payment.html [运行时间：0.120117s][吞吐率：8.33req/s] [内存消耗：2,439.30kb] [文件加载：64]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.037110s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cashier',
+    2 => 'payment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=s5ce9ms5o95r09fpnp6d319vf7; thinkphp_show_page_trace=0|0; admin_username=chuanweiyinxiang',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cwyx.com/admin/cashier/index/order/2018062019574798565451.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://cwyx.com',
+  'accept' => 'text/plain, */*; q=0.01',
+  'content-length' => '12',
+  'connection' => 'close',
+  'host' => 'cwyx.com',
+)
+[ info ] [ PARAM ] array (
+  'allPrice' => '224',
+)
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000977s ]
+[ info ] [ LANG ] D:\phpstudy\WWW\xjyapplet\public/../app/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\CashierController->Payment[ D:\phpstudy\WWW\xjyapplet\app\admin\controller\CashierController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.026368s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.025390s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order_pay_class` [ RunTime:0.026367s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_order_pay_class` WHERE  `seller_id` = 10  AND `delete_time` = 1 [ RunTime:0.000976s ]

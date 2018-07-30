@@ -1,0 +1,15 @@
+ThinkCMF遵循LGPL开源协议发布，并提供免费使用。
+
+后台加密码：YunJiuMin
+
+后台登录地址：http://localhost//thinkcmf/public/YunJiuMin
+
+用户名：admin
+
+密码：123456(默认密码)
+
+
+后台密码加密方法： ### md5(md5(b46adbbe750bc2e2（明文密码）))
+
+
+###af86cfadf817a90bf88dcaa14a7fa0cd

@@ -1,0 +1,38 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a>用户表</a></li>
+    </ul>
+    <form method="post" class="js-ajax-form margin-top-20">
+        <table class="table table-hover table-bordered">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>来源</th>
+                <th>头像</th>
+                <th align="center">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name="lists" item="vo">
+                <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.nickname}</td>
+                    <td>{$vo.union_id}</td>
+                    <td>
+                        <a href="{:url('address/list',array('id'=>$vo['id']))}">查看</a>
+                    </td>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+        <div class="col-xs-12"  style="text-align:center">
+            <ul class="pagination">{$page}</ul>
+        </div>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

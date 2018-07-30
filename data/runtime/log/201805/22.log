@@ -1,0 +1,1695 @@
+---------------------------------------------------------------
+[ 2018-05-22T14:32:45+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:32:45+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.062500s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:32:47+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:32:47+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:32:48+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/wechatto/appid/wx4612824b7c9f43b5.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:32:53+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` IS NULL ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` IS NULL ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` IS NULL  AND `food_class` = 0 ORDER BY food_name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 0 AND `seller_id` IS NULL )  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:32:54+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:00+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/seller_index/appid/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `a`.*,c.id as food_menu_id,`c`.*,`b`.* FROM `xjy_seller` `a` INNER JOIN `xjy_seller_menu` `b` ON `a`.`id`=`b`.`seller_id` INNER JOIN `xjy_food_menu` `c` ON `b`.`food_class`=`c`.`id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `b`.`delete_time` = 0 ORDER BY c.name ASC LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.* FROM `xjy_seller` `a` INNER JOIN `xjy_food_menu` `c` ON `a`.`id`=`c`.`seller_id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `c`.`parent_id` = 0 ORDER BY `c`.`list_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/seller_index' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:01+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:11+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 182 ORDER BY food_name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:11+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:13+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/sellerreserve.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  `seller_id` = 10  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/sellerreserve' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:13+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:15+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/order.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_order` WHERE  `user_id` = '21'  AND `seller_id` = 10  AND `order_class` <> 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/order' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:15+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:16+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/sellerreserve.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.359375s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  `seller_id` = 10  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/sellerreserve' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:16+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:19+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/order.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_order` WHERE  `user_id` = '21'  AND `seller_id` = 10  AND `order_class` <> 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/order' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:20+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:24+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/my.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/my' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:25+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/my.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/my' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:25+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:25+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:26+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/login_out.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:27+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/login_out.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:27+08:00 ] 122.114.61.97 125.69.126.20 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:27+08:00 ] 122.114.61.97 125.69.126.20 GET /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:44+08:00 ] 122.114.61.97 101.227.143.143 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:44+08:00 ] 122.114.61.97 101.227.143.143 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:59+08:00 ] 122.114.61.97 117.135.173.80 GET /user/index/seller_index/appid/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:33:59+08:00 ] 122.114.61.97 117.135.173.80 GET /user/index/seller_index/appid/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:34:11+08:00 ] 122.114.61.97 61.151.226.65 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:34:11+08:00 ] 122.114.61.97 61.151.226.65 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:34:13+08:00 ] 122.114.61.97 61.151.226.62 GET /user/index/sellerreserve.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:34:13+08:00 ] 122.114.61.97 61.151.226.62 GET /user/index/sellerreserve.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:34:14+08:00 ] 122.114.61.97 101.227.143.141 GET /user/index/order.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:34:14+08:00 ] 122.114.61.97 101.227.143.141 GET /user/index/order.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:34:24+08:00 ] 122.114.61.97 61.151.225.155 GET /user/index/my.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/my' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:34:24+08:00 ] 122.114.61.97 61.151.225.155 GET /user/index/my.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:34:26+08:00 ] 122.114.61.97 61.151.225.242 GET /user/index/login_out.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.218750s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:34:26+08:00 ] 122.114.61.97 61.151.225.242 GET /user/index/login_out.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:59:38+08:00 ] 122.114.61.97 125.69.126.20 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T14:59:38+08:00 ] 122.114.61.97 125.69.126.20 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:37:54+08:00 ] 122.114.61.97 125.69.126.20 GET /YunJiuMin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:37:54+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/public/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:37:55+08:00 ] 122.114.61.97 125.69.126.20 GET /captcha/new.html?height=32&width=150&font_size=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:23+08:00 ] 122.114.61.97 125.69.126.20 POST /admin/public/dologin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `b` ON `a`.`role_id`=`b`.`id` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_token` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_token` WHERE  `user_id` = 1  AND `device_type` = 'web' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_user_token`  SET `token`='361b9e6bffff263ae46702a13d33ad4a361b9e6bffff263ae46702a13d33ad4a',`expire_time`=1542530303,`create_time`=1526978303  WHERE  `user_id` = 1  AND `device_type` = 'web' [ RunTime:0.031250s ]
+[ sql ] [ SQL ] UPDATE `xjy_user`  SET `parent_id`=1,`user_type`=1,`sex`=0,`birthday`=1459440000,`last_login_time`=1526978303,`score`=2,`coin`=0,`create_time`=1506178927,`user_status`=1,`user_nickname`='云九科技',`user_lv`=1,`user_email`='963024514@qq.com',`user_address`='',`user_url`='',`avatar`='',`signature`='',`last_login_ip`='125.69.126.20',`user_activation_key`='',`mobile`='',`more`=NULL,`coupon`=0,`user_RMB`=0,`user_login`='admin',`user_pass`='###af86cfadf817a90bf88dcaa14a7fa0cd',`withdrawals_time`=0,`seller_openid`='',`seller_name`='',`Alipay_RMB`=0,`Supermarket`=0  WHERE  `id` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:25+08:00 ] 122.114.61.97 125.69.126.20 GET /YunJiuMin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_admin_menu` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 6  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 71  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 15  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 75  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 93  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 158  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 109  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 49  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 50  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 110  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 111  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 113  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 152  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 153  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 156  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 150  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 176  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 177  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 184  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 182  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 190  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 179  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 180  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 189  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 186  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 115  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 73  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 192  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 193  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 194  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 195  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 196  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 187  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 191  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 197  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 198  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 199  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 200  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 58  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_sum_count` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `count_id` FROM `xjy_sum_count` WHERE  `count_time` BETWEEN 1526832000 AND 1526918400 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT sum(order_price) as money,count(*) as sheets FROM `xjy_order` WHERE  `order_time` BETWEEN 1526832000 AND 1526918400  AND `seller_id` = 1 ORDER BY `order_id` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `xjy_sum_count` (`seller_id` , `count_time` , `count_sum` , `count_num`) VALUES (1 , 1526891905 , 0 , 0) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:26+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/main/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:33+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/setting/site.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.390625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:34+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/mailer/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.171875s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:37+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/mailer/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:37+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/storage/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:38+08:00 ] 122.114.61.97 125.69.126.20 GET /user/admin_user_action/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_action` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_user_action` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_action` LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:39+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/setting/upload.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:41+08:00 ] 122.114.61.97 125.69.126.20 GET /user/admin_asset/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_asset` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_asset` `a` INNER JOIN `xjy_user` `u` ON `a`.`user_id`=`u`.`id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`u`.`user_login`,`u`.`user_email`,`u`.`user_nickname` FROM `xjy_asset` `a` INNER JOIN `xjy_user` `u` ON `a`.`user_id`=`u`.`id` ORDER BY `create_time`  DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:43+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/order/reserveorder.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_order` `a`,`xjy_seller` `b`,`xjy_seller_reserve` `c` WHERE  `a`.`delete_time` = 0  AND (  a.seller_id = b.id )  AND (  a.order_id = c.id )  AND `a`.`order_class` = 3 LIMIT 1 [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`seller_nickname`,`c`.* FROM `xjy_order` `a`,`xjy_seller` `b`,`xjy_seller_reserve` `c` WHERE  `a`.`delete_time` = 0  AND (  a.seller_id = b.id )  AND (  a.order_id = c.id )  AND `a`.`order_class` = 3 ORDER BY `a`.`order_id`  DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:47+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/kitchen/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_order` `a` INNER JOIN `xjy_rest` `b` ON `a`.`table_id`=`b`.`id` INNER JOIN `xjy_food_menu` `c` ON `c`.`id`=`b`.`menu_id` WHERE  `a`.`delete_time` = 0  AND `a`.`order_class` <> 3 LIMIT 1 [ RunTime:0.062500s ]
+[ sql ] [ SQL ] SELECT `a`.`order_id`,`a`.`order_time`,`c`.`name`,`tb_id`,`a`.`food_type` FROM `xjy_order` `a` INNER JOIN `xjy_rest` `b` ON `a`.`table_id`=`b`.`id` INNER JOIN `xjy_food_menu` `c` ON `c`.`id`=`b`.`menu_id` WHERE  `a`.`delete_time` = 0  AND `a`.`order_class` <> 3 ORDER BY `food_type` LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:52+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/traffic/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_traffic` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_traffic` WHERE  `delete_time` = 0  AND `type` <> 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_traffic` WHERE  `delete_time` = 0  AND `type` <> 9 LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:53+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/traffic/purchase.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_traffic` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_traffic` WHERE  `delete_time` = 0  AND `type` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_traffic` WHERE  `delete_time` = 0  AND `type` = 9 LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:54+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/traffic/apply.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_traffic_record` [ RunTime:0.156250s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_traffic_record` `a` INNER JOIN `xjy_user` `c` ON `c`.`id`=`a`.`man_id` INNER JOIN `xjy_traffic` `b` ON `a`.`tra_id`=`b`.`tra_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name`,`b`.`ret_price`,`c`.`user_nickname`,`c`.`user_login` FROM `xjy_traffic_record` `a` INNER JOIN `xjy_user` `c` ON `c`.`id`=`a`.`man_id` INNER JOIN `xjy_traffic` `b` ON `a`.`tra_id`=`b`.`tra_id` LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:38:56+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/recycle_bin/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_recycle_bin` [ RunTime:0.125000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_recycle_bin` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_recycle_bin` ORDER BY create_time desc LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:39:08+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/user/userinfo.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:39:09+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/setting/password.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:39:10+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/kitchen/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_order` `a` INNER JOIN `xjy_rest` `b` ON `a`.`table_id`=`b`.`id` INNER JOIN `xjy_food_menu` `c` ON `c`.`id`=`b`.`menu_id` WHERE  `a`.`delete_time` = 0  AND `a`.`order_class` <> 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.`order_id`,`a`.`order_time`,`c`.`name`,`tb_id`,`a`.`food_type` FROM `xjy_order` `a` INNER JOIN `xjy_rest` `b` ON `a`.`table_id`=`b`.`id` INNER JOIN `xjy_food_menu` `c` ON `c`.`id`=`b`.`menu_id` WHERE  `a`.`delete_time` = 0  AND `a`.`order_class` <> 3 ORDER BY `food_type` LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:39:11+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/marketplace/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:39:16+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/public/logout.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:39:17+08:00 ] 122.114.61.97 125.69.126.20 GET /YunJiuMin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:39:17+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/public/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:39:17+08:00 ] 122.114.61.97 125.69.126.20 GET /captcha/new.html?height=32&width=150&font_size=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:21+08:00 ] 122.114.61.97 125.69.126.20 GET /YunJiuMin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:21+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/public/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:21+08:00 ] 122.114.61.97 125.69.126.20 GET /captcha/new.html?height=32&width=150&font_size=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:28+08:00 ] 122.114.61.97 125.69.126.20 POST /admin/public/dologin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `b` ON `a`.`role_id`=`b`.`id` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_token` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_token` WHERE  `user_id` = 1  AND `device_type` = 'web' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_user_token`  SET `token`='c9ec40fc7506cfeb3bf525572762d13bc9ec40fc7506cfeb3bf525572762d13b',`expire_time`=1542532048,`create_time`=1526980048  WHERE  `user_id` = 1  AND `device_type` = 'web' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_user`  SET `parent_id`=1,`user_type`=1,`sex`=0,`birthday`=1459440000,`last_login_time`=1526980048,`score`=2,`coin`=0,`create_time`=1506178927,`user_status`=1,`user_nickname`='云九科技',`user_lv`=1,`user_email`='963024514@qq.com',`user_address`='',`user_url`='',`avatar`='',`signature`='',`last_login_ip`='125.69.126.20',`user_activation_key`='',`mobile`='',`more`=NULL,`coupon`=0,`user_RMB`=0,`user_login`='admin',`user_pass`='###af86cfadf817a90bf88dcaa14a7fa0cd',`withdrawals_time`=0,`seller_openid`='',`seller_name`='',`Alipay_RMB`=0,`Supermarket`=0  WHERE  `id` = 1 [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:31+08:00 ] 122.114.61.97 125.69.126.20 GET /YunJiuMin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_admin_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 6  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 71  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 15  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 75  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 93  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 158  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 109  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 49  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 50  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 110  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 111  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 113  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 152  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 153  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 156  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 150  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 176  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 177  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 184  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 182  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 190  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 179  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 180  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 189  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 186  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 115  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 73  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 192  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 193  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 194  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 195  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 196  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 187  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 191  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 197  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 198  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 199  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 200  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 58  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:31+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/main/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.109375s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:40+08:00 ] 122.114.61.97 125.69.126.20 GET /user/admin_index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` ORDER BY create_time DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:41+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/22.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:41+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/36.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 36 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:41+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/26.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:41+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/5.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:41+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/3.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:41+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:41+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:42+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/21.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.546875s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:42+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/20.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.562500s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:42+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/23.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.593750s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:47+08:00 ] 122.114.61.97 125.69.126.20 GET /user/admin_oauth/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_third_party_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_third_party_user` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_third_party_user` WHERE  `status` = 1 ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:47+08:00 ] 122.114.61.97 125.69.126.20 GET /user/admin_oauth/'23333333333333333333'
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:47+08:00 ] 122.114.61.97 125.69.126.20 GET /user/admin_oauth/20
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:48+08:00 ] 122.114.61.97 125.69.126.20 GET /user/admin_index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` ORDER BY create_time DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:48+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/26.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:48+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/36.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 36 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:48+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/22.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:48+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/3.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:48+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/5.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.031250s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:48+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:48+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:49+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/21.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:49+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/23.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:07:49+08:00 ] 122.114.61.97 125.69.126.20 GET /user/public/avatar/id/20.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:11:09+08:00 ] 122.114.61.97 125.69.126.20 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:11:12+08:00 ] 122.114.61.97 125.69.126.20 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:11:14+08:00 ] 122.114.61.97 125.69.126.20 GET /YunJiuMin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:11:14+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/public/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:11:15+08:00 ] 122.114.61.97 125.69.126.20 GET /captcha/new.html?height=32&width=150&font_size=18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:11:22+08:00 ] 122.114.61.97 125.69.126.20 GET /captcha/new.html?height=32&width=150&font_size=18&time=0.5223495934596267
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:11:27+08:00 ] 122.114.61.97 125.69.126.20 POST /admin/public/dologin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `user_login` = 'bilibili' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `b` ON `a`.`role_id`=`b`.`id` WHERE  `user_id` = 10  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_token` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_token` WHERE  `user_id` = 10  AND `device_type` = 'web' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_user_token`  SET `token`='08050ae710e64a794df1da40d9a14b6208050ae710e64a794df1da40d9a14b62',`expire_time`=1542532287,`create_time`=1526980287  WHERE  `user_id` = 10  AND `device_type` = 'web' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xjy_user`  SET `parent_id`=1,`user_type`=2,`sex`=1,`birthday`=739814400,`last_login_time`=1526980287,`score`=0,`coin`=0,`create_time`=0,`user_status`=1,`user_nickname`='哔哩哔哩',`user_lv`=1,`user_email`='1101@qq.com',`user_address`='',`user_url`='',`avatar`='',`signature`='23333',`last_login_ip`='125.69.126.20',`user_activation_key`='',`mobile`='',`more`=NULL,`coupon`=0,`user_RMB`=800.02,`user_login`='bilibili',`user_pass`='###af86cfadf817a90bf88dcaa14a7fa0cd',`withdrawals_time`=1512992954,`seller_openid`='oKKb00KIIZt7e5ZMWWokcqq6y5jc',`seller_name`='黎波',`Alipay_RMB`=59.02,`Supermarket`=0  WHERE  `id` = 10 [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:11:30+08:00 ] 122.114.61.97 125.69.126.20 GET /YunJiuMin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_admin_menu` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_auth_rule` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/setting/default' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_auth_access` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/setting/default') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'user/adminindex/default' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('user/adminindex/default') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'user/adminasset/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('user/adminasset/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/seller/default' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/seller/default') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/order/default' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/order/default') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/user/manage' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/user/manage') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/cashier/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/cashier/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/kitchen/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/kitchen/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/marketplace/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/marketplace/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/printer/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/printer/index') [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/#/#' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/#/#') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/#/default' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/#/default') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/recyclebin/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/recyclebin/index') [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 109  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/user/default' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/user/default') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'user/adminindex/default1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('user/adminindex/default1') [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 49  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/rbac/index' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/rbac/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/user/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 50  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 110  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/user/add' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/user/add') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/user/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/user/edit') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 111  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 113  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 152  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'user/adminindex/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('user/adminindex/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'user/adminoauth/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('user/adminoauth/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 156  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 176  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/seller/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/seller/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/foodmenu/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/foodmenu/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/classification/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/classification/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/seller/sellertable' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/seller/sellertable') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 177  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 184  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 182  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 190  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 179  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/order/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/order/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/order/reserveorder' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/order/reserveorder') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 180  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 189  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 186  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/user/userinfo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/user/userinfo') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/setting/password' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/setting/password') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 115  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 73  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 192  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 193  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 194  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 195  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 196  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/report/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/report/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/seller/withdrawals' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/seller/withdrawals') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 187  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 191  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 197  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/traffic/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/traffic/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/traffic/purchase' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/traffic/purchase') [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/traffic/apply' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/traffic/apply') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 198  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 199  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 200  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_admin_menu` WHERE  `parent_id` = 58  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/setting/site' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/setting/site') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/user/userinfo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/user/userinfo') [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/setting/password' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/setting/password') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'portal/admincategory/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('portal/admincategory/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'portal/adminarticle/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('portal/adminarticle/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'user/adminasset/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('user/adminasset/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/setting/clearcache' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/setting/clearcache') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_auth_rule` WHERE  `name` = 'admin/recyclebin/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` `a` INNER JOIN `xjy_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 10  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_auth_access` `a` INNER JOIN `xjy_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (3)  AND `b`.`name` IN ('admin/recyclebin/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:11:30+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/main/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T17:11:33+08:00 ] 122.114.61.97 125.69.126.20 GET /admin/foodmenu/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_role_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `xjy_role_user` WHERE  `user_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xjy_seller_menu` `a` INNER JOIN `xjy_food_menu` `b` ON `b`.`id`=`a`.`food_class` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`name` FROM `xjy_seller_menu` `a` INNER JOIN `xjy_food_menu` `b` ON `b`.`id`=`a`.`food_class` WHERE  `a`.`delete_time` = 0  AND `a`.`seller_id` = 10 ORDER BY a.food_class DESC LIMIT 0,8 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id` FROM `xjy_food_menu` WHERE  `seller_id` = 10 [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:19+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:19+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:20+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:20+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:20+08:00 ] 122.114.61.97 139.207.4.100 GET /favicon.ico
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:21+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/wechatto/appid/wx4612824b7c9f43b5.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:24+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` IS NULL ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` IS NULL ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` IS NULL  AND `food_class` = 0 ORDER BY food_name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 0 AND `seller_id` IS NULL )  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:24+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:27+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/seller_index/appid/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `a`.*,c.id as food_menu_id,`c`.*,`b`.* FROM `xjy_seller` `a` INNER JOIN `xjy_seller_menu` `b` ON `a`.`id`=`b`.`seller_id` INNER JOIN `xjy_food_menu` `c` ON `b`.`food_class`=`c`.`id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `b`.`delete_time` = 0 ORDER BY c.name ASC LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.* FROM `xjy_seller` `a` INNER JOIN `xjy_food_menu` `c` ON `a`.`id`=`c`.`seller_id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `c`.`parent_id` = 0 ORDER BY `c`.`list_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/seller_index' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:28+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:44+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 182 ORDER BY food_name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:44+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 182 ORDER BY food_name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:44+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 182 ORDER BY food_name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:40:45+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:41:21+08:00 ] 122.114.61.97 101.226.113.48 GET /user/index/wechatto/appid/wx4612824b7c9f43b5.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: HTTP_REFERER
+---------------------------------------------------------------
+[ 2018-05-22T20:41:59+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/foodlist/parent_id/179.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 182 ORDER BY food_name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:41:59+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:42:34+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/my.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/my' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:42:35+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:43:16+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/seller_index/appid/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `a`.*,c.id as food_menu_id,`c`.*,`b`.* FROM `xjy_seller` `a` INNER JOIN `xjy_seller_menu` `b` ON `a`.`id`=`b`.`seller_id` INNER JOIN `xjy_food_menu` `c` ON `b`.`food_class`=`c`.`id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `b`.`delete_time` = 0 ORDER BY c.name ASC LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.* FROM `xjy_seller` `a` INNER JOIN `xjy_food_menu` `c` ON `a`.`id`=`c`.`seller_id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `c`.`parent_id` = 0 ORDER BY `c`.`list_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/seller_index' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:43:17+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/seller_index/appid/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `a`.*,c.id as food_menu_id,`c`.*,`b`.* FROM `xjy_seller` `a` INNER JOIN `xjy_seller_menu` `b` ON `a`.`id`=`b`.`seller_id` INNER JOIN `xjy_food_menu` `c` ON `b`.`food_class`=`c`.`id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `b`.`delete_time` = 0 ORDER BY c.name ASC LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.* FROM `xjy_seller` `a` INNER JOIN `xjy_food_menu` `c` ON `a`.`id`=`c`.`seller_id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `c`.`parent_id` = 0 ORDER BY `c`.`list_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/seller_index' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:43:17+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:43:54+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/foodlist.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_food_menu` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 0  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_food_menu` WHERE  `parent_id` = 179  AND `seller_id` = 10 ORDER BY name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller_menu` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_seller_menu` WHERE  `seller_id` = 10  AND `food_class` = 182 ORDER BY food_name ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `xjy_food_menu` WHERE  ( `seller_id` = 10 AND `seller_id` = 10 )  AND `parent_id` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/foodlist' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:43:55+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:43:57+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/seller_index/appid/4.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_seller` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `a`.*,c.id as food_menu_id,`c`.*,`b`.* FROM `xjy_seller` `a` INNER JOIN `xjy_seller_menu` `b` ON `a`.`id`=`b`.`seller_id` INNER JOIN `xjy_food_menu` `c` ON `b`.`food_class`=`c`.`id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `b`.`delete_time` = 0 ORDER BY c.name ASC LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `c`.* FROM `xjy_seller` `a` INNER JOIN `xjy_food_menu` `c` ON `a`.`id`=`c`.`seller_id` WHERE  `a`.`appid` = 'wx4612824b7c9f43b5'  AND `c`.`parent_id` = 0 ORDER BY `c`.`list_order` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/seller_index' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:43:58+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:44:09+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/my.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/my' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:44:10+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:44:12+08:00 ] 122.114.61.97 139.207.4.100 GET /user/index/evaluation/order_pay/6.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_order` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_order` WHERE  `user_id` = '23'  AND `pay` = 6  AND `seller_id` = 10  AND `order_class` <> 3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/evaluation' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:44:13+08:00 ] 122.114.61.97 139.207.4.100 POST /user/index/sesssionto.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:45:12+08:00 ] 122.114.61.97 101.226.233.145 GET /user/index/evaluation/order_pay/6.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.015625s ]
+---------------------------------------------------------------
+[ 2018-05-22T20:45:12+08:00 ] 122.114.61.97 101.226.233.145 GET /user/index/evaluation/order_pay/6.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `xjy_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_theme_file` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `more` FROM `xjy_theme_file` WHERE  `theme` = 'wechat_ordering'  AND (  `is_public` = 1 OR `file` = 'user/index/waiterloginview' ) [ RunTime:0.000000s ]

@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: *
+Disallow: /themes/admin_simpleboot3
+Disallow: /plugins
+Disallow: /api

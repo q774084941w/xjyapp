@@ -1,0 +1,93 @@
+<include file="public@header" />
+<link href="__STATIC__/js/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+<script src="__STATIC__/js/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="__STATIC__/js/bootstrap-select/js/i18n/defaults-zh_CN.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:url('printer/index')}">设备列表</a></li>
+			<li class="active"><a href="{:url('printer/add_index')}">添加设备</a></li>
+		</ul>
+		<php>
+			$voice = array('无','滴滴声','真人语音(小)','真人语音(中)','真人语音(大)');
+		</php>
+		<form method="post" class="form-horizontal margin-top-20 js-ajax-form" action="{:url('printer/addPost')}">
+			<div class="form-group">
+				<label for="input-menu_id" class="col-sm-2 control-label"><span class="form-required">*</span>菜系</label>
+				<div class="col-md-6 col-sm-10">
+
+					<if !empty($select_category)>
+						<select class="form-control selectpicker" name="menu_id[]" id="input-menu_id" data-live-search="true" multiple data-actions-box="true">
+							{$select_category}
+						</select>
+					</if>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="input-status" class="col-sm-2 control-label">位置</label>
+				<div class="col-md-6 col-sm-10" >
+					<select class="form-control selectpicker" name="position[]" data-live-search="true" multiple data-actions-box="true">
+						<notempty name="position">
+							<foreach name="position" item="vo">
+								<option value="{:$vo.posit_id}">{:$vo.name}</option>
+							</foreach>
+						</notempty>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>设备编号</label>
+				<div class="col-md-6 col-sm-10">
+					<input type="text" class="form-control" id="input-name" name="printer_id" placeholder="请输入正确的设备编号">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="input-key" class="col-sm-2 control-label"><span class="form-required">*</span>设备秘钥</label>
+				<div class="col-md-6 col-sm-10">
+					<input type="text" class="form-control" id="input-key" name="secret_key" placeholder="请输入正确的设备秘钥">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="input-remark" class="col-sm-2 control-label">名称、型号等其他信息</label>
+				<div class="col-md-6 col-sm-10">
+					<textarea class="form-control" id="input-remark" name="remark"></textarea>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="input-status" class="col-sm-2 control-label">状态</label>
+				<div class="col-md-6 col-sm-10" id="input-status">
+					<select class="form-control" name="type">
+						<option value="1">启用</option>
+						<option value="0">停用</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="input-voice" class="col-sm-2 control-label">语音</label>
+				<div class="col-md-6 col-sm-10" id="input-voice">
+					<select class="form-control" name="voice">
+						<foreach name="voice" item="vo">
+							<option value="{$key}">{$vo}</option>
+						</foreach>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary js-ajax-submit" >添加</button>
+				</div>
+			</div>
+
+		</form>
+	</div>
+	<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

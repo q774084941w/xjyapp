@@ -1,0 +1,39 @@
+    <!-- nav 底部导航 -->
+    <php>
+      $requestAction = request()->action();
+    </php>
+
+    <div class="clear-bothheight"> </div>
+
+    <div class="weui-tabbar wx-food-foodnav">
+        <a href="{:cmf_url('user/index/seller_index',['appid'=>4])}" class="weui-tabbar__item <if condition="$requestAction eq 'seller_index' " > weui-bar__item_on </if> ">
+            <span style="display: inline-block;position: relative;">
+                <icon class="iconfont icon-shouye weui-tabbar__icon " type="" size="50"/>
+            </span>
+            <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="{:cmf_url('user/index/FoodList')}" class="weui-tabbar__item <if condition="$requestAction eq 'foodlist' " > weui-bar__item_on </if> ">
+            <span style="display: inline-block;position: relative;">
+                <icon class="iconfont icon-qingdan- weui-tabbar__icon " type="" />
+            </span>
+            <p class="weui-tabbar__label">菜单</p>
+        </a>
+        <a href="{:cmf_url('user/index/sellerReserve')}" class="weui-tabbar__item <if condition="$requestAction eq 'sellerreserve' " > weui-bar__item_on </if> ">
+            <span style="display: inline-block;position: relative;">
+                <icon class="iconfont icon-yuyue weui-tabbar__icon " type="" />
+            </span>
+            <p class="weui-tabbar__label">预订</p>
+        </a>
+        <a href="{:cmf_url('user/index/order')}" class="weui-tabbar__item <if condition="$requestAction eq 'order' " > weui-bar__item_on </if> ">
+            <span style="display: inline-block;position: relative;">
+                <icon class="iconfont icon-dingdan weui-tabbar__icon " type="" />
+            </span>
+            <p class="weui-tabbar__label">订单</p>
+        </a>
+        <a href="{:cmf_url('user/index/my')}" class="weui-tabbar__item <if condition="$requestAction eq 'my' " > weui-bar__item_on </if>">
+            <span style="display: inline-block;position: relative;">
+                <icon class="iconfont icon-wode weui-tabbar__icon " type="" />
+            </span>
+            <p class="weui-tabbar__label">我的</p>
+        </a>
+    </div>

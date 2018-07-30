@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <include file="public@head"/>
+
+    <!-- WEUI js stare-->
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>
+    <!-- WEUI js end-->
+    <script type="text/javascript">
+      // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器  
+      var useragent = navigator.userAgent;  
+      if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {  
+          // 这里警告框会阻塞当前页面继续加载  
+          console.log('已禁止本次访问：您必须使用微信内置浏览器访问本页面或者使用服务员账号登录！'); 
+          
+          // 以下代码是用javascript强行关闭当前页面  
+          // var opened = window.open('about:blank', '_self');  
+          // opened.opener = null;  
+          // opened.close();  
+      }else{
+        console.log('跳转至微信自动授权登录！');
+        window.location.href = "{:url('user/index/WeChatto',['appid'=>'wx4612824b7c9f43b5'])}";
+      }
+    </script>
+
+    <title>服务员登录中心</title> 
+    <style type="text/css">
+      .group {
+        padding: 10px;
+      }
+      .weui-cells_form{
+        padding: 0 10px;
+        background: none;
+      }
+      .weui-cells_form:after, .weui-cells_form:before{
+        display: none;
+      }
+      text{
+        font-size: 14px;
+      }
+      .demos-header {
+        padding: 45px 0;
+      }  
+      .demos-title {
+        text-align: center;
+        font-size: 28px;
+        color: #fff;
+        font-weight: 400;
+        margin: 0 15%;
+      } 
+      .grade-a{
+        background-image: url('__TMPL__/public/assets/images/Landing.png');
+        width: 100%;
+      } 
+      .login_save{
+        background: linear-gradient(to right, #D13BF5, #7D3FD6);
+      }
+      .weixin-log{
+        background-color: #05B401 !important;
+        font-size: 14px;
+      }
+      .weixin-log .iconfont{
+        font-size: 16px;
+      } 
+      .weui-cell-login:before{
+        display: none;
+      }
+      .weui-cells_form .weui-cell{
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body class="grade-a">
+    <header class="demos-header">
+      <h1 class="demos-title">服务员登录端</h1>
+    </header>
+    <form method="post" action="{:cmf_url('user/index/login')}" class="js-ajax-form">
+      <input type='hidden' value='2' name="type" />
+      <!--<input type='hidden' value="{:$Request.param.appid}" name="appid" />-->
+      <!-- <input type='hidden' value="SCCWYXMSC" name="appid" /> -->
+      <input type='hidden' value="wx4612824b7c9f43b5" name="appid" />
+      <input type='hidden' value="{:url('user/index/seller_index')}" name="CallbackUrl" />
+      <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+          <div class="weui-cell__hd"><label class="weui-label">用户名</label></div>
+          <div class="weui-cell__bd">
+            <input class="weui-input" type="text" name="user" placeholder="请输入登录账号" required="required">
+          </div>
+        </div>
+        <div class="weui-cell">
+          <div class="weui-cell__hd"><label class="weui-label">密码</label></div>
+          <div class="weui-cell__bd">
+            <input class="weui-input" name="pass" required="required" type="password" placeholder="请输入登录密码">
+          </div>
+        </div>
+      </div>
+
+      <div class="weui-cell weui-cell-login" >
+        <button type="submit" class='save weui-btn weui-btn_primary login_save js-ajax-submit' > 登录 </button>
+      </div>
+
+      <div class="weui-cell weui-cell-login">
+        <!-- <a href="{:url('user/index/WeChatto',['appid'=>'SCCWYXMSC'])}" class='save weui-btn weui-btn_primary weixin-log' > -->
+        <a href="{:url('user/index/WeChatto',['appid'=>'wx4612824b7c9f43b5'])}" class='save weui-btn weui-btn_primary weixin-log' >
+          <icon class="iconfont icon-weixinzhifu" type="button" /></icon>
+          微信登录
+        </a>
+      </div>
+
+    </form>
+    
+<include file="public@footer"/>

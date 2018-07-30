@@ -1,0 +1,51 @@
+---------------------------------------------------------------
+[ 2018-05-11T17:27:27+08:00 ] 122.114.61.97 119.7.16.235 GET /api/index.php/wxapp/Public/login/?code=081spWSI0cmPti25tqTI0o2mTI0spWSV&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fscan_order%2Fid%2F24
+[ info ] wx.ccapp.com.cn/api/index.php/wxapp/Public/login/?code=081spWSI0cmPti25tqTI0o2mTI0spWSV&state=http%3A%2F%2Fwx.ccapp.com.cn%2Fuser%2Findex%2Fscan_order%2Fid%2F24 [运行时间：2.592774s][吞吐率：0.39req/s] [内存消耗：1,952.70kb] [文件加载：54]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.035156s ]
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wxapp',
+    1 => 'Public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E302 MicroMessenger/6.6.6 NetType/WIFI Language/zh_CN',
+  'cookie' => 'yunsuo_leech_key=93; admin_username=liubo; PHPSESSID=eofvcma2hdtegga48vbm897ti6; yunsuo_session_verify=9d3726ba2b9734c5c63301ef35891501',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'wx.ccapp.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'code' => '081spWSI0cmPti25tqTI0o2mTI0spWSV',
+  'state' => 'http://wx.ccapp.com.cn/user/index/scan_order/id/24',
+)
+[ info ] [ LANG ] D:\wwwroot\wx_cwyx\wwwroot\public\api/../../simplewind/cmf/lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002930s ]
+[ info ] [ RUN ] api\wxapp\controller\PublicController->login[ D:\wwwroot\wx_cwyx\wwwroot\api\wxapp\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:dbname=xjyapplet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_hook_plugin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `xjy_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_third_party_user` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_third_party_user` WHERE  `openid` = 'oGxoe1R29PzeooCjKWlnuPIOdevw'  AND `app_id` = 'wx4612824b7c9f43b5' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] INSERT INTO `xjy_user` (`create_time` , `user_status` , `user_type` , `sex` , `user_nickname` , `avatar` , `user_address` , `last_login_ip` , `last_login_time`) VALUES (1526030847 , 1 , 2 , 1 , '刘博' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/ysfRic8AKiaaCUQdROkOHSyHTg62ibNbOTs5W5An91EDZRD4JbyCgESzpFiaicsiaPhaIzPXud1HSOzHnrugZZUibFmtQ/132' , '四川成都' , '119.7.16.235' , 1526030847) [ RunTime:0.033203s ]
+[ sql ] [ SQL ] INSERT INTO `xjy_third_party_user` (`openid` , `user_id` , `nickname` , `avatarUrl` , `app_id` , `last_login_ip` , `union_id` , `last_login_time` , `create_time` , `login_times` , `status` , `more`) VALUES ('oGxoe1R29PzeooCjKWlnuPIOdevw' , 37 , '刘博' , 'http://thirdwx.qlogo.cn/mmopen/vi_32/ysfRic8AKiaaCUQdROkOHSyHTg62ibNbOTs5W5An91EDZRD4JbyCgESzpFiaicsiaPhaIzPXud1HSOzHnrugZZUibFmtQ/132' , 'wx4612824b7c9f43b5' , '119.7.16.235' , '微信平台' , 1526030847 , 1526030847 , 1 , 1 , '{\"gender\":1,\"nickName\":\"\\u5218\\u535a\",\"avatarUrl\":\"http:\\/\\/thirdwx.qlogo.cn\\/mmopen\\/vi_32\\/ysfRic8AKiaaCUQdROkOHSyHTg62ibNbOTs5W5An91EDZRD4JbyCgESzpFiaicsiaPhaIzPXud1HSOzHnrugZZUibFmtQ\\/132\",\"user_address\":\"\\u56db\\u5ddd\\u6210\\u90fd\",\"union_id\":\"\\u5fae\\u4fe1\\u5e73\\u53f0\"}') [ RunTime:0.016602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xjy_user_token` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT * FROM `xjy_user_token` WHERE  `user_id` = 37  AND `device_type` = 'wxapp' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] INSERT INTO `xjy_user_token` (`token` , `user_id` , `expire_time` , `create_time` , `device_type`) VALUES ('f31513ccbe4900b4b3f82a719c72278af31513ccbe4900b4b3f82a719c72278a' , 37 , 1541582847 , 1526030847 , 'wxapp') [ RunTime:0.003906s ]

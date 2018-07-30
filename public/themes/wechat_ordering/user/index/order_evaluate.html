@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>订单评价</title>
+    <include file="public@head"/>
+    <style type="text/css">
+      .group {
+        padding: 10px;
+      }
+      text{
+        font-size: 14px;
+      }
+      .weui-textarea{
+        background: #F7F7FA;
+        width: 93%;
+      }
+      .save{
+        background:linear-gradient(to right, #D13BF5, #7D3FD6);
+      }
+    </style>
+  </head>
+  <body class="grade-a">
+    <!-- 商家店铺信息 -->
+    <view class="Business-information pay-Business-information">
+      <view class="group">
+        <view>
+          <image class="Business-logo" src="{:cmf_get_image_url($order['seller_logo'])}" ></image>
+          <text class='logo-title'>  {:$order.seller_nickname}</text>
+        </view>
+      </view>
+    </view>
+
+    <view>
+      <form action="{:url('user/index/evaluate')}" method="post"  class="js-ajax-form">
+      <!-- 详细订单信息列表 -->
+        <input type='hidden' value='{:$order.order_id}' name="order_id" />
+        <input type='hidden' value='' name="order_icon[]" />
+        <input type='hidden' value='' name="delivery_evaluate" />
+        
+        <view class='Dishes-maxlist-right Dishes-maxlist-shoppingcart'>
+          <view class="Dishes-list">
+            <view class="group">
+              <view class="evaluation-Starrating">
+                <if !empty($order)>
+                  <for start="0" end="$order.delivery_evaluate">
+                    <image class='iconwuxing-img' data-idx='{{idx}}' data-Pentagram='{{item.Pentagram}}' src="__TMPL__/public/assets/images/Pentagram.png"  wx:if="{{item.Pentagram}}"></image>
+                  </for>
+                  <if condition="$order.delivery_evaluate neq 5">
+                    <for start="0" end="(5-$order['delivery_evaluate'])">
+                      <icon class="iconfont icon-wujiaoxing1" data-idx='{{idx}}' data-Pentagram='{{item.Pentagram}}' type="" size="50" wx:else />
+                      <!-- bindtap="Clickwuxing" -->
+                    </for>
+                  </if>
+
+                </if>
+              </view>
+            </view>
+          </view>
+          <view class="Dishes-list" style='border:none;'>
+            <view class="group">
+              <view class="evaluation-description">
+                <textarea class="weui-textarea" placeholder="亲，对菜品口味如何，对包装服务等还满意吗？" name="user_evaluate" rows="3" /></textarea>
+                <!-- <text class='fr'>至少输入8个子</text> -->
+                <text class='fr'>
+                  {:empty($order.food_evaluate) ? '您还没有评价' : mb_strlen($order.food_evaluate)}
+                </text>
+                <view class='clear'></view>
+              </view>
+            </view>
+          </view>
+          <!-- <template is="customer"/> -->
+          <!-- 订单商品信息列表  -->
+          <view class="Dishes-list">
+            <if !empty($food)>
+              <foreach name="food" item="vo" >
+                <view class="group">
+                  <view class="fl list-img">
+                    <image class="Dishes-picture" src="{:cmf_get_image_url($data[$vo['id']][1])}" ></image>
+                  </view>
+                  <view class="fl list-pric-text">
+                    <view class="fl address-tel-text">
+                      <text class='Dishes-Title'>{:$data[$vo['id']][0]}</text>
+                      <text class='Dishes-price'>x {:$vo.nub}</text>
+                    </view>
+                    <view class="fr Dishes-num">
+                      {:$data[$vo['id']][2]}
+                    </view>
+                  </view>
+                  <view class="clear"></view>
+                </view>
+              </foreach>
+            </if>
+
+          </view>
+
+          <!-- <view class="Dishes-list">
+            <view class="group">
+              <view class="Service-fee">
+                <text class='fl'> 包装费 </text>
+                <text class='fr'> ￥{{lunch_box}}.00 </text>
+                <view class="clear"></view>
+              </view>
+              <view class="Service-fee">
+                <text class='fl'> 配送费 </text>
+                <text class='fr'> ￥ {{orderInfoArray.delivery}} </text>
+                <view class="clear"></view>
+              </view>
+            </view>
+          </view> -->
+          <view class="Dishes-list Dishes-list-alone">
+            <view class="group">
+              <view class="Service-fee">
+                <text class='fl'>
+                  {:$order.table_name}
+                  {:$order.tb_id}号桌
+                </text>
+                <text class='fr'> {:$order.name}大厅</text>
+                <view class="clear"></view>
+              </view>
+            </view>
+          </view>
+          <view class="Dishes-list">
+            <view class="group">
+              <view class="Service-fee">
+                <text class='fl'> 订单价格（原价） </text>
+                <text class='fr'> ￥{:$order.order_price}</text>
+                <view class="clear"></view>
+              </view>
+              <view class="Service-fee">
+                <text class='fl'> 优惠后的金额 </text>
+                <text class='fr' style='color:#D13BF5'> ￥ {:$order.discount_price==0 ? $order.order_price : $order.discount_price} </text>
+                <view class="clear"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='group'>
+          <button type="submit" class='save weui-btn weui-btn_primary js-ajax-submit'> 提交 </button>
+        </view>
+      </form>
+
+      <view class="clear"> </view>
+      <view class="footer-shoppingpay-claer"> </view>
+    </view>
+   
+<include file="public@footer"/>

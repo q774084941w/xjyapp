@@ -1,0 +1,132 @@
+<include file="public@header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('admin/trafficReport/index')}">进货统计</a></li>
+        <li><a href="{:url('trafficReport/Shipments')}">出库统计</a></li>
+        <li><a href="{:url('trafficReport/alert')}">库存报警</a></li>
+        <li class="active"><a href="{:url('trafficReport/Statistics')}">库存统计</a></li>
+    </ul>
+    <form class="well form-inline margin-top-20 js-ajax-form" method="post" action="{:url('admin/trafficReport/Statistics')}">
+        <php>
+            $whereTime = empty($whereTime)?'month':$whereTime;
+        </php>
+        <input type="hidden" name="time" value="{:$whereTime}">
+        <div class="form-inline">
+            <div class="form-group cy-mar-ver-s">
+                <notempty name="category">
+                    <select name="category"  class="form-control">
+                        <option value="">分类查找</option>
+                        <foreach name="category" item="vo">
+                            <option value="{$vo.id}" <if condition="input('request.category') eq $vo.id">selected</if>>{:$vo.name}</option>
+                        </foreach>
+                    </select>
+                </notempty>
+                <input class="form-control" type="text" name="keyword" style="width: 200px;" value="{:input('request.keyword')}" placeholder="货品名称/拼音">
+                <span class="cy-pad-hor-s">时间</span>
+            </div>
+            <div class="input-daterange input-group" id="datepicker">
+                <input type="text" class="js-bootstrap-date form-control" name="beginTime" id="qBeginTime" value="{:input('request.beginTime')}" />
+                <span class="input-group-addon">至</span>
+                <input type="text" class="js-bootstrap-date form-control" name="endTime" id="qEndTime"  value="{:input('request.endTime')}"/>
+            </div>
+            <div class="form-group cy-mar-ver-s">
+                <input type="submit" class="btn btn-success" value="搜索" />
+            </div>
+            <span style="float:right">
+                <a class="btn btn-info" href="{:url('trafficReport/Statistics',array('time'=>'month'))}">本月</a>
+                <a class="btn btn-info" href="{:url('trafficReport/Statistics',array('time'=>'last month'))}">上个月</a>
+            </span>
+        </div>
+    </form>
+    <form method="post" class="margin-top-20">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th width="5%">排号</th>
+                    <th width="5%">货品编号</th>
+                    <th width="8%" align="left">货品名称</th>
+                    <th width="5%" align="left">拼音码</th>
+                    <th width="8%" align="left">分类</th>
+                    <th width="8%">累积库存</th>
+                    <th width="8%">当前库存</th>
+                    <th width="8%">历史库存</th>
+                    <th width="8%">进货价</th>
+                    <th width="8%" >零售价</th>
+                </tr>
+            </thead>
+            <tbody>
+            <if !empty($data)>
+                <foreach name="data" item="vo" key="key">
+                    <tr>
+                        <td>{$key+1}</td>
+                        <td>{$vo.traffic_number}</td>
+                        <td>{$vo.name}</td>
+                        <td>{$vo.pinyin}</td>
+                        <td>{$vo.category_name}</td>
+                        <td class="before">
+                            <a href="{:url('trafficReport/detailed',array('tra_id'=>$vo.tra_id,'type'=>1,'time'=>$whereTime))}">
+                                {$vo.all_num}
+                            </a>
+                        </td>
+                        <td>{$vo.stock}</td>
+                        <td>{$vo.before}</td>
+                        <td>{$vo.buy_price}</td>
+                        <td>{$vo.ret_price}</td>
+                    </tr>
+                </foreach>
+            </if>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>合计：</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="all_before"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+    <div class="col-xs-12"  style="text-align:center">
+        <ul class="pagination"><if !empty($page)>
+            {$page|default=''}
+        </if></ul>
+    </div>
+
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script>
+    $('#detailed').change(function () {
+        var type = $(this).prop('checked');
+        if(type){
+            $(this).next().children().eq(0).attr('class','btn btn-danger')
+        }else {
+            $(this).next().children().eq(0).attr('class','btn btn-info')
+        }
+    });
+    $(document).ready(function () {
+        var all_before=0;
+        var all_stock=0;
+        var all_all_num=0;
+        $('.before').each(function () {
+            all_before  += Number($(this).text());
+            all_stock   += Number($(this).next().text());
+            all_all_num += Number($(this).next().next().text());
+        });
+        var id = $('#all_before');
+        id.text(all_before);
+        id.next().text(all_stock);
+        id.next().next().text(all_all_num);
+    })
+
+
+</script>
+</body>
+</html>

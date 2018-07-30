@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>订单列表</title>
+    <include file="public@head"/>
+    <style type="text/css">
+      .group {
+        padding: 10px;
+      }
+      text{
+        font-size: 14px;
+      }
+      .Top-position-all{
+        font-size: 14px;
+        color: #000;
+      }
+      .Top-position{
+        position: relative;
+        border-bottom: 0px;
+      }
+      .icon-paided{
+        font-size: 28px !important;
+        margin-top: 5px;
+        margin-bottom: 7px;
+      }
+      .Order-Status-Options .weui-tabbar__item{
+        font-size: 14px;
+      }
+      /*.Top-position-all:after {
+          content: " ";
+          display: inline-block;
+          height: 6px;
+          width: 6px;
+          border-width: 2px 2px 0 0;
+          border-color: #c8c8cd;
+          border-style: solid;
+          -webkit-transform: matrix(.71,.71,-.71,.71,0,0);
+          transform: matrix(.71,.71,-.71,.71,0,0);
+          position: relative;
+          top: -2px;
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          margin-top: -4px;
+      }*/
+    </style>
+  </head>
+  <body class="grade-a">
+    <!-- 顶部位置 -->
+    <view class="group Top-position">
+      <view>
+        <text class="Top-position-tiele fl">我的订单</text>
+        <a class="Top-position-all fr" href="{:cmf_url('user/index/order')}" hover-class="mine-navigator-hover" open-type="redirect">全部订单 ＞</a>
+        <view class="clear"></view>
+      </view>  
+    </view>
+
+    <!-- 订单状态选项 -->
+    <view class=" weui-tabbar Order-Status-Options">
+        <a href="{:cmf_url('user/index/order',['order_pay'=>4])}" hover-class="mine-navigator-hover" class='weui-tabbar__item <if condition="$Request.param.order_pay eq 4 "> mine-navigator-hover </if>'>
+          <icon class="iconfont icon-paided" type="" size=""> </icon>
+          已支付
+        </a>
+        <a href="{:cmf_url('user/index/order',['order_pay'=>1])}" hover-class="mine-navigator-hover" class='weui-tabbar__item <if condition="$Request.param.order_pay eq 1 "> mine-navigator-hover </if>'>
+          <icon class="iconfont icon-icon" type="" size=""> </icon>
+          未支付
+        </a>
+        <a href="{:cmf_url('user/index/order',['order_pay'=>5])}" hover-class="mine-navigator-hover" class='weui-tabbar__item <if condition="$Request.param.order_pay eq 5 "> mine-navigator-hover </if>'>
+          <icon class="iconfont icon-daipingjia" type="" size=""> </icon>
+          待评价
+        </a>
+      <view class="clear"></view>
+    </view>
+
+    <view class="group me-Dishes-tiele">
+      <text>最近订单</text>
+    </view>
+    <!-- 订单信息列表 -->
+    <notempty name="$data">
+      <view class="group">
+        <foreach name="$data" item="vo">  
+          <view class="Dishes-list Me-Dishes-list" >
+            <view >
+            <!-- class="group"  -->
+              <view class="fl list-img" bindtap="order_info"  data-orderid=''>
+                <a href="{:cmf_url('user/index/order_detailed',['order_id'=>$vo.order_id])}" style="display: block;">
+                  <notempty name="$vo.food_icon">
+                    <image class="Dishes-picture" src="{:cmf_get_image_url($vo.food_icon)}" ></image>
+                  <else />
+                    <image class="Dishes-picture" src="__TMPL__/public/assets/images/dem-shop.png" ></image>
+                  </notempty>
+                </a>
+              </view>
+              <view class="fr list-pric-text">
+                  <view class="address-tel-text">
+                    <view  class='Dishes-Title'>
+                      <text class='fl' style='display: inline-block;'>{:$vo.food_name}</text>
+                      <text class='fr' style="color:#923EDE;display: inline-block;">
+                        <if condition="$vo.pay eq 1 " >
+                          等待支付
+                        <elseif condition="$vo.pay eq 2 " >
+                          商家已确认
+                        <elseif condition="$vo.pay eq 3 " >
+                          商家已拒绝
+                        <elseif condition="$vo.pay eq 4 " >
+                          已支付
+                        <elseif condition="$vo.pay eq 5 " >
+                          未评价
+                        <elseif condition="$vo.pay eq 6 " >
+                          已评价
+                        </if>
+                      </text>
+                      <view class='clear'> </view>
+                    </view>
+                    <text class='Dishes-time'>下单时间：</text>
+                     <text class='Dishes-time'>{:date('Y-m-d H:i',$vo.order_time)} </text>
+                    <!-- 2017-10-30 10:48 -->
+                    <text class='Dishes-Me-price'>总价：{:$vo.order_price}元</text>
+                    <view class="fr operating">
+                      <if condition="$vo.pay eq 1 " >
+                        <a hover-class="mine-navigator-hover" class="Dishes-operating" href="{:cmf_url('user/index/payment',['order_id'=>$vo.order_id])}">立即支付</a>
+                        <a hover-class="mine-navigator-hover" class="Dishes-operating" href="{:cmf_url('user/index/AddFoodList',['order_id'=>$vo.order_id])}">加菜</a>
+                      <elseif condition="$vo.pay neq 1 " >
+                        <if condition="($vo.user_evaluate eq '该用户尚未评价！') OR ($vo.user_evaluate eq '')">
+                          <a hover-class="mine-navigator-hover" class="Dishes-operating" href="{:cmf_url('user/index/order_evaluate',['order_id'=>$vo.order_id])}">去评价</a>
+                        </if>
+                        <a hover-class="mine-navigator-hover" class="Dishes-operating" href="{:cmf_url('user/index/FoodList',['child_id'=>$vo.food_class])}">再来一单</a>
+                      </if>
+                      <!-- <navigator url="" hover-class="mine-navigator-hover" class="Dishes-operating" wx:if="{{item.pay == 1 }}">取消订单</navigator> -->
+                    </view>
+                  </view>         
+              </view>
+              <view class="clear"></view>
+            </view>
+          </view>
+        </foreach>
+      </view>
+    <else />
+      <view class="group" style='color: #999;'> 暂无订单信息</view> 
+    </notempty>    
+   
+<include file="public@nav"/>
+<include file="public@footer"/>

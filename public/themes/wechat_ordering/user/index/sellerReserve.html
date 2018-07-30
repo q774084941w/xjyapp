@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>预订餐桌</title>
+    <include file="public@head"/>
+    <style type="text/css">
+      .weui-cells{
+        margin-top: 0;
+      }
+      .save{
+        background: linear-gradient(to right, #D13BF5, #7D3FD6);
+      }
+      .booking-select .isused{
+        background-color: #D13BF5;
+      }
+      .Notable_type{
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="grade-a">
+    <!-- 用餐时间 -->
+    <form method="post" action="{:cmf_url('user/index/place_order')}"  class="js-ajax-form" onsubmit="return reservrscation()">
+      <input type='hidden' value='3' name="order_class" />
+      
+      <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+          <div class="weui-cell__hd"><label for="" class="weui-label">用餐日期</label></div>
+          <div class="weui-cell__bd">
+            <input class="weui-input" type="date"  placeholder="请选择用餐日期" required="required">
+          </div>
+        </div>
+        <div class="weui-cell">
+          <div class="weui-cell__hd"><label for="" class="weui-label">到店时间</label></div>
+          <div class="weui-cell__bd">
+            <input class="weui-input" type="datetime-local" name="reserve_time" placeholder="请选择预计到店时间" required="required">
+          </div>
+        </div>
+        <div class="weui-cell">
+          <div class="weui-cell__hd"><label class="weui-label">用餐人数</label></div>
+          <div class="weui-cell__bd">
+            <input class="weui-input" type="number" pattern="[0-9]*" name="user_nub" placeholder="请输入就餐人数" required="required">
+          </div>
+        </div>
+        <div class="weui-cell">
+          <div class="weui-cell__hd"><label class="weui-label">联系人</label></div>
+          <div class="weui-cell__bd">
+            <input class="weui-input" name="user_name" required="required" type="text" placeholder="请输入联系人称呼">
+          </div>
+        </div>
+        <div class="weui-cell weui-cells__tel_sellerReserve">
+          <div class="weui-cell__hd">
+            <label class="weui-label">联系电话</label>
+          </div>
+          <div class="weui-cell__bd">
+            <input class="weui-input" type="tel" required="required" name="tel" placeholder="请输入手机号">
+          </div>
+        </div>
+        <div class="weui-cell weui-cells__title weui-cells__title_sellerReserve ">备注</div>
+        <div class="weui-cells weui-cells_form">
+          <div class="weui-cell">
+            <div class="weui-cell__bd">
+              <textarea class="weui-textarea" placeholder="请输入备注信息" rows="3" name="remarks"></textarea>
+              <div class="weui-textarea-counter"><span>最多</span>/200个字</div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-cell weui-cells__title weui-cells__title_sellerReserve ">服务厅选择</div>
+        <div class="weui-cell">
+          <div class='booking-select' id="sellrmenus">
+              <notempty name="$data">
+                <foreach name="$data" item="vo">
+                  <view class="booking-numname" data-id='{:$vo.id}' bindtap="tapName" >{:$vo.name}厅</view> 
+                </foreach>
+              </notempty>
+              <div class="clear"> </div>
+          </div>
+          <!-- <div style="font-size: 14px;">
+            <p>紫红色为已经预定，绿色为正在使用，预定请选择灰色</p>
+            <p>绿色为当前选择，预定请选择灰色</p> 
+          </div> -->
+        </div>
+        <div class="weui-cell weui-cells__title weui-cells__title_sellerReserve Notable_type">餐桌类型选择</div>
+        <div class="weui-cell Notable_type">
+          <div class='booking-select' id="Notable_types">
+              <div class="clear"> </div>
+          </div>
+          <!-- <div style="font-size: 14px;">
+            <p>紫红色为已经预定，绿色为正在使用，预定请选择灰色</p>
+            <p>绿色为当前选择，预定请选择灰色</p> 
+          </div> -->
+        </div>
+
+        <input type='hidden' value='1' name="table_nub" class="table_nub"  />
+        <input type='hidden' value='' id="reserve_class" name="reserve_class" />
+        <input type='hidden' value='' id="menu_id" name="menu_id" />
+        <div class="weui-cell">
+          <button type="submit" class='save weui-btn weui-btn_primary js-ajax-submit' > 确认预订 </button>
+        </div>
+
+      </div>
+
+    </form>
+
+<include file="public@nav"/>
+<include file="public@footer"/>
+
+<script type="text/javascript">
+  $("#my-date-input").calendar();
+
+  $("#sellrmenus .booking-numname").click(function(){
+    $("#menu_id").val(parseInt($(this).attr('data-id')));
+  });
+
+</script>
